@@ -1,0 +1,46 @@
+All types of structures are defined in *window.T*
+
+=Typies Constructor=
+|| *Call* || *Meaning* ||
+|| new T.`LinkedList`() || the linked list ||
+
+=Typies API=
+==`LinkedList`==
+|| *Call* || *Meaning* ||
+|| size(): number || the size of the list ||
+|| isEmpty(): boolean || true when list is empty, otherwise false ||
+|| insert(elem, i): void || insert elem after ith element, basing 0, if i >= length, insert elem at the end of list ||
+|| push(elem): void || insert elem at the end of list ||
+|| reverse(): void || reverse the lst itself ||
+|| remove(elem): void || remove the first node with elem, if no such node, wo do nothing ||
+|| forEach(x=>void): void || apply the function to each element in 0..n-1 order ||
+|| map(x=>y): `[y]` ||  get a new array mapped from x=>y in 0..n-1 order ||
+|| toArray(): `[]` || get a new array containing each element of list in 0..n-1 order ||
+
+==Stack==
+===Static===
+T.Stack.*
+|| *Call* || *Meaning* ||
+|| validPopSeries(pushArray, popArray) || true when we can get the pop series by the push series ||
+
+===Members===
+|| *Call* || *Meaning* ||
+|| size(): number || the size of the list ||
+|| isEmpty(): boolean || true when list is empty, otherwise false ||
+|| push(item): void || push item into stack ||
+|| peek(): item || get the last item from stack, error when empty ||
+|| pop(): item || get the last item and remove it, error when empty ||
+|| forEach(x=>void): void || apply the function to each element in LIFO order ||
+|| map(x=>y): `[y]` ||  get a new array mapped from x=>y in LIFO order ||
+|| toArray(): `[]` || get a new array containing each element of stack in LIFO order ||
+
+==Queue==
+|| *Call* || *Meaning* ||
+|| size(): number || the size of the list ||
+|| isEmpty(): boolean || true when list is empty, otherwise false ||
+|| enqueue(item): void || add item into queue ||
+|| peek(): item || get the first added item from queue, error when empty ||
+|| dequeue(): item || get the first added item and remove it, error when empty ||
+|| forEach(x=>void): void || apply the function to each element in FIFO order ||
+|| map(x=>y): `[y]` ||  get a new array mapped from x=>y in FIFO order ||
+|| toArray(): `[]` || get a new array containing each element of queue in FIFO order ||

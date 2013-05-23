@@ -1,0 +1,16 @@
+	* [AlgoJs Readme of Algo.js]
+	* API of Algo.js
+		* [APIType#LinkedList T.LinkedList]
+		* [APIType#Stack T.Stack]
+		* [APISorting#Sorting._* Sorting]
+		* [APISorting#Sorting.Heap Sorting.Heap]
+		* [APIMath#Stats Statistics]
+	* [ChangeLog Change Log]
+
+<wiki:comment>
+|| *Call* || *Meaning* ||
+||  ||  ||
+||  ||  ||
+||  ||  ||
+||  ||  ||
+</wiki:comment>
