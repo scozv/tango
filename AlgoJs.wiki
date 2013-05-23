@@ -81,4 +81,4 @@ Here are some name specification:
 Only when we get to the function level, we use lowercase, otherwise, we describe the Object by Uppercase.
 
 ==References==
-[js00] professional javascript for web developers, 3rd, nicholas c. zakas, wrox
+`[js00]` professional javascript for web developers, 3rd, nicholas c. zakas, wrox
