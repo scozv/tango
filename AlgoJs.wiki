@@ -2,33 +2,33 @@
 
 This is a project containing implementation of some algorithms in `JavaScript`.
 
-As a Csharper (C#), I try to introduce the OOP of C# into this project. Recently, I am learning functional programming like Scala, so that I also try to introduce the functional conception. So we will see `.map()`, `.forEach()`, etc.
+As a Csharper (`C#`), I try to introduce the OOP of `C#` into this project. Recently, I am learning functional programming like `Scala`, so that I also try to introduce the functional conception. So we will see `.map()`, `.forEach()`, etc.
 
 This project is not the best implementation, but I am taking it easier to use.
 
 == File Structure==
-The implementation of one Class may be separated into different files, with the same initial file name, for instance sorting.js, sorting.quickSort.js and sorting.mergeSort.js. These three files implement the Class named Sorting. In sorting.quickSort.js, there is a comment saying that '// using sorting.js', which means the sorting.quickSort.js is dependent on sorting.js. However, we have to line:
+The implementation of one Class may be separated into different files, with the same initial file name, for instance `sorting.js`, `sorting.quickSort.js` and `sorting.mergeSort.js`. These three files implement the Class named Sorting. In `sorting.quickSort.js`, there is a comment saying that '// using sorting.js', which means the `sorting.quickSort.js` is dependent on `sorting.js`. However, we have to line:
 {{{
 <script src="sorting.js"></script>
 <script src="sorting.quickSort.js"></script>
 }}}
-to index.html manually.
+to `index.html` manually.
 
 I will try to make this (using namespace, or import package) dynamicly one day, if JavaScript can. Or maybe someday I will merge them into one file.
 
 ==Initial Filename and Its Meaning==
 || *Filename* || *Meaning* ||
-|| t.*.js || Encapsulation of the structure type, like LinkedList, Stack, etc ||
-|| x.*.js || Extensions of the current object, like x.array.js ||
+|| t.*.js || Encapsulation of the structure type, like `LinkedList`, `Stack`, etc ||
+|| x.*.js || Extensions of the current object, like `x.array.js` ||
 || sorting.*.js || Implementation of sorting algorithm ||
 
 ==File Name and So-called Namespace==
 sorting.js
 sorting.quickSort.js, Sorting.mergeSort.js
 
-Our files are named like sorting.quickSort.js instead of sorting.quick_sort.js, Sorting.QuickSort.js. 
+Our files are named like `sorting.quickSort.js` instead of `sorting.quick_sort.js`, `Sorting.QuickSort.js`. 
 
-Usually, if we have basic.js, basic.extendOne.js and basic.extendTwo.js, that means basic.js is the basic file of other two files, these two files are dependent on basic.js. Meanwhile, basic.extendOne.js and basic.extendTwo.js are two branches of the extension.
+Usually, if we have `basic.js`, `basic.extendOne.js` and `basic.extendTwo.js`, that means `basic.js` is the basic file of other two files, these two files are dependent on `basic.js`. Meanwhile, `basic.extendOne.js` and `basic.extendTwo.js` are two branches of the extension.
 
 ==Private and Public Member==
 We have two types of private member: _member and __member__
@@ -36,7 +36,7 @@ _member is a private member which we can only access it inside the function clos
 
 We have one type of public member: member
 
-For instance, there are two files: f1.js and f2.js
+For instance, there are two files: `f1.js` and `f2.js`
 {{{
 <script>
 	// f1.js
@@ -73,8 +73,8 @@ DO NOT forget using 'new' to construct the object.
 ==Variable Name==
 Here are some name specification:
 || *name* || *meaning* ||
-|| $pt || the short for prototype, like $arr = Array.prototype ||
-|| `_` || the short for 'this' in function, like function(){var `_` = this;}; ||
+|| $pt || the short for prototype, like `$arr = Array.prototype` ||
+|| `_` || the short for 'this' in function, like `function(){var _ = this;};` ||
 || `*`compare || compare function return negative, 0 and positive number for comparison, it is a function ||
 
 ==lower and Upper==

@@ -5,9 +5,9 @@
 		* [APISorting#Sorting._* Sorting]
 		* [APISorting#Sorting.Heap Sorting.Heap]
 		* [APIMath#Stats Statistics]
-	* [ChangeLog Change Log]
 
 <wiki:comment>
+	* [ChangeLog Change Log]
 || *Call* || *Meaning* ||
 ||  ||  ||
 ||  ||  ||
