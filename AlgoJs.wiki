@@ -31,8 +31,11 @@ Our files are named like `sorting.quickSort.js` instead of `sorting.quick_sort.j
 Usually, if we have `basic.js`, `basic.extendOne.js` and `basic.extendTwo.js`, that means `basic.js` is the basic file of other two files, these two files are dependent on `basic.js`. Meanwhile, `basic.extendOne.js` and `basic.extendTwo.js` are two branches of the extension.
 
 ==Private and Public Member==
-All members of class named by lowercase, and we have two types of private member: `member` and `__member__`
-`member` is a private member which we can only access it inside the function closure. While, `__member__` is a so-called private member, which we can access it as a public one actually, and please DO NOT call it directly.
+All members of class named by lowercase, and we have two types of private member: `member` and `__member__`.
+
+`member` is a private member which we can only access it inside the function closure. 
+
+While, `__member__` is a so-called private member, which we can access it as a public one actually, and please DO NOT call it directly.
 
 We should place all private members under `// ***** private members *****` 
 
