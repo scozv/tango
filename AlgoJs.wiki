@@ -31,10 +31,12 @@ Our files are named like `sorting.quickSort.js` instead of `sorting.quick_sort.j
 Usually, if we have `basic.js`, `basic.extendOne.js` and `basic.extendTwo.js`, that means `basic.js` is the basic file of other two files, these two files are dependent on `basic.js`. Meanwhile, `basic.extendOne.js` and `basic.extendTwo.js` are two branches of the extension.
 
 ==Private and Public Member==
-We have two types of private member: _member and __member__
-_member is a private member which we can only access it inside the function closure. While, __member__ is a mine-called private member, which we can access it as a public one actually, however, please DO NOT call it directly.
+All members of class named by lowercase, and we have two types of private member: `member` and `__member__`
+`member` is a private member which we can only access it inside the function closure. While, `__member__` is a so-called private member, which we can access it as a public one actually, and please DO NOT call it directly.
 
-We have one type of public member: member
+We should place all private members under `// ***** private members *****` 
+
+We have one type of public member: `member` by lowercase withoud any underscore.
 
 For instance, there are two files: `f1.js` and `f2.js`
 {{{
@@ -52,20 +54,22 @@ For instance, there are two files: `f1.js` and `f2.js`
 <script>
 	// f2.js
 	(function(X, undefined){
-		function _func1(){};
+		function func1(){};
 
 		X.func3 = function(){
 			// call X.__func2__
 		};
-
-		// _func1() is not accessible here.
 	}(window.X = window.X || {}));
+
+	// X.func1() is not accessible outside.
 </script>	
 }}}
 
 This coding way is inspired by _The constructor pattern defines instance properties, whereas the prototype pattern defines methods and shared properties._ (see js00 page 197)
 
 ==Class and Static==
+All classes named by Capital letter initilized, no matter public or nested private.
+
 We have Point objects constructed by <code>new Math.Point()</code>, we also have static class Point, which we access its static member by <code>Math.Point.member()</code>
 
 DO NOT forget using 'new' to construct the object.
@@ -79,6 +83,9 @@ Here are some name specification:
 
 ==lower and Upper==
 Only when we get to the function level, we use lowercase, otherwise, we describe the Object by Uppercase.
+
+==Error Message==
+All error messages should not include any symbol windows.
 
 ==References==
 `[js00]` professional javascript for web developers, 3rd, nicholas c. zakas, wrox
