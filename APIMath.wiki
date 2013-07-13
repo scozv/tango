@@ -1,3 +1,9 @@
+=Math=
+The basic extensions for Math.
+
+|| *Call* || *Meaning* ||
+|| mod(i, n) || return x, where i == k * n + x (x > 0) ||
+
 =Stats=
 The basic of statistics.
 
