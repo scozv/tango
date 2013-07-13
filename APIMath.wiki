@@ -4,21 +4,12 @@ The basic extensions for Math.
 || *Call* || *Meaning* ||
 || mod(i, n) || return x, where i == k * n + x (x > 0) ||
 
-=Stats=
-The basic of statistics.
+=Math.Stats=
+The basic of statistics. 
 
-==Static==
 || *Call* || *Meaning* ||
 || sum(arr) || gets the sum of an array ||
 || mean(arr) || gets the average of an array ||
 || var(arr) || gets sample variance of an array ||
 || stddev(arr) || gets the standard deviation of an array ||
-
-
-=Math.Stats.Regression=
-Regression.
-
-==Static==
-|| *Call* || *Meaning* ||
-|| linearLeastSquare(X, Y) || gets the a of Y = aX + b ||
-|| logarithmLeastSquare(X, Y) || gets linearLeastSquare(lnX, lnY) ||
+|| linearLeastSquare( X, Y, fn=(x=>x) ) || gets the a, where fn(Y) = a fn(X) + b ||
