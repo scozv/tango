@@ -13,3 +13,20 @@ The basic of statistics.
 || var(arr) || gets sample variance of an array ||
 || stddev(arr) || gets the standard deviation of an array ||
 || linearLeastSquare( X, Y, fn=(x=>x) ) || gets the a, where fn(Y) = a fn(X) + b ||
+
+=Math.Point=
+The point for the vector.
+
+|| *Call* || *Meaning* ||
+|| new Math.Point(arr) || builds new point by coordinates array ||
+
+=Math.Vector=
+The vector in n dimension.
+
+|| *Call* || *Meaning* ||
+|| new Math.Vector(arr) || builds new vector by coordinates array ||
+|| new Math.Vector(arr1, arr2) || builds new vector by coordinates array of two point ||
+|| new Math.Vector(point1, point2) || builds new vector by two Math.Point ||
+|| norm(vec) || gets the length of the vec ||
+|| dot(v1, v2) || calculates the dot result of two vectors ||
+|| cos(v1, v2) || calculates the cos result of two vectors ||

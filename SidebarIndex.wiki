@@ -1,10 +1,14 @@
 	* [AlgoJs Readme of Algo.js]
 	* API of Algo.js
-		* [APIType#LinkedList T.LinkedList]
-		* [APIType#Stack T.Stack]
+		* [APIType T._*]
+			* [APIType#LinkedList T.LinkedList]
+			* [APIType#Stack T.Stack]
 		* [APISorting#Sorting._* Sorting]
-		* [APISorting#Sorting.Heap Sorting.Heap]
-		* [APIMath#Stats Statistics]
+			* [APISorting#Sorting.Heap Sorting.Heap]
+		* [APIMath Math]
+			* [APIMath#Math.Stats Math.Stats]
+			* [APIMath#Math.Point Math.Point]
+			* [APIMath#Math.Vector Math.Vector]
 
 <wiki:comment>
 	* [ChangeLog Change Log]
