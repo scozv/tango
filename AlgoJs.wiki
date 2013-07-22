@@ -14,7 +14,7 @@ The implementation of one Class may be separated into different files, with the 
 }}}
 to `index.html` manually.
 
-I will try to make this (using namespace, or import package) dynamicly one day, like `require()` in [nodejs.org `Node.js`] or [requirejs.org `RequireJS`]. Or maybe someday I will merge them into one file.
+I will try to make this (using namespace, or import package) dynamicly one day, like `require()` in [http://nodejs.org Node.js] or [http://requirejs.org RequireJS]. Or maybe someday I will merge them into one file.
 
 ==Initial Filename and Its Meaning==
 || *Filename* || *Meaning* ||
@@ -68,7 +68,7 @@ For instance, there are two files: `f1.js` and `f2.js`
 </script>	
 }}}
 
-This coding way is inspired by _The constructor pattern defines instance properties, whereas the prototype pattern defines methods and shared properties._ (see [AlgoJs#References js00] page 197)
+This coding way is inspired by _The constructor pattern defines instance properties, whereas the prototype pattern defines methods and shared properties._ (see [#References js00] page 197)
 
 ==Class and Static==
 All classes named by Capital letter initilized, no matter public or nested private.
@@ -91,5 +91,5 @@ Only when we get to the function level, we use lowercase, otherwise, we describe
 All error messages should not include any symbol windows.
 
 ==References==
-|| *Code*|| *ISBN* || *Details*
+|| *Code*|| *ISBN* || *Details* ||
 || js00 || 978-1-118-22219-5 || professional javascript for web developers, 3rd, nicholas c. zakas, wrox ||
