@@ -1,6 +1,6 @@
 	* [AlgoJs Readme of Algo.js]
 		* [AlgoJs#File_Structure File]
-		* [AlgoJs#Filename_and_Its_Meaning Filename]
+		* [AlgoJs#Initial_Filename_and_Its_Meaning Filename]
 		* [AlgoJs#Filename_and_So-called_Namespace Namespace]
 		* [AlgoJs#Private_and_Public_Member private and Public]
 		* [AlgoJs#Instance_and_Static Instance and Static]
