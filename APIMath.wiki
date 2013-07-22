@@ -2,7 +2,7 @@
 The basic extensions for Math.
 
 || *Call* || *Meaning* ||
-|| `Math.mod(i, n): number` || return x, where i == k * n + x (x > 0) ||
+|| `Math.mod(i, n): number` || returns `x`, where `i == k * n + x (x > 0)` ||
 
 =Math.Stats=
 The basic of statistics. 
@@ -12,7 +12,7 @@ The basic of statistics.
 || `mean(arr): number` || gets the average of an array ||
 || `var(arr): number` || gets sample variance of an array ||
 || `stddev(arr): number` || gets the standard deviation of an array ||
-|| `linearLeastSquare( X, Y, fn=(x=>x) ): number` || gets the a, where fn(Y) = a fn(X) + b ||
+|| `linearLeastSquare( X, Y, fn=(x=>x) ): number` || gets the `a`, where `fn(Y) = a fn(X) + b`. passes `Math.log` to get linear least square for `Y = c X^a` ||
 
 =Math.Point=
 The point for the vector.
@@ -21,7 +21,7 @@ The point for the vector.
 || `new Math.Point(arr)` || builds new point by coordinates array ||
 
 =Math.Vector=
-The vector in n dimension.
+The vector in `n` dimension.
 
 ==Constructors and Static==
 || *Call* || *Meaning* ||
@@ -29,10 +29,10 @@ The vector in n dimension.
 || `new Math.Vector(arr1, arr2)` || builds new vector by coordinates array of two point ||
 || `new Math.Vector(point1, point2)` || builds new vector by two Math.Point ||
 || `Math.Vector.norm(vec): number` || gets the length of the vec ||
-|| `Math.Vector.dot(v1, v2): number` || calculates the dot result of two vectors ||
-|| `Math.Vector.cos(v1, v2): number` || calculates the cos result of two vectors ||
+|| `Math.Vector.dot(v1, v2): number` || calculates the `dot` result of two vectors ||
+|| `Math.Vector.cos(v1, v2): number` || calculates the `cos` result of two vectors ||
 
 ==Members==
 || `norm(): number` || gets the length of the vec itself ||
-|| `dot(that): number` || calculates the dot result of this and that ||
-|| `cos(that): number` || calculates the cos result of this and that ||
+|| `dot(that): number` || calculates the `dot` result of this and that ||
+|| `cos(that): number` || calculates the `cos` result of this and that ||

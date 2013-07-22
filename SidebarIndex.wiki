@@ -5,7 +5,7 @@
 			* [APIType#Stack T.Stack]
 			* [APIType#Queue T.Queue]
 		* [APISorting#Sorting._* Sorting]
-			# [APISorting#Static Sorting Algorithms]
+			* [APISorting#Static Sorting Algorithms]
 			* [APISorting#Sorting.Heap Sorting.Heap]
 		* [APIMath Math]
 			* [APIMath#Math.Stats Math.Stats]

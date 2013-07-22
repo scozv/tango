@@ -20,7 +20,7 @@ All types of structures are defined in *window.T*
 || `reverse(): void` || reverse the lst itself ||
 || `remove(item): void` || remove the first node with elem, if no such node, wo do nothing ||
 || `forEach(x => void): void` || apply the function to each element in 0..n-1 order ||
-|| `map(x => any): [any]` ||  get a new array mapped from x => y in 0..n-1 order ||
+|| `map(x => any): [any]` ||  get a new array mapped from `x => any` in 0..n-1 order ||
 || `toArray(): []` || get a new array containing each element of list in 0..n-1 order ||
 
 ==`Stack`==
@@ -31,7 +31,7 @@ All types of structures are defined in *window.T*
 || `peek(): item` || get the last item from stack, error when empty ||
 || `pop(): item` || get the last item and remove it, error when empty ||
 || `forEach(x => void): void` || apply the function to each element in LIFO order ||
-|| `map(x => any): [any]` ||  get a new array mapped from x => y in LIFO order ||
+|| `map(x => any): [any]` ||  get a new array mapped from `x => any` in LIFO order ||
 || `toArray(): []` || get a new array containing each element of stack in LIFO order ||
 
 ==`Queue`==
@@ -42,5 +42,5 @@ All types of structures are defined in *window.T*
 || `peek(): item` || get the first added item from queue, error when empty ||
 || `dequeue(): item` || get the first added item and remove it, error when empty ||
 || `forEach(x => void): void` || apply the function to each element in FIFO order ||
-|| `map(x => any): [y]` ||  get a new array mapped from x => y in FIFO order ||
+|| `map(x => any): [y]` ||  get a new array mapped from `x => any` in FIFO order ||
 || `toArray(): []` || get a new array containing each element of queue in FIFO order ||
