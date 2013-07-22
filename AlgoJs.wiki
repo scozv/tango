@@ -6,7 +6,7 @@ As a Csharper (`C#`), I try to introduce the `OOP` of `C#` into this project. Re
 
 This project is not the best implementation, but I am taking it easier to use.
 
-== File Structure==
+==File Structure==
 The implementation of one Class may be separated into different files, with the same initial file name, for instance `sorting.js`, `sorting.quickSort.js` and `sorting.mergeSort.js`. These three files implement the class named `Sorting`. In `sorting.quickSort.js`, there is a comment saying that '// using sorting.js', which means the `sorting.quickSort.js` is dependent on `sorting.js`. However, we have to line:
 {{{
 <script src="sorting.js"></script>
@@ -22,7 +22,7 @@ I will try to make this (using namespace, or import package) dynamicly one day, 
 || `x.*.js` || Extensions of the current object, like `x.array.js` ||
 || `sorting.*.js` || Implementation of sorting algorithm ||
 
-==File Name and So-called Namespace==
+==Filename and So-called Namespace==
 `sorting.js`
 `sorting.quickSort.js`, `sorting.mergeSort.js`
 
@@ -70,7 +70,7 @@ For instance, there are two files: `f1.js` and `f2.js`
 
 This coding way is inspired by _The constructor pattern defines instance properties, whereas the prototype pattern defines methods and shared properties._ (see [#References js00] page 197)
 
-==Class and Static==
+==Instance and Static==
 All classes named by Capital letter initilized, no matter public or nested private.
 
 We have Point objects constructed by <code>new Math.Point()</code>, we also have static class Point, which we access its static member by <code>Math.Point.member()</code>
@@ -89,6 +89,14 @@ Only when we get to the function level, we use lowercase, otherwise, we describe
 
 ==Error Message==
 All error messages should not include any symbol windows.
+
+==Unit Test==
+Unit test runs under [http://qunitjs.com QUnit].
+To see the result of unit test for Algo.js, just run `qunit.html` in your web browser.
+
+==Code Coverage==
+Code coverage runs under [http://blanketjs.org Blanket.js].
+To see the result of code coverage for unit test, just run `qunit.html` in your web browser, and check _Enable coverage_.
 
 ==References==
 || *Code*|| *ISBN* || *Details* ||

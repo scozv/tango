@@ -1,4 +1,15 @@
 	* [AlgoJs Readme of Algo.js]
+		* [AlgoJs#File_Structure File]
+		* [AlgoJs#Filename_and_Its_Meaning Filename]
+		* [AlgoJs#Filename_and_So-called_Namespace Namespace]
+		* [AlgoJs#Private_and_Public_Member private and Public]
+		* [AlgoJs#Instance_and_Static Instance and Static]
+		* [AlgoJs#Variable_Name var name]
+		* [AlgoJs#lower_and_Upper varStyle]
+		* [AlgoJs#Error_Message Error]
+		* [AlgoJs#Unit_Test Unit Test]
+		* [AlgoJs#Code_Coverage Code Coverage]
+		* [AlgoJs#References References]
 	* API of Algo.js
 		* [APIType Type]
 			* [APIType#LinkedList T.LinkedList]
@@ -11,12 +22,3 @@
 			* [APIMath#Math.Stats Math.Stats]
 			* [APIMath#Math.Point Math.Point]
 			* [APIMath#Math.Vector Math.Vector]
-
-<wiki:comment>
-	* [ChangeLog Change Log]
-|| *Call* || *Meaning* ||
-||  ||  ||
-||  ||  ||
-||  ||  ||
-||  ||  ||
-</wiki:comment>
