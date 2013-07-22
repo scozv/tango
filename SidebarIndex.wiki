@@ -1,9 +1,11 @@
 	* [AlgoJs Readme of Algo.js]
 	* API of Algo.js
-		* [APIType T._*]
+		* [APIType Type]
 			* [APIType#LinkedList T.LinkedList]
 			* [APIType#Stack T.Stack]
+			* [APIType#Queue T.Queue]
 		* [APISorting#Sorting._* Sorting]
+			# [APISorting#Static Sorting Algorithms]
 			* [APISorting#Sorting.Heap Sorting.Heap]
 		* [APIMath Math]
 			* [APIMath#Math.Stats Math.Stats]
