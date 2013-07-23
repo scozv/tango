@@ -12,7 +12,7 @@ The basic of statistics.
 || `mean(arr): number` || gets the average of an array ||
 || `var(arr): number` || gets sample variance of an array ||
 || `stddev(arr): number` || gets the standard deviation of an array ||
-|| `linearLeastSquare( X, Y, fn=(x=>x) ): number` || gets the `a`, where `fn(Y) = a fn(X) + b`. passes `Math.log` to get linear least square for `Y = c X^a` ||
+|| `linearLeastSquare( X, Y, fn=(x=>x) ): [number, number]` || gets the `[a, b]`, where `fn(Y) = a fn(X) + b`. passes `Math.log` to get linear least square for `Y = c X^a` ||
 
 =Math.Point=
 The point for the vector.
