@@ -22,3 +22,4 @@
 			* [APIMath#Math.Stats Math.Stats]
 			* [APIMath#Math.Point Math.Point]
 			* [APIMath#Math.Vector Math.Vector]
+		* [APIArray Array]
