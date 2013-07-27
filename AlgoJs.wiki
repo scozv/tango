@@ -82,7 +82,7 @@ Here are some name specification:
 || *name* || *meaning* ||
 || $pt || the short for prototype, like `$arr = Array.prototype` ||
 || `_` || the short for 'this' in function, like `function(){var _ = this;};` ||
-|| `*`compare || compare function return negative, 0 and positive number for comparison, it is a function ||
+|| `*`compare || a function which returns negative, 0 and positive number for comparison, it is `(x, y) => x - y` by default ||
 
 ==lower and Upper==
 Only when we get to the function level, we use lowercase, otherwise, we describe the Object by Uppercase.

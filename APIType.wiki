@@ -5,6 +5,8 @@ All types of structures are defined in *window.T*
 || `new T.LinkedList()` || constructs a new linked list ||
 || `new T.Stack()` || constructs a new stack ||
 || `new T.Queue()` || constructs a new queue ||
+|| `T.MaxHeap(): heap` || gets a new max heap, _new_ is option ||
+|| `T.MinHeap(): heap` || gets a new min heap, _new_ is option ||
 
 =Static=
 || *Call* || *Meaning* ||
@@ -15,10 +17,10 @@ All types of structures are defined in *window.T*
 || *Call* || *Meaning* ||
 || `size(): number` || the size of the list ||
 || `isEmpty(): boolean` || true when list is empty, otherwise false ||
-|| `insert(item, i): void` || insert elem after ith element, basing 0, if i >= length, insert elem at the end of list ||
-|| `push(item): void` || insert elem at the end of list ||
+|| `insert(any, i): void` || insert elem after ith element, basing 0, if i >= length, insert elem at the end of list ||
+|| `push(any): void` || insert elem at the end of list ||
 || `reverse(): void` || reverse the lst itself ||
-|| `remove(item): void` || remove the first node with elem, if no such node, wo do nothing ||
+|| `remove(any): void` || remove the first node with elem, if no such node, wo do nothing ||
 || `forEach(x => void): void` || apply the function to each element in 0..n-1 order ||
 || `map(x => any): [any]` ||  get a new array mapped from `x => any` in 0..n-1 order ||
 || `toArray(): []` || get a new array containing each element of list in 0..n-1 order ||
@@ -27,9 +29,9 @@ All types of structures are defined in *window.T*
 || *Call* || *Meaning* ||
 || `size(): number` || the size of the list ||
 || `isEmpty(): boolean` || true when list is empty, otherwise false ||
-|| `push(item): void` || push item into stack ||
-|| `peek(): item` || get the last item from stack, error when empty ||
-|| `pop(): item` || get the last item and remove it, error when empty ||
+|| `push(any): void` || push item into stack ||
+|| `peek(): any` || get the last item from stack, error when empty ||
+|| `pop(): any` || get the last item and remove it, error when empty ||
 || `forEach(x => void): void` || apply the function to each element in LIFO order ||
 || `map(x => any): [any]` ||  get a new array mapped from `x => any` in LIFO order ||
 || `toArray(): []` || get a new array containing each element of stack in LIFO order ||
@@ -38,9 +40,17 @@ All types of structures are defined in *window.T*
 || *Call* || *Meaning* ||
 || `size(): number` || the size of the list ||
 || `isEmpty(): boolean` || true when list is empty, otherwise false ||
-|| `enqueue(item): void` || add item into queue ||
-|| `peek(): item` || get the first added item from queue, error when empty ||
-|| `dequeue(): item` || get the first added item and remove it, error when empty ||
+|| `enqueue(any): void` || add item into queue ||
+|| `peek(): any` || get the first added item from queue, error when empty ||
+|| `dequeue(): any` || get the first added item and remove it, error when empty ||
 || `forEach(x => void): void` || apply the function to each element in FIFO order ||
-|| `map(x => any): [y]` ||  get a new array mapped from `x => any` in FIFO order ||
+|| `map(x => any): [any]` ||  get a new array mapped from `x => any` in FIFO order ||
 || `toArray(): []` || get a new array containing each element of queue in FIFO order ||
+
+==`Heap`==
+Usage of `Sorting.MinHeap` is same as `Sorting.MaxHeap`, except the constructor. Notice, there is a pseudo element at `heap[0]` which we might not use.
+
+|| *Call* || *Meaning* ||
+|| `isEmpty(): boolean` || returns true if there is no real element in heap ||
+|| `push(any): number` || inserts a element into the heap, and gets length of the new heap ||
+|| `pop(): any` || gets the max / min element from heap, and remove it, keeping heap sorted ||

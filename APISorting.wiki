@@ -9,17 +9,3 @@ The default `fn(x): any` is `x => x`, while the default `compare(x, y) : number`
 || `quickSort(arr, fn, compare): []` || gets a new sorted array by quick sort ||
 || `mergeSort(arr, fn, compare): []` || gets a new sorted array by merge sort ||
 || `mergeSortBU(arr, fn, compare): []` || gets a new sorted array by bottom-up merge sort ||
-
-=Sorting.Heap=
-Usage of `Sorting.MinHeap` is same as `Sorting.MaxHeap`, except the constructor. Notice, there is a pseudo element at `heap[0]` which we might not use.
-
-==Constructor==
-|| *Call* || *Meaning* ||
-|| `Sorting.MaxHeap(): heap` || gets a new max heap, _new_ is option ||
-|| `Sorting.MinHeap(): heap` || gets a new min heap, _new_ is option ||
-
-==Members==
-|| *Call* || *Meaning* ||
-|| `isEmpty(): boolean` || returns true if there is no real element in heap ||
-|| `push(x): number` || inserts a element into the heap, and gets length of the new heap ||
-|| `pop(): any` || gets the max / min element from heap, and remove it, keeping heap sorted ||
