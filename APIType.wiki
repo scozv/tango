@@ -50,6 +50,8 @@ All types of structures are defined in *window.T*
 ==`Heap`==
 Usage of `Sorting.MinHeap` is same as `Sorting.MaxHeap`, except the constructor. Notice, there is a pseudo element at `heap[0]` which we might not use.
 
+The reason we do not implement public `forEach`, `map` or `toArray` is that any of these function will destroy the heap.
+
 || *Call* || *Meaning* ||
 || `isEmpty(): boolean` || returns true if there is no real element in heap ||
 || `push(any): number` || inserts a element into the heap, and gets length of the new heap ||
