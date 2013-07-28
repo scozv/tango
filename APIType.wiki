@@ -7,6 +7,7 @@ All types of structures are defined in *window.T*
 || `new T.Queue()` || constructs a new queue ||
 || `T.MaxHeap(): heap` || gets a new max heap, _new_ is option ||
 || `T.MinHeap(): heap` || gets a new min heap, _new_ is option ||
+|| `T.Graph(directed: bool = false)` || gets a unweighted graph, which is undirected by default ||
 
 =Static=
 || *Call* || *Meaning* ||
@@ -56,3 +57,10 @@ The reason we do not implement public `forEach`, `map` or `toArray` is that any 
 || `isEmpty(): boolean` || returns true if there is no real element in heap ||
 || `push(any): number` || inserts a element into the heap, and gets length of the new heap ||
 || `pop(): any` || gets the max / min element from heap, and remove it, keeping heap sorted ||
+
+==`Graph`==
+Representation of unweighted graph, and it is undirected graph by default.
+
+|| *Call* || *Meaning* ||
+|| `v(): number`|| gets the number of vertex ||
+|| `clone(): Graph` || gets a new cloned graph from this graph itself ||
