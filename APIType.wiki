@@ -64,3 +64,4 @@ Representation of unweighted graph, and it is undirected graph by default.
 || *Call* || *Meaning* ||
 || `v(): number`|| gets the number of vertex ||
 || `clone(): Graph` || gets a new cloned graph from this graph itself ||
+|| `toString(verbose: bool = false)` || gets the information of this graph, containing only number of v and e by default ||
