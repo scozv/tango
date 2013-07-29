@@ -1,4 +1,4 @@
-=Sorting.`*`=
+=`Sorting`=
 In our sorting, we pass two function as parameters, `fn(x) : any` and `compare(x, y) : number`. We sort the array by comparing each two value resulted from `fn(x)`, where `x`is an element of array.
 
 The default `fn(x): any` is `x => x`, while the default `compare(x, y) : number` is `(x, y) => x - y`.
