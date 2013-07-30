@@ -62,6 +62,7 @@ The reason we do not implement public `forEach`, `map` or `toArray` is that any 
 Representation of unweighted graph, and it is undirected graph by default.
 
 || *Call* || *Meaning* ||
-|| `v(): number`|| gets the number of vertex ||
+|| `v(): number`|| gets the number of vertex, which has not been visited ||
+|| `e(): number`|| gets the number of edges, which has not been marked invalid, and the sourcing vertex has not been visited ||
 || `clone(): Graph` || gets a new cloned graph from this graph itself ||
 || `toString(verbose: bool = false)` || gets the information of this graph, containing only number of v and e by default ||
