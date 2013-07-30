@@ -7,7 +7,7 @@ All types of structures are defined in *window.T*
 || `new T.Queue()` || constructs a new queue ||
 || `T.MaxHeap(): heap` || gets a new max heap, _new_ is option ||
 || `T.MinHeap(): heap` || gets a new min heap, _new_ is option ||
-|| `T.Graph(directed: bool = false)` || gets a unweighted graph, which is undirected by default ||
+|| `new T.Graph(directed: bool = false)` || gets a unweighted graph, which is undirected by default ||
 
 =Static=
 || *Call* || *Meaning* ||
