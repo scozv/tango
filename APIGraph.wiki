@@ -5,6 +5,8 @@ All the following methods are call by `T.Graph.*`.
 
 ==Static==
 || *Call* || *Meaning* ||
+|| `bfs(graph): []` || gets the vertex visiting array by `BFS` order ||
+|| `dfs(graph): []` || gets the vertex visiting array by `DFS` order ||
 || `multiMinimumCut(graph: T.Graph, times: number): number` || gets the minimum cut number of graph after that times calculations ||
-|| `bfs(graph)` || gets the vertex visiting array by `BFS` order ||
-|| `dfs(graph)` || gets the vertex visiting array by `DFS` order ||
+|| `topologicalSort(graph): []` || gets the topological visiting array of this directed graph ||
+|| `undirectedConnected(graph): []` || gets an array indicating connectivity info of undirected graph. this undirected graph is connected iff `result.length == 1 && result[0][1] == Graph.dfs(graph)` ||
