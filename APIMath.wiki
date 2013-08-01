@@ -10,6 +10,8 @@ The basic extensions for Math.
 The basic of statistics. 
 
 || *Call* || *Meaning* ||
+|| `max(arr): number` || gets the max number of an array ||
+|| `min(arr): number` || gets the min number of an array ||
 || `sum(arr): number` || gets the sum of an array ||
 || `mean(arr): number` || gets the average of an array ||
 || `var(arr): number` || gets sample variance of an array ||
