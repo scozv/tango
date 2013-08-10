@@ -6,8 +6,9 @@ All types of structures are defined in *window.T*
 || `new T.Stack()` || constructs a new stack ||
 || `new T.Queue()` || constructs a new queue ||
 || `T.MaxHeap(): heap` || gets a new max heap, _new_ is option ||
-|| `T.MinHeap(): heap` || gets a new min heap, _new_ is option ||
+|| `T.MinHeap(compare: fn): heap` || gets a new min heap, _new_ is option. see [APISorting Sorting docs] for `compare` which is used in Dijkstra algorithm ||
 || `new T.Graph(n: number, directed: bool = false)` || gets a unweighted graph with n vertex, which is undirected by default ||
+|| `new T.GraphW(n: number, directed: bool = false)` || gets a weighted graph with n vertex, which is undirected by default ||
 
 =Static=
 || *Call* || *Meaning* ||
@@ -66,7 +67,15 @@ To build a graph, we must pass `n` as number of vertex. `n`, the number of verte
 However, when we call `v()` or `e()` as below, the number we get is the valid number of vertex or edges, which has not been visited or marked.
 
 || *Call* || *Meaning* ||
+|| `n: number` || gets the actual number of vertex, whether it is visited, marked or not ||
 || `v(): number`|| gets the number of vertex, which has not been visited ||
 || `e(): number`|| gets the number of edges, which has not been marked invalid, and the sourcing vertex has not been visited ||
 || `clone(): Graph` || gets a new cloned graph from this graph itself ||
 || `toString(verbose: bool = false)` || gets the information of this graph, containing only number of v and e by default ||
+
+==`GraphW`==
+The members in weighted graph is same as the graph, except some differences between the adjancency list representation:
+
+|| *Type* || *Element in Adjancency List* ||
+|| `T.Graph` || `[v, [u1, u2, u3, ...]]` ||
+|| `T.Graph` || `[v, [[u1, w1], [u2, w2], [u3, w3], ...]]` ||
