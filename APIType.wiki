@@ -5,8 +5,8 @@ All types of structures are defined in *window.T*
 || `new T.LinkedList()` || constructs a new linked list ||
 || `new T.Stack()` || constructs a new stack ||
 || `new T.Queue()` || constructs a new queue ||
-|| `T.MaxHeap(): heap` || gets a new max heap, _new_ is option ||
-|| `T.MinHeap(compare: fn): heap` || gets a new min heap, _new_ is option. see [APISorting Sorting docs] for `compare` which is used in Dijkstra algorithm ||
+|| `T.MaxHeap(): heap` || gets a new max heap, ~~_new_ is option~~ ||
+|| `T.MinHeap(compare: fn): heap` || gets a new min heap, ~~_new_ is option~~. see [APISorting Sorting docs] for `compare` which is used in Dijkstra algorithm ||
 || `new T.Graph(n: number, directed: bool = false)` || gets a unweighted graph with n vertex, which is undirected by default ||
 || `new T.GraphW(n: number, directed: bool = false)` || gets a weighted graph with n vertex, which is undirected by default ||
 
