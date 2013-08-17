@@ -56,6 +56,7 @@ The reason we do not implement public `forEach`, `map` or `toArray` is that any 
 
 || *Call* || *Meaning* ||
 || `isEmpty(): boolean` || returns true if there is no real element in heap ||
+|| `size(): number` || gets the number of elements in heap ||
 || `push(any): number` || inserts a element into the heap, and gets length of the new heap ||
 || `pop(): any` || gets the max / min element from heap, and remove it, keeping heap sorted ||
 

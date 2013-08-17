@@ -15,6 +15,7 @@
 			* [APIType#LinkedList T.LinkedList]
 			* [APIType#Stack T.Stack]
 			* [APIType#Queue T.Queue]
+			* [APIType#Heap T.Heap]
 			* [APIType#Graph T.Graph]
 		* [APIMath Math]
 			* [APIMath Math Extensions]
