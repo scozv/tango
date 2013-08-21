@@ -1,12 +1,15 @@
-All types of structures are defined in *window.T*
+All types of structures are defined in *window.T*.
+
+We pass some funtion as parameter sometimes, such as `.map(fn), .forEach(fn), .sort(compare)`... The default `fn` for `.map(fn)` is `x => x`, while the default for comparasion is `(x, y) => x - y`.
 
 =Constructors=
 || *Call* || *Meaning* ||
 || `new T.LinkedList()` || constructs a new linked list ||
 || `new T.Stack()` || constructs a new stack ||
 || `new T.Queue()` || constructs a new queue ||
-|| `T.MaxHeap(): heap` || gets a new max heap, ~~_new_ is option~~ ||
-|| `T.MinHeap(compare: fn): heap` || gets a new min heap, ~~_new_ is option~~. see [APISorting Sorting docs] for `compare` which is used in Dijkstra algorithm ||
+|| `new T.MaxHeap(): heap` || gets a new max heap. ||
+|| `new T.MinHeap(compare): heap` || gets a new min heap. see [APISorting Sorting docs] for `compare` which is used in Dijkstra algorithm ||
+|| `new T.BinarySearchTree(compare)` || gets a binary search tree with the specific comparasion rule ||
 || `new T.Graph(n: number, directed: bool = false)` || gets a unweighted graph with n vertex, which is undirected by default ||
 || `new T.GraphW(n: number, directed: bool = false)` || gets a weighted graph with n vertex, which is undirected by default ||
 
@@ -59,6 +62,25 @@ The reason we do not implement public `forEach`, `map` or `toArray` is that any 
 || `size(): number` || gets the number of elements in heap ||
 || `push(any): number` || inserts a element into the heap, and gets length of the new heap ||
 || `pop(): any` || gets the max / min element from heap, and remove it, keeping heap sorted ||
+
+==`BinarySearchTree`==
+We can indicate the comparasion rule by constructor parameter which will be used for greater left instead of smaller left by default.
+
+For `search`, `insert`, `delete` operations which travel the tree, we provide you two versions, one is iterative operation, the other is recursive one whose function name is initialized with a `r`. Always choose iterative operations as a recommandation.
+
+And, here is definition for some properties of tree, according to [wikipedia.org Wikipedia]:
+
+The height of a node is the length of the longest downward path to a leaf from that node. 
+
+The depth of a node is the length of the path to its root (i.e., its root path). The root node has depth zero, leaf nodes have height zero.
+
+The height of the root is the height of the tree. An empty tree (tree with no nodes, if such are allowed) has depth and height `−1`.
+
+|| *Recursive Call* || *Iterative Call* || *Meaning* ||
+|| `rSearch(elem): node` || `search(elem): node` || searches elem in this tree, returns node which contains elem, or null if not exsits ||
+|| `rInsert(elem): void` || `insert(elem): void` || inserts elem under `BST` order, no duplication ||
+|| `rForEach(TRAVERSAL = T.TRAVERSAL.IN_ORDER, fn): void` || `forEach(TRAVERSAL, fn): void` || travel this `BST` tree with specific `T.TRAVERSAL` order ||
+|| `rMap(TRAVERSAL = T.TRAVERSAL.IN_ORDER, fn: x => any): [any]` || `map(TRAVERSAL, fn): [any]` || maps each element of this `BST` tree with specific `T.TRAVERSAL` order ||
 
 ==`Graph`==
 Representation of unweighted graph, and it is undirected graph by default.

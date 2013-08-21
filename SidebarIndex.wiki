@@ -16,6 +16,7 @@
 			* [APIType#Stack T.Stack]
 			* [APIType#Queue T.Queue]
 			* [APIType#Heap T.Heap]
+			* [APIType#BinarySearchTree T.BinarySearchTree]
 			* [APIType#Graph T.Graph]
 		* [APIMath Math]
 			* [APIMath Math Extensions]
