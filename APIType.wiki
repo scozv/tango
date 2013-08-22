@@ -64,7 +64,7 @@ We can indicate the comparasion rule by constructor parameter which will be used
 
 For `search`, `insert`, `delete` operations which travel the tree, we provide you two versions, one is iterative operation, the other is recursive one whose function name is initialized with a `r`. Always choose iterative operations as a recommandation.
 
-And, here is definition for some properties of tree, according to [www.wikipedia.org Wikipedia]:
+And, here is definition for some properties of tree, according to [http://www.wikipedia.org Wikipedia]:
 
 The height of a node is the length of the longest downward path to a leaf from that node. 
 
