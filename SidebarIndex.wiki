@@ -24,6 +24,7 @@
 			* [APIMath#Math.Point Math.Point]
 			* [APIMath#Math.Vector Math.Vector]
 		* [APIArray Array Extensions]
+		* [APIList Linear Collection Algorithms]
 		* [APISorting Sorting]
 			* [APISorting#Static Sorting Algorithms]
 		* [APIGraph Graph]

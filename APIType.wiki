@@ -13,10 +13,6 @@ We pass some funtion as parameter sometimes, such as `.map(fn), .forEach(fn), .s
 || `new T.Graph(n: number, directed: bool = false)` || gets a unweighted graph with n vertex, which is undirected by default ||
 || `new T.GraphW(n: number, directed: bool = false)` || gets a weighted graph with n vertex, which is undirected by default ||
 
-=Static=
-|| *Call* || *Meaning* ||
-|| `T.Stack.validPopSeries(pushArray, popArray): boolean` || true when we can get the pop series by the push series ||
-
 =Members=
 ==`LinkedList`==
 || *Call* || *Meaning* ||
@@ -68,7 +64,7 @@ We can indicate the comparasion rule by constructor parameter which will be used
 
 For `search`, `insert`, `delete` operations which travel the tree, we provide you two versions, one is iterative operation, the other is recursive one whose function name is initialized with a `r`. Always choose iterative operations as a recommandation.
 
-And, here is definition for some properties of tree, according to [wikipedia.org Wikipedia]:
+And, here is definition for some properties of tree, according to [www.wikipedia.org Wikipedia]:
 
 The height of a node is the length of the longest downward path to a leaf from that node. 
 
@@ -80,7 +76,7 @@ The height of the root is the height of the tree. An empty tree (tree with no no
 || `rSearch(elem): node` || `search(elem): node` || searches elem in this tree, returns node which contains elem, or null if not exsits ||
 || `rInsert(elem): void` || `insert(elem): void` || inserts elem under `BST` order, no duplication ||
 || `rForEach(TRAVERSAL = T.TRAVERSAL.IN_ORDER, fn): void` || `forEach(TRAVERSAL, fn): void` || travel this `BST` tree with specific `T.TRAVERSAL` order ||
-|| `rMap(TRAVERSAL = T.TRAVERSAL.IN_ORDER, fn: x => any): [any]` || `map(TRAVERSAL, fn): [any]` || maps each element of this `BST` tree with specific `T.TRAVERSAL` order ||
+|| `rMap(TRAVERSAL = T.TRAVERSAL.IN_ORDER, fn: x => any): [any]` || `map(TRAVERSAL, fn): [any]` || maps each element of this `BST` tree into an array with specific `T.TRAVERSAL` order ||
 
 ==`Graph`==
 Representation of unweighted graph, and it is undirected graph by default.
