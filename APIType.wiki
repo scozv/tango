@@ -59,6 +59,10 @@ The reason we do not implement public `forEach`, `map` or `toArray` is that any 
 || `push(any): number` || inserts a element into the heap, and gets length of the new heap ||
 || `pop(): any` || gets the max / min element from heap, and remove it, keeping heap sorted ||
 
+===`MinHeap`===
+|| *Call* || *Meaning* ||
+|| `update(key: x=>boolean, when: x=>boolean, how: x=>void): boolean` || find the elem holding `key(x)`, if `when(x)`, then update elem by `how(x)`, return false iff no elem hoding `key(x)` ||
+
 ==`BinarySearchTree`==
 We can indicate the comparasion rule by constructor parameter which will be used for greater left instead of smaller left by default.
 
