@@ -9,6 +9,8 @@ We pass some funtion as parameter sometimes, such as `.map(fn), .forEach(fn), .s
 || `new T.Queue()` || constructs a new queue ||
 || `new T.MaxHeap(): heap` || gets a new max heap. ||
 || `new T.MinHeap(compare): heap` || gets a new min heap. see [APISorting Sorting docs] for `compare` which is used in Dijkstra algorithm ||
+|| `new T.QuickFind(n: number): unionfind` || gets a union find by QuickFind algorithm ||
+|| `new T.WeightedQuickUnion(n: number): unionfind` || gets a union find by Weighted QuickFind algorithm ||
 || `new T.BinarySearchTree(compare)` || gets a binary search tree with the specific comparasion rule ||
 || `new T.Graph(n: number, directed: bool = false)` || gets a unweighted graph with n vertex, which is undirected by default ||
 || `new T.GraphW(n: number, directed: bool = false)` || gets a weighted graph with n vertex, which is undirected by default ||
@@ -62,6 +64,19 @@ The reason we do not implement public `forEach`, `map` or `toArray` is that any 
 ===`MinHeap`===
 || *Call* || *Meaning* ||
 || `update(key: x=>boolean, when: x=>boolean, how: x=>void): boolean` || find the elem holding `key(x)`, if `when(x)`, then update elem by `how(x)`, return false iff no elem hoding `key(x)` ||
+
+==`QuickFind`==
+When we construct a quick find, we pass `n` as the capacity of the quick find. We index the elements in quick find from `0` to `n-1` (inclusive).
+
+|| *Call* || *Meaning* ||
+|| `connected(p, q): boolean` || returns true iff `p` is connected with `q` ||
+|| `count(): number` || gets the number of components which are not connected with each other ||
+|| `union(p, q): number` || unions `p` with `q`, and returns the count after union ||
+
+Different algorithms of quick find bring us different growth of the cost, see below:
+|| *Type* || *`connected(p, q)`* || *`union(p, q)`* ||
+|| `T.QuickFind(N)` || `O(1)` || `O(N)` ||
+|| `T.WeightedQuickFind(N)` || `O(lg N)` || `O(lg N)` ||
 
 ==`BinarySearchTree`==
 We can indicate the comparasion rule by constructor parameter which will be used for greater left instead of smaller left by default.
