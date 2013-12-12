@@ -1,0 +1,1 @@
+Welcome to the algo-js wiki!
