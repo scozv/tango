@@ -1,9 +1,9 @@
-=`Graph`=
+# Graph
 We use `T.Graph` in `t.graph.js` to help implementations of some algorithms in `Graph` static object, which has been put in `graph.*.js`.
 
 All the following methods are call by `T.Graph.*`.
 
-==Static==
+## Static
 || *Call* || *Meaning* ||
 || `bfs(graph): []` || gets the vertex visiting array by `BFS` order ||
 || `dfs(graph): []` || gets the vertex visiting array by `DFS` order ||

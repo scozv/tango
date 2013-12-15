@@ -78,6 +78,7 @@ Different algorithms of quick find bring us different growth of the cost, see be
 || `T.QuickFind(N)` || `O(1)` || `O(N)` ||
 || `T.WeightedQuickFind(N)` || `O(lg N)` || `O(lg N)` ||
 
+<a name="bst" />
 ### `BinarySearchTree`
 We can indicate the comparasion rule by constructor parameter which will be used for greater left instead of smaller left by default.
 

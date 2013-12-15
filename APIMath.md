@@ -1,4 +1,4 @@
-=Math=
+# Math
 The basic extensions for Math.
 
 || *Call* || *Meaning* ||
@@ -6,7 +6,8 @@ The basic extensions for Math.
 || `Math.range(start = 0, end, step = 1): []` || gets an array of range from start to end (exclusive), with that step ||
 || `Math.randomInteger(a = 0, b): number` || gets an integer from a to b (inclusive), where a equals 0 by default ||
 
-=Math.Stats=
+<a name="math-stats" />
+## Math.Stats
 The basic of statistics. 
 
 || *Call* || *Meaning* ||
@@ -18,16 +19,18 @@ The basic of statistics.
 || `stddev(arr): number` || gets the standard deviation of an array ||
 || `linearLeastSquare( X, Y, fn=(x=>x) ): [number, number]` || gets the `[a, b]`, where `fn(Y) = a fn(X) + b`. passes `Math.log` to get linear least square for `Y = c X^a` ||
 
-=Math.Point=
+<a name="math-point" />
+## Math.Point
 The point for the vector.
 
 || *Call* || *Meaning* ||
 || `new Math.Point(arr)` || builds new point by coordinates array ||
 
-=Math.Vector=
+<a name="math.vector" />
+## Math.Vector
 The vector in `n` dimension.
 
-==Constructors and Static==
+### Constructors and Static
 || *Call* || *Meaning* ||
 || `new Math.Vector(arr)` || builds new vector by coordinates array ||
 || `new Math.Vector(arr1, arr2)` || builds new vector by coordinates array of two point ||
@@ -36,7 +39,7 @@ The vector in `n` dimension.
 || `Math.Vector.dot(v1, v2): number` || calculates the `dot` result of two vectors ||
 || `Math.Vector.cos(v1, v2): number` || calculates the `cos` result of two vectors ||
 
-==Members==
+### Members
 || `norm(): number` || gets the length of the vec itself ||
 || `dot(that): number` || calculates the `dot` result of this and that ||
 || `cos(that): number` || calculates the `cos` result of this and that ||

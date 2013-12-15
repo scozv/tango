@@ -1,11 +1,23 @@
-# Readme for Algo.js
+# Overview of Algo.js
 
-This is a project containing implementation of some algorithms in `JavaScript`.
+> You can skip this overview by clicking the __API__ sidebar right.
 
-As a Csharper (`C#`), I try to introduce the `OOP` of `C#` into this project. Recently, I am learning functional programming like `Scala`, so that I also try to introduce the functional conception. So we will see `.map()`, `.forEach()`, etc.
+This overview describes how I organize the files, and how to name the variables. Here is table of content.
 
-This project is not the best implementation, but I am taking it easier to use.
+[File Structure](#file)
+[Initial Filename and Its Meaning](#initial)
+[Filename and So-called Namespace](#namespace)
+[Private and Public Member](#member)
+[Instance and Static](#static)
+[Variable Name](#var)
+[lower and Upper](#lower)
+[Error Message](#error)
+[Unit Test](#ut)
+[Code Coverage](#coverage)
+[References](#ref)
 
+
+<a name="file" />
 ## File Structure
 The implementation of one Class may be separated into different files, with the same initial file name, for instance `sorting.js`, `sorting.quickSort.js` and `sorting.mergeSort.js`. These three files implement the class named `Sorting`. In `sorting.quickSort.js`, there is a comment saying that `// using sorting.js`, which means the `sorting.quickSort.js` is dependent on `sorting.js`. However, we have to add following lines into `index.html` manually:
 <pre><code>script src="sorting.js"
@@ -13,6 +25,7 @@ script src="sorting.quickSort.js"</code></pre>
 
 I will try to make this (using namespace, or import package) dynamicly one day, like `require()` in [Node.js] [1] or [RequireJS] [2]. Or maybe someday I will merge them into one file.
 
+<a name="initial" />
 ## Initial Filename and Its Meaning
 
  Filename | Meaning
@@ -21,6 +34,7 @@ I will try to make this (using namespace, or import package) dynamicly one day, 
  `x.*.js` | Extensions of the current object, like `x.array.js` 
  `sorting.*.js` | Implementation of sorting algorithm 
 
+<a name="namespace" />
 ## Filename and So-called Namespace
 `sorting.js`
 `sorting.quickSort.js`, `sorting.mergeSort.js`
@@ -61,8 +75,9 @@ For instance, there are two files: `f1.js` and `f2.js`
 
 // X.func1() is not accessible outside.</code></pre>
 
-This coding way is inspired by _The constructor pattern defines instance properties, whereas the prototype pattern defines methods and shared properties._ (see ref book [[js00 | Home#references]] page 197)
+This coding way is inspired by _The constructor pattern defines instance properties, whereas the prototype pattern defines methods and shared properties._ (see ref book [__js00__](#ref) page 197)
 
+<a name="static" />
 ## Instance and Static
 All classes named by Capital letter initilized, no matter public or nested private.
 
@@ -70,6 +85,7 @@ We have Point objects constructed by `new Math.Point()`, we also have static cla
 
 __DO NOT__ forget using 'new' to construct the object.
 
+<a name="var" />
 ## Variable Name
 Here are some name specification:
 
@@ -79,20 +95,26 @@ Here are some name specification:
  `_` | the short for 'this' in function, like `function(){var _ = this;};` 
  `*`compare | a function which returns negative, 0 and positive number for comparison, it is `(x, y) => x - y` by default
 
+<a name="lower" />
 ## lower and Upper
 Only when we get to the function level, we use lowercase, otherwise, we describe the Object by Uppercase.
 
+<a name="error" />
 ## Error Message
-All error messages should not include any symbol windows.
+'All error messages should not end by any symbol'
+So that, we can `join` a error list, and end a dot by ourselves.
 
+<a name="ut" />
 ## Unit Test
 Unit test runs under [QUnit] [3].
 To see the result of unit test for Algo.js, just run `qunit.html` in your web browser.
 
+<a name="coverage" />
 ## Code Coverage
 Code coverage runs under [Blanket.js] [4].
 To see the result of code coverage for unit test, just run `qunit.html` in your web browser, and check _Enable coverage_.
 
+<a name="ref" />
 ## References
 Code | ISBN | Details
 :----|:----:|:-------
