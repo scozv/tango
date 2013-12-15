@@ -11,6 +11,7 @@
 		* [[Code Coverage | Home#code-coverage]]
 		* [[References | Home#references]] 
 -->
+    * [[Overview | Home]]
 	* API of Algo.js
 		* [[Type | APIType]]
 			* [[T.LinkedList | APIType#linkedlist]]

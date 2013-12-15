@@ -1,6 +1,7 @@
+<a name="overview" />
 # Overview of Algo.js
 
-> You can skip this overview by clicking the __API__ sidebar right.
+> You can skip this overview to __API__ page by clicking the sidebar right.
 
 This overview describes how I organize the files, and how to name the variables. Here is table of content.
 
@@ -24,6 +25,8 @@ script src="sorting.quickSort.js"</code></pre>
 
 I will try to make this (using namespace, or import package) dynamicly one day, like `require()` in [Node.js] [1] or [RequireJS] [2]. Or maybe someday I will merge them into one file.
 
+[Back to top](#overview)
+
 <a name="initial" />
 ## Initial Filename and Its Meaning
 
@@ -33,6 +36,8 @@ I will try to make this (using namespace, or import package) dynamicly one day, 
  `x.*.js` | Extensions of the current object, like `x.array.js` 
  `sorting.*.js` | Implementation of sorting algorithm 
 
+[Back to top](#overview)
+
 <a name="namespace" />
 ## Filename and So-called Namespace
 `sorting.js`
@@ -41,6 +46,8 @@ I will try to make this (using namespace, or import package) dynamicly one day, 
 Our files are named like `sorting.quickSort.js` instead of `sorting.quick_sort.js`, `Sorting.QuickSort.js`. 
 
 Usually, if we have `basic.js`, `basic.extendOne.js` and `basic.extendTwo.js`, that means `basic.js` is the basic file of other two files, these two files are dependent on `basic.js`. Meanwhile, `basic.extendOne.js` and `basic.extendTwo.js` are two branches of the extension.
+
+[Back to top](#overview)
 
 ## Private and Public Member
 All members of class named by lowercase, and we have two types of private member: `member` and `__member__`.
@@ -76,6 +83,8 @@ For instance, there are two files: `f1.js` and `f2.js`
 
 This coding way is inspired by _The constructor pattern defines instance properties, whereas the prototype pattern defines methods and shared properties._ (see ref book [__js00__](#ref) page 197)
 
+[Back to top](#overview)
+
 <a name="static" />
 ## Instance and Static
 All classes named by Capital letter initilized, no matter public or nested private.
@@ -83,6 +92,8 @@ All classes named by Capital letter initilized, no matter public or nested priva
 We have Point objects constructed by `new Math.Point()`, we also have static class Point, which we access its static member by `Math.Point.member()`.
 
 __DO NOT__ forget using 'new' to construct the object.
+
+[Back to top](#overview)
 
 <a name="var" />
 ## Variable Name
@@ -94,30 +105,42 @@ Here are some name specification:
  `_` | the short for 'this' in function, like `function(){var _ = this;};` 
  `*`compare | a function which returns negative, 0 and positive number for comparison, it is `(x, y) => x - y` by default
 
+[Back to top](#overview)
+
 <a name="lower" />
 ## lower and Upper
 Only when we get to the function level, we use lowercase, otherwise, we describe the Object by Uppercase.
+
+[Back to top](#overview)
 
 <a name="error" />
 ## Error Message
 'All error messages should not end by any symbol'
 So that, we can `join` a error list, and end a dot by ourselves.
 
+[Back to top](#overview)
+
 <a name="ut" />
 ## Unit Test
 Unit test runs under [QUnit] [3].
 To see the result of unit test for Algo.js, just run `qunit.html` in your web browser.
+
+[Back to top](#overview)
 
 <a name="coverage" />
 ## Code Coverage
 Code coverage runs under [Blanket.js] [4].
 To see the result of code coverage for unit test, just run `qunit.html` in your web browser, and check _Enable coverage_.
 
+[Back to top](#overview)
+
 <a name="ref" />
 ## References
 Code | ISBN | Details
 :----|:----:|:-------
 js00 | 978-1-118-22219-5 | professional javascript for web developers, 3rd, nicholas c. zakas, wrox
+
+[Back to top](#overview)
 
 [1]: http://nodejs.org  "Node.js"
 [2]: http://requirejs.org   "require.js"
