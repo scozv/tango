@@ -61,7 +61,7 @@ For instance, there are two files: `f1.js` and `f2.js`
 
 // X.func1() is not accessible outside.</code></pre>
 
-This coding way is inspired by _The constructor pattern defines instance properties, whereas the prototype pattern defines methods and shared properties._ (see ref book _js00_ page 197)
+This coding way is inspired by _The constructor pattern defines instance properties, whereas the prototype pattern defines methods and shared properties._ (see ref book [[js00 | Home#references]] page 197)
 
 ## Instance and Static
 All classes named by Capital letter initilized, no matter public or nested private.
