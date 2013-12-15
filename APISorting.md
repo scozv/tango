@@ -12,3 +12,5 @@ Call | Meaning
 `mergeSort(arr, compare): []` | gets a new sorted array by merge sort
 `mergeSortBU(arr, compare): []` | gets a new sorted array by bottom-up merge sort
 `heapSort(arr, option): []` | gets a new sorted array by heap sort, `option == {order:'ASC' | 'DESC'}`
+
+[Back to top](#sorting)

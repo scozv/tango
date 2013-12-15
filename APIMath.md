@@ -19,7 +19,7 @@ Call | Meaning
 `mean(arr): number` | gets the average of an array
 `var(arr): number` | gets sample variance of an array
 `stddev(arr): number` | gets the standard deviation of an array
-<pre><code>linearLeastSquare(<br /> X,<br /> Y,<br /> fn=(x=>x) ): [number, number]</code></pre> | <br />gets the `[a, b]`, where `fn(Y) = a fn(X) + b`. passes `Math.log` to get linear least square for `Y = c X^a`
+`linearLeastSquare(` <br /> ` X,` <br /> ` Y,` <br /> ` fn=(x=>x) ): [number, number]` | gets the `[a, b]`, where `fn(Y) = a fn(X) + b`. passes `Math.log` to get linear least square for `Y = c X^a`
 
 [Back to top](#math)
 
