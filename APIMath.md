@@ -7,7 +7,6 @@ The basic extensions for Math.
 || `Math.range(start = 0, end, step = 1): []` || gets an array of range from start to end (exclusive), with that step ||
 || `Math.randomInteger(a = 0, b): number` || gets an integer from a to b (inclusive), where a equals 0 by default ||
 
-<a name="math-stats" />
 ## Math.Stats
 The basic of statistics. 
 
@@ -22,7 +21,6 @@ The basic of statistics.
 
 [Back to top](#math)
 
-<a name="math-point" />
 ## Math.Point
 The point for the vector.
 
@@ -31,7 +29,6 @@ The point for the vector.
 
 [Back to top](#math)
 
-<a name="math.vector" />
 ## Math.Vector
 The vector in `n` dimension.
 
