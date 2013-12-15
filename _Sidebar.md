@@ -25,7 +25,7 @@
 			* [[Math.Point | APIMath#math-point]]
 			* [[Math.Vector | APIMath#math-vector]]
 		* [[Array Extensions | APIArray]]
-		* [[Linear Collection Algorithms | APIList]]
+		* [[Linear Collection Algo | APIList]]
 		* [[Sorting | APISorting]]
 			* [[Sorting Algorithms | APISorting#static]]
 		* [[Graph | APIGraph]]

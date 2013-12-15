@@ -1,3 +1,4 @@
+<a name="math" />
 # Math
 The basic extensions for Math.
 
@@ -19,12 +20,16 @@ The basic of statistics.
 || `stddev(arr): number` || gets the standard deviation of an array ||
 || `linearLeastSquare( X, Y, fn=(x=>x) ): [number, number]` || gets the `[a, b]`, where `fn(Y) = a fn(X) + b`. passes `Math.log` to get linear least square for `Y = c X^a` ||
 
+[Back to top](#math)
+
 <a name="math-point" />
 ## Math.Point
 The point for the vector.
 
 || *Call* || *Meaning* ||
 || `new Math.Point(arr)` || builds new point by coordinates array ||
+
+[Back to top](#math)
 
 <a name="math.vector" />
 ## Math.Vector
@@ -43,3 +48,5 @@ The vector in `n` dimension.
 || `norm(): number` || gets the length of the vec itself ||
 || `dot(that): number` || calculates the `dot` result of this and that ||
 || `cos(that): number` || calculates the `cos` result of this and that ||
+
+[Back to top](#math)

@@ -4,18 +4,17 @@
 
 This overview describes how I organize the files, and how to name the variables. Here is table of content.
 
-[File Structure](#file)
-[Initial Filename and Its Meaning](#initial)
-[Filename and So-called Namespace](#namespace)
-[Private and Public Member](#member)
-[Instance and Static](#static)
-[Variable Name](#var)
-[lower and Upper](#lower)
-[Error Message](#error)
-[Unit Test](#ut)
-[Code Coverage](#coverage)
-[References](#ref)
-
+* [File Structure](#file)
+* [Initial Filename and Its Meaning](#initial)
+* [Filename and So-called Namespace](#namespace)
+* [Private and Public Member](#member)
+* [Instance and Static](#static)
+* [Variable Name](#var)
+* [lower and Upper](#lower)
+* [Error Message](#error)
+* [Unit Test](#ut)
+* [Code Coverage](#coverage)
+* [References](#ref)
 
 <a name="file" />
 ## File Structure
