@@ -8,10 +8,8 @@ This project is not the best implementation, but I am taking it easier to use.
 
 ## File Structure
 The implementation of one Class may be separated into different files, with the same initial file name, for instance `sorting.js`, `sorting.quickSort.js` and `sorting.mergeSort.js`. These three files implement the class named `Sorting`. In `sorting.quickSort.js`, there is a comment saying that `// using sorting.js`, which means the `sorting.quickSort.js` is dependent on `sorting.js`. However, we have to add following lines into `index.html` manually:
-<pre><code>
-script src="sorting.js"
-script src="sorting.quickSort.js"
-</code></pre>
+<pre><code>script src="sorting.js"
+script src="sorting.quickSort.js"</code></pre>
 
 I will try to make this (using namespace, or import package) dynamicly one day, like `require()` in [Node.js] [1] or [RequireJS] [2]. Or maybe someday I will merge them into one file.
 
@@ -43,19 +41,16 @@ We should place all private members under `// ***** private members *****`
 We have one type of public member: `member` by lowercase withoud any underscore.
 
 For instance, there are two files: `f1.js` and `f2.js`
-<pre></code>
-// f1.js
+<pre></code>// f1.js
 (function(X, undefined){
     function _func1(){};
 
     X.__func2__ = function(){};
 
     X.func3 = function(){};
-}(window.X = window.X || {}));
-</code></pre>
+}(window.X = window.X || {}));</code></pre>
 
-<pre></code>
-// f2.js
+<pre></code>// f2.js
 (function(X, undefined){
     function func1(){};
 
@@ -64,15 +59,14 @@ For instance, there are two files: `f1.js` and `f2.js`
     };
 }(window.X = window.X || {}));
 
-// X.func1() is not accessible outside.
-</code></pre>
+// X.func1() is not accessible outside.</code></pre>
 
-This coding way is inspired by _The constructor pattern defines instance properties, whereas the prototype pattern defines methods and shared properties._ (see [js00] (#References) page 197)
+This coding way is inspired by _The constructor pattern defines instance properties, whereas the prototype pattern defines methods and shared properties._ (see ref book _js00_ page 197)
 
 ## Instance and Static
 All classes named by Capital letter initilized, no matter public or nested private.
 
-We have Point objects constructed by <code>new Math.Point()</code>, we also have static class Point, which we access its static member by <code>Math.Point.member()</code>
+We have Point objects constructed by `new Math.Point()`, we also have static class Point, which we access its static member by `Math.Point.member()`.
 
 __DO NOT__ forget using 'new' to construct the object.
 

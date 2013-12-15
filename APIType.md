@@ -1,8 +1,8 @@
-All types of structures are defined in *window.T*.
+All types of structures are defined in __window.T__.
 
 We pass some funtion as parameter sometimes, such as `.map(fn), .forEach(fn), .sort(compare)`... The default `fn` for `.map(fn)` is `x => x`, while the default for comparasion is `(x, y) => x - y`.
 
-=Constructors=
+## Constructors
 || *Call* || *Meaning* ||
 || `new T.LinkedList()` || constructs a new linked list ||
 || `new T.Stack()` || constructs a new stack ||
@@ -15,8 +15,8 @@ We pass some funtion as parameter sometimes, such as `.map(fn), .forEach(fn), .s
 || `new T.Graph(n: number, directed: bool = false)` || gets a unweighted graph with n vertex, which is undirected by default ||
 || `new T.GraphW(n: number, directed: bool = false)` || gets a weighted graph with n vertex, which is undirected by default ||
 
-=Members=
-==`LinkedList`==
+## Members
+### `LinkedList`
 || *Call* || *Meaning* ||
 || `size(): number` || the size of the list ||
 || `isEmpty(): boolean` || true when list is empty, otherwise false ||
@@ -28,7 +28,7 @@ We pass some funtion as parameter sometimes, such as `.map(fn), .forEach(fn), .s
 || `map(x => any): [any]` ||  get a new array mapped from `x => any` in 0..n-1 order ||
 || `toArray(): []` || get a new array containing each element of list in 0..n-1 order ||
 
-==`Stack`==
+### Stack
 || *Call* || *Meaning* ||
 || `size(): number` || the size of the list ||
 || `isEmpty(): boolean` || true when list is empty, otherwise false ||
@@ -39,7 +39,7 @@ We pass some funtion as parameter sometimes, such as `.map(fn), .forEach(fn), .s
 || `map(x => any): [any]` ||  get a new array mapped from `x => any` in LIFO order ||
 || `toArray(): []` || get a new array containing each element of stack in LIFO order ||
 
-==`Queue`==
+### `Queue`
 || *Call* || *Meaning* ||
 || `size(): number` || the size of the list ||
 || `isEmpty(): boolean` || true when list is empty, otherwise false ||
@@ -50,7 +50,7 @@ We pass some funtion as parameter sometimes, such as `.map(fn), .forEach(fn), .s
 || `map(x => any): [any]` ||  get a new array mapped from `x => any` in FIFO order ||
 || `toArray(): []` || get a new array containing each element of queue in FIFO order ||
 
-==`Heap`==
+### `Heap`
 Usage of `Sorting.MinHeap` is same as `Sorting.MaxHeap`, except the constructor. Notice, there is a pseudo element at `heap[0]` which we might not use.
 
 The reason we do not implement public `forEach`, `map` or `toArray` is that any of these function will destroy the heap.
@@ -61,11 +61,11 @@ The reason we do not implement public `forEach`, `map` or `toArray` is that any 
 || `push(any): number` || inserts a element into the heap, and gets length of the new heap ||
 || `pop(): any` || gets the max / min element from heap, and remove it, keeping heap sorted ||
 
-===`MinHeap`===
+### `MinHeap`
 || *Call* || *Meaning* ||
 || `update(key: x=>boolean, when: x=>boolean, how: x=>void): boolean` || find the elem holding `key(x)`, if `when(x)`, then update elem by `how(x)`, return false iff no elem hoding `key(x)` ||
 
-==`QuickFind`==
+### `QuickFind`
 When we construct a quick find, we pass `n` as the capacity of the quick find. We index the elements in quick find from `0` to `n-1` (inclusive).
 
 || *Call* || *Meaning* ||
@@ -78,7 +78,7 @@ Different algorithms of quick find bring us different growth of the cost, see be
 || `T.QuickFind(N)` || `O(1)` || `O(N)` ||
 || `T.WeightedQuickFind(N)` || `O(lg N)` || `O(lg N)` ||
 
-==`BinarySearchTree`==
+### `BinarySearchTree`
 We can indicate the comparasion rule by constructor parameter which will be used for greater left instead of smaller left by default.
 
 For `search`, `insert`, `delete` operations which travel the tree, we provide you two versions, one is iterative operation, the other is recursive one whose function name is initialized with a `r`. Always choose iterative operations as a recommandation.
@@ -97,7 +97,7 @@ The height of the root is the height of the tree. An empty tree (tree with no no
 || `rForEach(TRAVERSAL = T.TRAVERSAL.IN_ORDER, fn): void` || `forEach(TRAVERSAL, fn): void` || travel this `BST` tree with specific `T.TRAVERSAL` order ||
 || `rMap(TRAVERSAL = T.TRAVERSAL.IN_ORDER, fn: x => any): [any]` || `map(TRAVERSAL, fn): [any]` || maps each element of this `BST` tree into an array with specific `T.TRAVERSAL` order ||
 
-==`Graph`==
+### `Graph`
 Representation of unweighted graph, and it is undirected graph by default.
 
 To build a graph, we must pass `n` as number of vertex. `n`, the number of vertex, is readonly after built graph.
@@ -111,7 +111,7 @@ However, when we call `v()` or `e()` as below, the number we get is the valid nu
 || `clone(): Graph` || gets a new cloned graph from this graph itself ||
 || `toString(verbose: bool = false)` || gets the information of this graph, containing only number of v and e by default ||
 
-==`GraphW`==
+### `GraphW`
 The members in weighted graph is same as the graph, except some differences between the adjancency list representation:
 
 || *Type* || *Element in Adjancency List* ||
