@@ -116,12 +116,14 @@ And, here is definition for some properties of tree, according to Wikipedia:
 > 
 > The height of the root is the height of the tree. An empty tree (tree with no nodes, if such are allowed) has depth and height `−1`.
 
+We have defined different traversal way in `T.TRAVERSAL.*`. The default traversal way is `T.TRAVERSAL.IN_ORDER`.
+
 Recursive Call | Iterative Call | Meaning
 :--------------|:---------------|:-------
 `rSearch(elem): node` | `search(elem): node` | searches elem in this tree, returns node which contains elem, or null if not exsits
 `rInsert(elem): void` | `insert(elem): void` | inserts elem under `BST` order, no duplication
-<pre><code>rForEach(<br />TRAVERSAL = T.TRAVERSAL.IN_ORDER, <br />fn): void</code></pre> | <pre><code>forEach(TRAVERSAL, fn): void</code></pre> | <br />travel this `BST` tree with specific `T.TRAVERSAL` order
-<pre><code>rMap(<br />TRAVERSAL = T.TRAVERSAL.IN_ORDER, <br />fn: x => any): [any]</code></pre> | <pre><code>map(TRAVERSAL, fn): [any]</code></pre> | <br />maps each element of this `BST` tree into an array with specific `T.TRAVERSAL` order
+<pre><code>rForEach(<br /> TRAVERSAL,<br /> fn): void</code></pre> | <pre><code>forEach(<br /> TRAVERSAL,<br /> fn): void</code></pre> | <br />travel this `BST` tree with specific `T.TRAVERSAL` order
+<pre><code>rMap(<br /> TRAVERSAL,<br /> fn: x => any): [any]</code></pre> | <pre><code>map(<br /> TRAVERSAL,<br /> fn): [any]</code></pre> | <br />maps each element of this `BST` tree into an array with specific `T.TRAVERSAL` order
 
 [Back to top](#t)
 
@@ -148,6 +150,6 @@ The members in weighted graph is same as the graph, except some differences betw
 Type | Element in Adjancency List
 :----|:-------
 `T.Graph` | `[v, [u1, u2, u3, ...]]`
-`T.Graph` | <code>[v, [[u1, w1], [u2, w2], [u3, w3], ...]]</code>
+`T.Graph` | <code>\[v, \[\[u1, w1\], \[u2, w2\], \[u3, w3\], ...\]\]</code>
 
 [Back to top](#t)
