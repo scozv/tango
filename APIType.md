@@ -12,11 +12,11 @@ Call | Meaning
 `new T.Queue()` | constructs a new queue
 `new T.MaxHeap(): heap` | gets a new max heap
 `new T.MinHeap(compare): heap` | gets a new min heap
-<pre><code>new T.QuickFind(<br /> n: number): unionfind</code><pre>| gets a union find by QuickFind algorithm
-<pre><code>new T.WeightedQuickUnion(<br /> n: number): unionfind</code><pre> | gets a union find by Weighted QuickFind algorithm
-<pre><code>new T.BinarySearchTree(compare)</code><pre> | gets a binary search tree with the specific comparasion rule
-<pre><code>new T.Graph(<br /> n: number,<br /> directed: bool = false)</code><pre> | gets a unweighted graph with n vertex, which is undirected by default
-<pre><code>new T.GraphW(<br /> n: number,<br /> directed: bool = false)</code><pre> | gets a weighted graph with n vertex, which is undirected by default
+<code>new T.QuickFind(<br />&#32; n: number): unionfind</code>| gets a union find by QuickFind algorithm
+<code>new T.WeightedQuickUnion(<br /> n: number): unionfind</code> | gets a union find by Weighted QuickFind algorithm
+<code>new T.BinarySearchTree(compare)</code> | gets a binary search tree with the specific comparasion rule
+<code>new T.Graph(<br /> n: number,<br /> directed: bool = false)</code> | gets a unweighted graph with n vertex, which is undirected by default
+<code>new T.GraphW(<br /> n: number,<br /> directed: bool = false)</code> | gets a weighted graph with n vertex, which is undirected by default
 
 [Back to top](#t)
 
@@ -81,7 +81,7 @@ Call | Meaning
 ### MinHeap
 Call | Meaning
 :----|:-------
-<pre><code>update(<br /> key: x=>boolean,<br /> when: x=>boolean,<br /> how: x=>void): boolean</code></pre> | find the elem holding `key(x)`, if `when(x)`, then update elem by `how(x)`, return false iff no elem hoding `key(x)`
+<code>update(<br /> key: x=>boolean,<br /> when: x=>boolean,<br /> how: x=>void): boolean</code> | find the elem holding `key(x)`, if `when(x)`, then update elem by `how(x)`, return false iff no elem hoding `key(x)`
 
 [Back to top](#t)
 
@@ -122,8 +122,8 @@ Recursive Call | Iterative Call | Meaning
 :--------------|:---------------|:-------
 `rSearch(elem): node` | `search(elem): node` | searches elem in this tree, returns node which contains elem, or null if not exsits
 `rInsert(elem): void` | `insert(elem): void` | inserts elem under `BST` order, no duplication
-<pre><code>rForEach(<br /> TRAVERSAL,<br /> fn): void</code></pre> | <pre><code>forEach(<br /> TRAVERSAL,<br /> fn): void</code></pre> | travel this `BST` tree with specific `T.TRAVERSAL` order
-<pre><code>rMap(<br /> TRAVERSAL,<br /> fn: x => any): [any]</code></pre> | <pre><code>map(<br /> TRAVERSAL,<br /> fn): [any]</code></pre> | maps each element of this `BST` tree into an array with specific `T.TRAVERSAL` order
+<code>rForEach(<br /> TRAVERSAL,<br /> fn): void</code> | <code>forEach(<br /> TRAVERSAL,<br /> fn): void</code> | travel this `BST` tree with specific `T.TRAVERSAL` order
+<code>rMap(<br /> TRAVERSAL,<br /> fn: x => any): [any]</code> | <code>map(<br /> TRAVERSAL,<br /> fn): [any]</code> | maps each element of this `BST` tree into an array with specific `T.TRAVERSAL` order
 
 [Back to top](#t)
 
@@ -140,7 +140,7 @@ Call | Meaning
 `v(): number`| gets the number of vertex, which has not been visited
 `e(): number`| gets the number of edges, which has not been marked invalid, and the sourcing vertex has not been visited
 `clone(): Graph` | gets a new cloned graph from this graph itself
-`toString(verbose: bool = false)` | gets the information of this graph, containing only number of v and e by default
+<code>toString(<br /> verbose: bool = false)<code> | gets the information of this graph, containing only number of v and e by default
 
 [Back to top](#t)
 
