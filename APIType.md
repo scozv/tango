@@ -12,11 +12,11 @@ Call | Meaning
 `new T.Queue()` | constructs a new queue
 `new T.MaxHeap(): heap` | gets a new max heap
 `new T.MinHeap(compare): heap` | gets a new min heap
-`new T.QuickFind(n: number): unionfind` | gets a union find by QuickFind algorithm
-`new T.WeightedQuickUnion(n: number): unionfind` | gets a union find by Weighted QuickFind algorithm
-`new T.BinarySearchTree(compare)` | gets a binary search tree with the specific comparasion rule
-`new T.Graph(n: number, directed: bool = false)` | gets a unweighted graph with n vertex, which is undirected by default
-`new T.GraphW(n: number, directed: bool = false)` | gets a weighted graph with n vertex, which is undirected by default
+<pre><code>new T.QuickFind(<br /> n: number): unionfind</code><pre>| gets a union find by QuickFind algorithm
+<pre><code>new T.WeightedQuickUnion(<br /> n: number): unionfind</code><pre> | gets a union find by Weighted QuickFind algorithm
+<pre><code>new T.BinarySearchTree(compare)</code><pre> | gets a binary search tree with the specific comparasion rule
+<pre><code>new T.Graph(<br /> n: number,<br /> directed: bool = false)</code><pre> | gets a unweighted graph with n vertex, which is undirected by default
+<pre><code>new T.GraphW(<br /> n: number,<br /> directed: bool = false)</code><pre> | gets a weighted graph with n vertex, which is undirected by default
 
 [Back to top](#t)
 
@@ -81,7 +81,7 @@ Call | Meaning
 ### MinHeap
 Call | Meaning
 :----|:-------
-<pre><code>update(<br />key: x=>boolean,<br />when: x=>boolean,<br />how: x=>void): boolean</code></pre> | <br />find the elem holding `key(x)`, if `when(x)`, then update elem by `how(x)`, return false iff no elem hoding `key(x)`
+<pre><code>update(<br /> key: x=>boolean,<br /> when: x=>boolean,<br /> how: x=>void): boolean</code></pre> | find the elem holding `key(x)`, if `when(x)`, then update elem by `how(x)`, return false iff no elem hoding `key(x)`
 
 [Back to top](#t)
 
@@ -122,8 +122,8 @@ Recursive Call | Iterative Call | Meaning
 :--------------|:---------------|:-------
 `rSearch(elem): node` | `search(elem): node` | searches elem in this tree, returns node which contains elem, or null if not exsits
 `rInsert(elem): void` | `insert(elem): void` | inserts elem under `BST` order, no duplication
-<pre><code>rForEach(<br /> TRAVERSAL,<br /> fn): void</code></pre> | <pre><code>forEach(<br /> TRAVERSAL,<br /> fn): void</code></pre> | <br />travel this `BST` tree with specific `T.TRAVERSAL` order
-<pre><code>rMap(<br /> TRAVERSAL,<br /> fn: x => any): [any]</code></pre> | <pre><code>map(<br /> TRAVERSAL,<br /> fn): [any]</code></pre> | <br />maps each element of this `BST` tree into an array with specific `T.TRAVERSAL` order
+<pre><code>rForEach(<br /> TRAVERSAL,<br /> fn): void</code></pre> | <pre><code>forEach(<br /> TRAVERSAL,<br /> fn): void</code></pre> | travel this `BST` tree with specific `T.TRAVERSAL` order
+<pre><code>rMap(<br /> TRAVERSAL,<br /> fn: x => any): [any]</code></pre> | <pre><code>map(<br /> TRAVERSAL,<br /> fn): [any]</code></pre> | maps each element of this `BST` tree into an array with specific `T.TRAVERSAL` order
 
 [Back to top](#t)
 
@@ -150,6 +150,6 @@ The members in weighted graph is same as the graph, except some differences betw
 Type | Element in Adjancency List
 :----|:-------
 `T.Graph` | `[v, [u1, u2, u3, ...]]`
-`T.Graph` | <code>\[v, \[\[u1, w1\], \[u2, w2\], \[u3, w3\], ...\]\]</code>
+`T.GraphW` | `[v, [(u1, w1), (u2, w2), (u3, w3), ...]]`
 
 [Back to top](#t)
