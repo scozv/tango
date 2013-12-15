@@ -11,3 +11,5 @@ Call | Meaning
 :----|:-------
 `clone(): []` | gets a new array cloned from itself
 `zip(that): []` | gets Array.zip(this, that)
+
+[Back to top](#array)

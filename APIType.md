@@ -50,7 +50,7 @@ Call | Meaning
 
 [Back to top](#t)
 
-### `Queue`
+### Queue
 Call | Meaning
 :----|:-------
 `size(): number` | the size of the list
@@ -64,7 +64,7 @@ Call | Meaning
 
 [Back to top](#t)
 
-### `Heap`
+### Heap
 Usage of `Sorting.MinHeap` is same as `Sorting.MaxHeap`, except the constructor. Notice, there is a pseudo element at `heap[0]` which we might not use.
 
 The reason we do not implement public `forEach`, `map` or `toArray` is that any of these function will destroy the heap.
@@ -78,14 +78,14 @@ Call | Meaning
 
 [Back to top](#t)
 
-### `MinHeap`
+### MinHeap
 Call | Meaning
 :----|:-------
-`update(key: x=>boolean, when: x=>boolean, how: x=>void): boolean` | find the elem holding `key(x)`, if `when(x)`, then update elem by `how(x)`, return false iff no elem hoding `key(x)`
+<pre><code>update(<br />key: x=>boolean,<br />when: x=>boolean,<br />how: x=>void): boolean</code></pre> | <br />find the elem holding `key(x)`, if `when(x)`, then update elem by `how(x)`, return false iff no elem hoding `key(x)`
 
 [Back to top](#t)
 
-### `QuickFind`
+### QuickFind
 When we construct a quick find, we pass `n` as the capacity of the quick find. We index the elements in quick find from `0` to `n-1` (inclusive).
 
 Call | Meaning
@@ -103,7 +103,7 @@ Type | `connected(p, q)` | `union(p, q)`
 
 [Back to top](#t)
 
-### `BinarySearchTree`
+### BinarySearchTree
 We can indicate the comparasion rule by constructor parameter which will be used for greater left instead of smaller left by default.
 
 For `search`, `insert`, `delete` operations which travel the tree, we provide you two versions, one is iterative operation, the other is recursive one whose function name is initialized with a `r`. Always choose iterative operations as a recommandation.
@@ -120,12 +120,12 @@ Recursive Call | Iterative Call | Meaning
 :--------------|:---------------|:-------
 `rSearch(elem): node` | `search(elem): node` | searches elem in this tree, returns node which contains elem, or null if not exsits
 `rInsert(elem): void` | `insert(elem): void` | inserts elem under `BST` order, no duplication
-`rForEach(TRAVERSAL = T.TRAVERSAL.IN_ORDER, fn): void` | `forEach(TRAVERSAL, fn): void` | travel this `BST` tree with specific `T.TRAVERSAL` order
-`rMap(TRAVERSAL = T.TRAVERSAL.IN_ORDER, fn: x => any): [any]` | `map(TRAVERSAL, fn): [any]` | maps each element of this `BST` tree into an array with specific `T.TRAVERSAL` order
+<pre><code>rForEach(<br />TRAVERSAL = T.TRAVERSAL.IN_ORDER, <br />fn): void</code></pre> | <pre><code>forEach(TRAVERSAL, fn): void</code></pre> | <br />travel this `BST` tree with specific `T.TRAVERSAL` order
+<pre><code>rMap(<br />TRAVERSAL = T.TRAVERSAL.IN_ORDER, <br />fn: x => any): [any]</code></pre> | <pre><code>map(TRAVERSAL, fn): [any]</code></pre> | <br />maps each element of this `BST` tree into an array with specific `T.TRAVERSAL` order
 
 [Back to top](#t)
 
-### `Graph`
+### Graph
 Representation of unweighted graph, and it is undirected graph by default.
 
 To build a graph, we must pass `n` as number of vertex. `n`, the number of vertex, is readonly after built graph.
@@ -142,12 +142,12 @@ Call | Meaning
 
 [Back to top](#t)
 
-### `GraphW`
+### GraphW
 The members in weighted graph is same as the graph, except some differences between the adjancency list representation:
 
 Type | Element in Adjancency List
 :----|:-------
 `T.Graph` | `[v, [u1, u2, u3, ...]]`
-`T.Graph` | `[v, [[u1, w1], [u2, w2], [u3, w3], ...]]`
+`T.Graph` | <code>[v, [[u1, w1], [u2, w2], [u3, w3], ...]]</code>
 
 [Back to top](#t)

@@ -16,3 +16,5 @@ Call | Meaning
 `sccKosaraju(graph): []` | gets the top 10 large size strong connect component of directed graph, using Kosaraju algorithm
 `topologicalSort(graph): []` | gets the topological visiting array of this directed graph
 `undirectedConnected(graph): []` | gets an array indicating connectivity info of undirected graph. this undirected graph is connected iff `result.length == 1` __AND__ `result[0][1] == Graph.dfs(graph)`
+
+[Back to top](#graph)
