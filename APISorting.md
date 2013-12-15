@@ -1,3 +1,4 @@
+<a name="sorting" />
 # Sorting
 In our sorting, we pass a function as parameters, named `compare(x, y) : number`. We sort the array by comparing each two value resulted from `x`, where `x`is an element of array.
 

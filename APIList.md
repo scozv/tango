@@ -1,3 +1,4 @@
+<a name="list" />
 # List
 We put some algortithms on linear collection into `List.*`. To use linear collection type, please go to `T.Stack`, `T.LinkedList`...
 

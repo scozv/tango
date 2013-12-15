@@ -1,3 +1,4 @@
+<a name="array" />
 # Array
 The basic extensions for Array.
 
