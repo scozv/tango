@@ -5,9 +5,10 @@ The default `compare(x, y) : number` is `(x, y) => x - y`. While, we can pass `(
 
 <a name="static" />
 ## Static
-|| *Call* || *Meaning* ||
-|| `isSorted(arr, compare): boolean` || gets a boolean value indicating whether arr is sorted under comparing rule for `item` ||
-|| `quickSort(arr, compare): []` || gets a new sorted array by quick sort ||
-|| `mergeSort(arr, compare): []` || gets a new sorted array by merge sort ||
-|| `mergeSortBU(arr, compare): []` || gets a new sorted array by bottom-up merge sort ||
-|| `heapSort(arr, option): []` || gets a new sorted array by heap sort, `option == {order:'ASC' | 'DESC'}`||
+Call | Meaning
+:----|:-------
+`isSorted(arr, compare): boolean` | gets a boolean value indicating whether arr is sorted under comparing rule for `item`
+`quickSort(arr, compare): []` | gets a new sorted array by quick sort
+`mergeSort(arr, compare): []` | gets a new sorted array by merge sort
+`mergeSortBU(arr, compare): []` | gets a new sorted array by bottom-up merge sort
+`heapSort(arr, option): []` | gets a new sorted array by heap sort, `option == {order:'ASC' | 'DESC'}`
