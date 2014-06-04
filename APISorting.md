@@ -12,6 +12,6 @@ Call | Meaning
 `quickSort(arr, compare): []` | gets a new sorted array by quick sort
 `mergeSort(arr, compare): []` | gets a new sorted array by merge sort
 `mergeSortBU(arr, compare): []` | gets a new sorted array by bottom-up merge sort
-`heapSort(arr, option): []` | gets a new sorted array by heap sort, `option == {order:'ASC' | 'DESC'}`
+`heapSort(arr, option): []` | gets a new sorted array by heap sort, `option = {order:"ASC"}` OR `option = {order:"DESC"}`
 
 [Back to top](#sorting)
