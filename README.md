@@ -1,5 +1,7 @@
 Ultimate API Docs for algo-x
 ======
+[![Build Status](https://drone.io/github.com/scotv/algo-wiki/status.png)](https://drone.io/github.com/scotv/algo-wiki/latest)
+
 by _Scott_, Last updated on June 14, 2014
 
 This book has just been migrated from previous wiki page of [algo-js](https://github.com/scotv/algo-js). There are lots of formats need to be rebuilt.
