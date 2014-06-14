@@ -1,0 +1,23 @@
+{
+  "name": "algo-wiki",
+  "private": true,
+  "version": "3.1.4",
+  "description": "Sources of Ultimate API Docs for algo-x",
+  "dependencies": {},
+  "devDependencies": {
+    "grunt": "~0.4.2",
+    "gitbook": "~0.5.2"
+  },
+  "keywords": [
+    "gitbook",
+    "api",
+    "algo-js",
+    "algo-scala"
+  ],
+  "author": "scotv",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/scotv/algo-wiki/issues"
+  },
+  "homepage": "https://github.com/scotv/algo-wiki"
+}
