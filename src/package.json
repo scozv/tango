@@ -5,8 +5,9 @@
   "description": "Sources of Ultimate API Docs for algo-x",
   "dependencies": {},
   "devDependencies": {
-    "grunt": "~0.4.2",
-    "gitbook": "~0.5.2"
+    "grunt": "~0.4.5",
+    "gitbook": "~0.5.2",
+    "grunt-gitbook": "~0.5.2"
   },
   "keywords": [
     "gitbook",
