@@ -1,4 +1,4 @@
-<a name="t" />
+<a name="t"></a>
 # T.*
 All types of structures are defined in __window.T__.
 
@@ -12,15 +12,16 @@ Call | Meaning
 `new T.Queue()` | constructs a new queue
 `new T.MaxHeap(): heap` | gets a new max heap
 `new T.MinHeap(compare): heap` | gets a new min heap
-`new T.QuickFind(` <br /> `n: number): unionfind`| gets a union find by QuickFind algorithm
-`new T.WeightedQuickUnion(` <br /> `n: number): unionfind` | gets a union find by Weighted QuickFind algorithm
+`new T.QuickFind(` <br></a> `n: number): unionfind`| gets a union find by QuickFind algorithm
+`new T.WeightedQuickUnion(` <br></a> `n: number): unionfind` | gets a union find by Weighted QuickFind algorithm
 `new T.BinarySearchTree(compare)` | gets a binary search tree with the specific comparasion rule
-`new T.Graph(` <br /> `n: number,` <br /> `directed: bool = false)` | gets a unweighted graph with n vertex, which is undirected by default
-`new T.GraphW(` <br /> `n: number,` <br /> `directed: bool = false)` | gets a weighted graph with n vertex, which is undirected by default
+`new T.Graph(` <br></a> `n: number,` <br></a> `directed: bool = false)` | gets a unweighted graph with n vertex, which is undirected by default
+`new T.GraphW(` <br></a> `n: number,` <br></a> `directed: bool = false)` | gets a weighted graph with n vertex, which is undirected by default
 
 [Back to top](#t)
 
 ## Members
+<a name="linkedlist"></a>
 ### LinkedList
 Call | Meaning
 :----|:-------
@@ -36,6 +37,7 @@ Call | Meaning
 
 [Back to top](#t)
 
+<a name="stack"></a>
 ### Stack
 Call | Meaning
 :----|:-------
@@ -50,6 +52,7 @@ Call | Meaning
 
 [Back to top](#t)
 
+<a name="queue"></a>
 ### Queue
 Call | Meaning
 :----|:-------
@@ -64,6 +67,7 @@ Call | Meaning
 
 [Back to top](#t)
 
+<a name="heap"></a>
 ### Heap
 Usage of `Sorting.MinHeap` is same as `Sorting.MaxHeap`, except the constructor. Notice, there is a pseudo element at `heap[0]` which we might not use.
 
@@ -78,13 +82,15 @@ Call | Meaning
 
 [Back to top](#t)
 
+<a name="minheap"></a>
 ### MinHeap
 Call | Meaning
 :----|:-------
-`update(` <br /> `key: x=>boolean,` <br /> `when: x=>boolean,` <br /> `how: x=>void): boolean` | find the elem holding `key(x)`, if `when(x)`, then update elem by `how(x)`, return false iff no elem hoding `key(x)`
+`update(` <br></a> `key: x=>boolean,` <br></a> `when: x=>boolean,` <br></a> `how: x=>void): boolean` | find the elem holding `key(x)`, if `when(x)`, then update elem by `how(x)`, return false iff no elem hoding `key(x)`
 
 [Back to top](#t)
 
+<a name="quickfind"></a>
 ### QuickFind
 When we construct a quick find, we pass `n` as the capacity of the quick find. We index the elements in quick find from `0` to `n-1` (inclusive).
 
@@ -103,6 +109,7 @@ Type | `connected(p, q)` | `union(p, q)`
 
 [Back to top](#t)
 
+<a name="binarysearchtree"></a>
 ### BinarySearchTree
 We can indicate the comparasion rule by constructor parameter which will be used for greater left instead of smaller left by default.
 
@@ -122,11 +129,12 @@ Recursive Call | Iterative Call | Meaning
 :--------------|:---------------|:-------
 `rSearch(elem): node` | `search(elem): node` | searches elem in this tree, returns node which contains elem, or null if not exsits
 `rInsert(elem): void` | `insert(elem): void` | inserts elem under `BST` order, no duplication
-`rForEach(` <br /> `TRAVERSAL,` <br /> `fn): void` | `forEach(` <br /> `TRAVERSAL,` <br /> `fn): void` | travel this `BST` tree with specific `T.TRAVERSAL` order
-`rMap(` <br /> `TRAVERSAL,` <br /> `fn: x => any): [any]` | `map(` <br /> `TRAVERSAL,` <br /> `fn): [any]` | maps each element of this `BST` tree into an array with specific `T.TRAVERSAL` order
+`rForEach(` <br></a> `TRAVERSAL,` <br></a> `fn): void` | `forEach(` <br></a> `TRAVERSAL,` <br></a> `fn): void` | travel this `BST` tree with specific `T.TRAVERSAL` order
+`rMap(` <br></a> `TRAVERSAL,` <br></a> `fn: x => any): [any]` | `map(` <br></a> `TRAVERSAL,` <br></a> `fn): [any]` | maps each element of this `BST` tree into an array with specific `T.TRAVERSAL` order
 
 [Back to top](#t)
 
+<a name="graph"></a>
 ### Graph
 Representation of unweighted graph, and it is undirected graph by default.
 
@@ -140,10 +148,11 @@ Call | Meaning
 `v(): number`| gets the number of vertex, which has not been visited
 `e(): number`| gets the number of edges, which has not been marked invalid, and the sourcing vertex has not been visited
 `clone(): Graph` | gets a new cloned graph from this graph itself
-`toString(` <br /> `verbose: bool = false)` | gets the information of this graph, containing only number of v and e by default
+`toString(` <br></a> `verbose: bool = false)` | gets the information of this graph, containing only number of v and e by default
 
 [Back to top](#t)
 
+<a name="graphw"></a>
 ### GraphW
 The members in weighted graph is same as the graph, except some differences between the adjancency list representation:
 

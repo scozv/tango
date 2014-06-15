@@ -1,4 +1,4 @@
-<a name="graph" />
+<a name="graph"></a>
 # Graph
 We use `T.Graph` in `t.graph.js` to help implementations of some algorithms in `Graph` static object, which has been put in `graph.*.js`.
 

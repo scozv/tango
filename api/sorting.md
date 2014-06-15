@@ -1,10 +1,10 @@
-<a name="sorting" />
+<a name="sorting"></a>
 # Sorting
 In our sorting, we pass a function as parameters, named `compare(x, y) : number`. We sort the array by comparing each two value resulted from `x`, where `x`is an element of array.
 
 The default `compare(x, y) : number` is `(x, y) => x - y`. While, we can pass `(x, y) => y -x` to order by DESC, or we can pass `(x, y) => y^2 - x^2` to order by DESC of each absolute value.
 
-<a name="static" />
+<a name="static"></a>
 ## Static
 Call | Meaning
 :----|:-------

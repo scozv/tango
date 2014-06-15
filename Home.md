@@ -1,4 +1,4 @@
-<a name="overview" />
+<a name="overview"></a>
 # Overview of Algo.js
 
 > You can skip this overview to __API__ page by clicking the sidebar right.
@@ -17,7 +17,7 @@ This overview describes how I organize the files, and how to name the variables.
 * [Code Coverage](#coverage)
 * [References](#ref)
 
-<a name="file" />
+<a name="file"></a>
 ## File Structure
 The implementation of one Class may be separated into different files, with the same initial file name, for instance `sorting.js`, `sorting.quickSort.js` and `sorting.mergeSort.js`. These three files implement the class named `Sorting`. In `sorting.quickSort.js`, there is a comment saying that `// using sorting.js`, which means the `sorting.quickSort.js` is dependent on `sorting.js`. However, we have to add following lines into `index.html` manually:
 <pre><code>script src="sorting.js"
@@ -27,7 +27,7 @@ I will try to make this (using namespace, or import package) dynamicly one day, 
 
 [Back to top](#overview)
 
-<a name="initial" />
+<a name="initial"></a>
 ## Initial Filename and Its Meaning
 
  Filename | Meaning
@@ -38,7 +38,7 @@ I will try to make this (using namespace, or import package) dynamicly one day, 
 
 [Back to top](#overview)
 
-<a name="namespace" />
+<a name="namespace"></a>
 ## Filename and So-called Namespace
 `sorting.js`
 `sorting.quickSort.js`, `sorting.mergeSort.js`
@@ -85,7 +85,7 @@ This coding way is inspired by _The constructor pattern defines instance propert
 
 [Back to top](#overview)
 
-<a name="static" />
+<a name="static"></a>
 ## Instance and Static
 All classes named by Capital letter initilized, no matter public or nested private.
 
@@ -95,7 +95,7 @@ __DO NOT__ forget using 'new' to construct the object.
 
 [Back to top](#overview)
 
-<a name="var" />
+<a name="var"></a>
 ## Variable Name
 Here are some name specification:
 
@@ -107,34 +107,34 @@ Here are some name specification:
 
 [Back to top](#overview)
 
-<a name="lower" />
+<a name="lower"></a>
 ## lower and Upper
 Only when we get to the function level, we use lowercase, otherwise, we describe the Object by Uppercase.
 
 [Back to top](#overview)
 
-<a name="error" />
+<a name="error"></a>
 ## Error Message
 'All error messages should not end by any symbol'
 So that, we can `join` a error list, and end a dot by ourselves.
 
 [Back to top](#overview)
 
-<a name="ut" />
+<a name="ut"></a>
 ## Unit Test
 Unit test runs under [QUnit] [3].
 To see the result of unit test for Algo.js, just run `qunit.html` in your web browser.
 
 [Back to top](#overview)
 
-<a name="coverage" />
+<a name="coverage"></a>
 ## Code Coverage
 Code coverage runs under [Blanket.js] [4].
 To see the result of code coverage for unit test, just run `qunit.html` in your web browser, and check _Enable coverage_.
 
 [Back to top](#overview)
 
-<a name="ref" />
+<a name="ref"></a>
 ## References
 Code | ISBN | Details
 :----|:----:|:-------

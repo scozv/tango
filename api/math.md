@@ -1,4 +1,4 @@
-<a name="math" />
+<a name="math"></a>
 # Math
 The basic extensions for Math.
 
@@ -7,7 +7,8 @@ Call | Meaning
 `Math.mod(i, n): number` | returns `x`, where `i == k * n + x (x > 0)`
 `Math.range(start = 0, end, step = 1): []` | gets an array of range from start (inclusive) to end (exclusive), with that step
 `Math.randomInteger(a = 0, b): number` | gets a random integer from a (inclusive) to b (inclusive)
-
+ 
+<a name="math-stats"></a>
 ## Math.Stats
 The basic of statistics. 
 
@@ -23,6 +24,7 @@ Call | Meaning
 
 [Back to top](#math)
 
+<a name="math-point"></a>
 ## Math.Point
 The point for the vector.
 
@@ -32,6 +34,7 @@ Call | Meaning
 
 [Back to top](#math)
 
+<a name="math-vector"></a>
 ## Math.Vector
 The vector in `n` dimension.
 
