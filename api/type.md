@@ -1,5 +1,5 @@
 <a name="t"></a>
-# T.*
+# Type Extension
 All types of structures are defined in __window.T__.
 
 We pass some funtion as parameter sometimes, such as `.map(fn), .forEach(fn), .sort(compare)`... The default `fn` for `.map(fn)` is `x => x`, while the default for comparasion is `(x, y) => x - y`.
