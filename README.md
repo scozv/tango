@@ -4,7 +4,7 @@ Ultimate API Docs for algo-x
 
 by _Scott_, Last updated on June 14, 2014
 
-This book has just been migrated from previous wiki page of [algo-js](https://github.com/scotv/algo-js). There are lots of formats need to be rebuilt. And, lots of namespaces are still in JaveScript, that I am converting them right now.
+This book has just been migrated from previous wiki page of [algo-js](https://github.com/scotv/algo-js). There are lots of formats need to be rebuilt. And, lots of namespaces are still in JaveScript, that I am converting right now.
 
 The purpose of this book is listing the API of projects algo-x:
 
