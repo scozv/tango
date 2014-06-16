@@ -1,4 +1,4 @@
-API Docs for algo-x
+The API Documents for algo-x
 ======
 [![Build Status](https://drone.io/github.com/scotv/algo-wiki/status.png)](https://drone.io/github.com/scotv/algo-wiki/latest)
 
