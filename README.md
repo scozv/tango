@@ -2,7 +2,7 @@ The API Documents for algo-x
 ======
 [![Build Status](https://drone.io/github.com/scotv/algo-wiki/status.png)](https://drone.io/github.com/scotv/algo-wiki/latest)[![devDependency Status](https://david-dm.org/scotv/algo-wiki/dev-status.png)](https://david-dm.org/scotv/algo-wiki#info=devDependencies)
 
-by _Scott_, Last updated on June 16, 2014
+by _Scott_, Last updated on August 27, 2014
 
 This book has just been migrated from previous wiki page of [algo-js](https://github.com/scotv/algo-js). There are lots of formats need to be rebuilt. And, lots of namespaces are still in JaveScript, that I am converting right now.
 
