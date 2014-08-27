@@ -1,5 +1,5 @@
 {
-	"plugins": ["-mathjax", "ga"],
+	"plugins": ["ga", "-mixpanel", "-quizzes", "-exercises"],
 	"pluginsConfig": {
     "ga": {"token": "UA-35340941-6"}
 	},
