@@ -2,25 +2,31 @@
 # Math
 The basic extensions for Math.
 
-Call | Meaning
-:----|:-------
-`Math.mod(i, n): number` | returns `x`, where `i == k * n + x (x > 0)`
-`Math.range(start = 0, end, step = 1): []` | gets an array of range from start (inclusive) to end (exclusive), with that step
-`Math.randomInteger(a = 0, b): number` | gets a random integer from a (inclusive) to b (inclusive)
+## `Math.mod(i, n): number`
+Returns a positive number $x$, where $i = k * n + x, (x > 0)$.
+## `Math.range(start = 0, end, step = 1): [ ]`
+Generates an array of range from `start` (inclusive) to `end` (exclusive), with that `step`.
+## `Math.randomInteger(a = 0, b): number`
+Gets a random integer $x$, where $ a \leq x \leq b $.
  
 <a name="math-stats"></a>
-## Math.Stats
-The basic of statistics. 
+## Statistics
+The basic statistics extension that is located in `Math.Stats.*`
 
-Call | Meaning
-:----|:-------
-`max(arr): number` | gets the max number of an array
-`min(arr): number` | gets the min number of an array
-`sum(arr): number` | gets the sum of an array
-`mean(arr): number` | gets the average of an array
-`var(arr): number` | gets sample variance of an array
-`stddev(arr): number` | gets the standard deviation of an array
-`linearLeastSquare(` <br /> ` X,` <br /> ` Y,` <br /> ` fn=(x=>x) ): [number, number]` | gets the `[a, b]`, where `fn(Y) = a fn(X) + b`. passes `Math.log` to get linear least square for `Y = c X^a`
+### `max(arr): number`
+Gets the max number of an array.
+### `min(arr): number`
+Gets the min number of an array.
+### `sum(arr): number`
+Gets the sum of an array.
+### `mean(arr): number`
+Gets the average of an array.
+### `var(arr): number`
+Gets sample variance of an array.
+### `stddev(arr): number`
+Gets the standard deviation of an array.
+### `linearLeastSquare(X,  Y, fn=(x=> x) ): [number, number]`
+gets the `[a, b]`, where $fn(Y) = a \cdot fn(X) + b$. passes `Math.log` to get linear least square for $Y = c \cdot X^a$.
 
 [Back to top](#math)
 
@@ -28,31 +34,34 @@ Call | Meaning
 ## Math.Point
 The point for the vector.
 
-Call | Meaning
-:----|:-------
-`new Math.Point(arr)` | builds new point by coordinates array
+### `new Math.Point(arr)`
+Builds new point by coordinates array.
 
 [Back to top](#math)
 
 <a name="math-vector"></a>
 ## Math.Vector
-The vector in `n` dimension.
+The vector in $n$ dimension.
 
-### Constructors and Static
-Call | Meaning
-:----|:-------
-`new Math.Vector(arr)` | builds new vector by coordinates array
-`new Math.Vector(arr1, arr2)` | builds new vector by coordinates array of two point
-`new Math.Vector(point1, point2)` | builds new vector by two Math.Point
-`Math.Vector.norm(vec): number` | gets the length of the vec
-`Math.Vector.dot(v1, v2): number` | calculates the `dot` result of two vectors
-`Math.Vector.cos(v1, v2): number` | calculates the `cos` result of two vectors
+### `new Math.Vector(arr)`
+Builds new vector by coordinates array.
+### `new Math.Vector(arr1, arr2)`
+Builds new vector by coordinates array of two point.
+### `new Math.Vector(point1, point2)`
+Builds new vector by two Math.Point.
 
-### Members
-Call | Meaning
-:----|:-------
-`norm(): number` | gets the length of the vec itself
-`dot(that): number` | calculates the `dot` result of this and that
-`cos(that): number` | calculates the `cos` result of this and that
+### `Math.Vector.norm(vec): number`
+Gets the length of the vec.
+### `Math.Vector.dot(v1, v2): number`
+Calculates the `dot` result of two vectors.
+### `Math.Vector.cos(v1, v2): number`
+Calculates the `cos` result of two vectors.
+
+### `norm(): number`
+Gets the length of the vec itself.
+### `dot(that): number`
+Calculates the `dot` result of this and that.
+### `cos(that): number`
+Calculates the `cos` result of this and that.
 
 [Back to top](#math)
