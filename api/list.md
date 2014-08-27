@@ -6,8 +6,8 @@ A overview of time complexity laies below:
 
 Call | Time Complexity
 :----|:---:
-`validPopStackSeries` | `O(n)`
-`medianMaintenence` | `O(n logn)`
+`validPopStackSeries` | $\operatorname{O}(n)$
+`medianMaintenence` | $\operatorname{O}(n \ln n)$
 
 #### `validPopStackSeries(push: [], pop: []): bool`
 Returns true iff we can get the `pop` series from the `push` series, using a stack.
