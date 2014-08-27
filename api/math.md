@@ -25,7 +25,7 @@ Gets the average of an array.
 Gets sample variance of an array.
 ### `stddev(arr): number`
 Gets the standard deviation of an array.
-### `linearLeastSquare(X,  Y, fn=(x=> x) ): [number, number]`
+### `linearLeastSquare(X,  Y, fn = (x=>x)): [number, number]`
 gets the `[a, b]`, where $fn(Y) = a \cdot fn(X) + b$. passes `Math.log` to get linear least square for $Y = c \cdot X^a$.
 
 [Back to top](#math)

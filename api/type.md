@@ -2,7 +2,7 @@
 # Type Extension
 All types of structures are defined in __window.T__.
 
-We pass some funtion as parameter sometimes, such as `.map(fn), .forEach(fn), .sort(compare)`... 
+We pass some funtion as parameter sometimes, such as `.map(fn)`, `.forEach(fn)`, `.sort(compare)`... 
 The default `fn` for `.map(fn)` is `x => x`, while the default for comparasion is `(x, y) => x - y`.
 
 ## Type Constructors
@@ -30,7 +30,7 @@ Gets a weighted graph with `n` vertex, which is undirected by default.
 [Back to top](#t)
 
 ## General Members of Linear Collection
-Linear collection like `LinkedList, Stack, Queue ...` have the default traversal order. 
+Linear collection like `LinkedList`, `Stack`, `Queue` ... have the default traversal order. 
 
 * `LinkedList` traverses each element in `0 ... n-1` order;
 * `Stack`traverses each element in `LIFO`order;
@@ -39,21 +39,26 @@ Linear collection like `LinkedList, Stack, Queue ...` have the default traversal
 There are also some general members defined in linear collection.
 
 * `size(): number`
+  
   Gets the size (length) of the linear collecion.
 * `isEmpty(): boolean`
+  
   Returns `true`when the linear collection is empty, otherwise `false`.
 * `forEach(x => void): void`
+  
   Applies a function to each element in default order.
-* map(x => any): [any]`
+* `map(x => any): [any]`
+  
   Gets a new array mapped from `x => any`in default order.
 * `toArray(): [ ]`
+  
   Gets a new array containing each element of this linear collection in default order.
 
 <a name="linkedlist"></a>
 ## LinkedList
 ### `insert(any, i): void`
 Inserts an element after ith element, indexing from 0, if `i >= size()`, 
-insert elem at the end of list.
+inserts elem at the end of list.
 ### `push(any): void`
 Inserts an element at the end of list.
 ### `reverse(): void`
@@ -145,7 +150,7 @@ Always choose iterative operations as a recommandation in `JavaScript`.
 
 And, here is definition for some properties of tree, 
 according to Wikipedia 
-([Terminology of Tree on Wikipedia](https://en.wikipedia.org/wiki/Tree_(data_structure)\#Terminology)):
+([Terminology of Tree on Wikipedia] [1]):
 
 > The height of a node is the length of the longest downward path to a leaf from that node. 
 > 
@@ -211,3 +216,5 @@ Type | Element in Adjancency List
 `T.GraphW` | `[v, [(u1, w1), (u2, w2), (u3, w3), ...]]`
 
 [Back to top](#t)
+
+[1]: https://en.wikipedia.org/wiki/Tree_(data_structure)#Terminology "Tree Term"
