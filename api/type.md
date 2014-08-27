@@ -6,25 +6,25 @@ We pass some funtion as parameter sometimes, such as `.map(fn)`, `.forEach(fn)`,
 The default `fn` for `.map(fn)` is `x => x`, while the default for comparasion is `(x, y) => x - y`.
 
 ## Type Constructors
-### `new T.LinkedList()`
+#### `new T.LinkedList()`
 Constructs a new linked list.
-### `new T.Stack()`
+#### `new T.Stack()`
 Constructs a new stack
-### `new T.Queue()`
+#### `new T.Queue()`
 Constructs a new queue.
-### `new T.MaxHeap(): heap`
+#### `new T.MaxHeap(): heap`
 Gets a new max heap.
-### `new T.MinHeap(compare): heap`
+#### `new T.MinHeap(compare): heap`
 Gets a new min heap.
-### `new T.QuickFind(n: number): unionfind`
+#### `new T.QuickFind(n: number): unionfind`
 Gets a union find by QuickFind algorithm.
-### `new T.WeightedQuickUnion(n: number): unionfind`
+#### `new T.WeightedQuickUnion(n: number): unionfind`
 Gets a union find by Weighted QuickFind algorithm.
-### `new T.BinarySearchTree(compare)`
+#### `new T.BinarySearchTree(compare)`
 Gets a Binary Search Tree with the specific comparasion rule.
-### `new T.Graph(n: number, directed: bool = false)`
+#### `new T.Graph(n: number, directed: bool = false)`
 Gets a unweighted graph with `n` vertex, which is undirected by default.
-### `new T.GraphW(n: number, directed: bool = false)`
+#### `new T.GraphW(n: number, directed: bool = false)`
 Gets a weighted graph with `n` vertex, which is undirected by default.
 
 [Back to top](#t)
@@ -56,36 +56,36 @@ There are also some general members defined in linear collection.
 
 <a name="linkedlist"></a>
 ## LinkedList
-### `insert(any, i): void`
+#### `insert(any, i): void`
 Inserts an element after ith element, indexing from 0, if `i >= size()`, 
 inserts elem at the end of list.
-### `push(any): void`
+#### `push(any): void`
 Inserts an element at the end of list.
-### `reverse(): void`
+#### `reverse(): void`
 Reverses the list itself.
-### `remove(any): void`
+#### `remove(any): void`
 Removes the first node with such element, if no such node, keeps array unchanged.
 
 [Back to top](#t)
 
 <a name="stack"></a>
 ## Stack
-### `push(any): void`
+#### `push(any): void`
 Pushes `any` item into `stack`.
-### `peek(): any`
+#### `peek(): any`
 Gets the last added item from `stack`, throws `error` when empty.
-### `pop(): any`
+#### `pop(): any`
 Gets and removes the last added item from `stack`, throws `error` when empty.
 
 [Back to top](#t)
 
 <a name="queue"></a>
 ## Queue
-### `enqueue(any): void`
+#### `enqueue(any): void`
 Addes item into `queue`.
-### `peek(): any`
+#### `peek(): any`
 Gets the first added item from `queue`, throws `error` when empty.
-### `dequeue(): any`
+#### `dequeue(): any`
 Gets and removes the first added item from `queue`, throws `error` when empty.
 
 [Back to top](#t)
@@ -98,16 +98,16 @@ Notice, there is a pseudo element at `heap[0]` which we might not use.
 The reason we do not implement public `forEach`, `map` or `toArray` is 
 that any of these function will destroy the heap.
 
-### `isEmpty(): boolean`
+#### `isEmpty(): boolean`
 Returns `true` if there is no real element in `heap`, otherwise `false`.
-### `size(): number`
+#### `size(): number`
 Gets the number of elements in `heap`.
-### `push(any): number`
+#### `push(any): number`
 Inserts an element into the `heap`, and gets `size()` of the new `heap`.
-### `pop(): any`
+#### `pop(): any`
 Get the max element from `MaxHeap`, or the min element from `MinHeap`, 
 the remove it, keeping `heap` sorted.
-### `minheap.update(key, when, how): boolean`
+#### `minheap.update(key, when, how): boolean`
 `minheap.update(key: x => boolean, when: x => boolean, how: x => void): boolean`
 
 Finds the elem holding `key(x)`, if `when(x)`, 
@@ -128,11 +128,11 @@ Type | `connected(p, q)` | `union(p, q)`
 `T.QuickFind(N)` | `O(1)` | `O(N)`
 `T.WeightedQuickFind(N)` | `O(lg N)` | `O(lg N)`
 
-### `connected(p, q): boolean`
+#### `connected(p, q): boolean`
 Returns `true` iff `p` is connected with `q`, otherwise `false`.
-### `count(): number`
+#### `count(): number`
 Gets the number of components which are not connected with each other.
-### `union(p, q): number`
+#### `union(p, q): number`
 Unions `p` with `q`, and returns the `count()` after union.
 
 [Back to top](#t)
@@ -160,22 +160,22 @@ according to Wikipedia
 
 We have defined different traversal way in `T.TRAVERSAL.*`. The default traversal way is `T.TRAVERSAL.IN_ORDER`.
 
-### `search(elem): node`
+#### `search(elem): node`
 Searches `elem` in this tree, returns node which contains`elem`, or `null` if not exsits.
 
 Recursive version is `rSearch(elem): node`.
 
-### `insert(elem): void`
+#### `insert(elem): void`
 Inserts `elem` under `BST` order, no duplication.
 
 Recursive version is `rInsert(elem): void`.
 
-### `forEach(t: TRAVERSAL, fn): void`
+#### `forEach(t: TRAVERSAL, fn): void`
 Travels and applies function `fn` on this `BST` tree with specific `T.TRAVERSA` order.
 
 Recursive version is `rForEach(t: TRAVERSAL, fn): void`.
 
-### `map(t: TRAVERSAL, fn): [any]`
+#### `map(t: TRAVERSAL, fn): [any]`
 Maps each element of this `BST` tree into an array with specific `T.TRAVERSA` order.
 
 Recursive version is `rMap(t: TRAVERSAL, fn): void`.
@@ -192,15 +192,15 @@ However, when we call `v()` or `e()` as below,
 the number we get is the valid number of vertex or edges, 
 which has not been visited or marked.
 
-### `n: number`
+#### `n: number`
 Gets the actual number of vertex, whether it has been visited, marked or not.
-### `v(): number`
+#### `v(): number`
 Gets the number of vertex, which has not been visited.
-### `e(): number`
+#### `e(): number`
 Gets the number of edges, which has not been marked invalid, and the sourcing vertex has not been visited.
-### `clone(): Graph`
+#### `clone(): Graph`
 Gets a new cloned graph from this original graph itself.
-### `toString(verbose: boolean = false): string`
+#### `toString(verbose: boolean = false): string`
 Gets the information of this graph, containing only number of vertex and edges by default.
 
 [Back to top](#t)
