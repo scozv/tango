@@ -50,7 +50,7 @@ There are also some general members defined in linear collection.
 * `map(x => any): [any]`
   
   Gets a new array mapped from `x => any`in default order.
-* `toArray(): [ ]`
+* `toArray(): []`
   
   Gets a new array containing each element of this linear collection in default order.
 

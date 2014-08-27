@@ -9,9 +9,9 @@ Call | Time Complexity
 `validPopStackSeries` | `O(n)`
 `medianMaintenence` | `O(n logn)`
 
-#### `validPopStackSeries(push: [ ], pop: [ ]): bool`
+#### `validPopStackSeries(push: [], pop: []): bool`
 Returns true iff we can get the `pop` series from the `push` series, using a stack.
-#### `medianMaintenence(arr): [ ]`
+#### `medianMaintenence(arr): []`
 For each time $t$ we visit `arr` from $0$ to $n-1$, we maintenence the median of all $[0, t]$ elements from input, and push this median into output array.
 
 [Back to top](#list)

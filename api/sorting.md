@@ -6,13 +6,13 @@ The default `compare(x, y) : number` is `(x, y) => x - y`. that is ascending ord
 
 #### `isSorted(arr, compare): boolean`
 Gets a boolean value indicating whether the `arr` is sorted under this `compare` rule.
-#### `quickSort(arr, compare): [ ]`
+#### `quickSort(arr, compare): []`
 Gets a new sorted array by quick sort.
-#### `mergeSort(arr, compare): [ ]`
+#### `mergeSort(arr, compare): []`
 Gets a new sorted array by merge sort.
-#### `mergeSortBU(arr, compare): [ ]`
+#### `mergeSortBU(arr, compare): []`
 Gets a new sorted array by bottom-up merge sort.
-#### `heapSort(arr, option): [ ]`
+#### `heapSort(arr, option): []`
 Gets a new sorted array by heap sort, with `option = {order:"ASC"}` OR `option = {order:"DESC"}`.
 
 [Back to top](#sorting)
