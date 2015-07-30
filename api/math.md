@@ -13,12 +13,19 @@ Gets a random integer $x$, where $ a \leq x \leq b $.
 ## Statistics
 The basic statistics extension that is located in `Math.Stats.*`
 
+#### `equals(x: number, y: number): boolean`
+Return true iif `Math.abs(x - y) < 1e-29`.
+#### `equals(x: Array, y: Array): boolean`
+Return true iif the length of array x and y is same and each items in same index are `equals()`.
 #### `max(arr): number`
 Gets the max number of an array.
 #### `min(arr): number`
 Gets the min number of an array.
 #### `sum(arr): number`
 Gets the sum of an array.
+#### `normalize(arr): []`
+Normalizes the array, for instance: `normalize([1, 7, 3])` 
+$=[\frac{1}{1+7+3}, \frac{7}{1+7+3}, \frac{3}{1+7+3}]$.
 #### `mean(arr): number`
 Gets the average of an array.
 #### `var(arr): number`
