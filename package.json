@@ -1,32 +1,34 @@
 {
-	"name": "algo-wiki",
-	"private": true,
-	"version": "3.1.4",
-	"description": "Sources of Ultimate API Docs for algo-x",
-	"dependencies": {},
-	"devDependencies": {
-		"grunt": "~0.4.5",
-		"gitbook": "~2.2.0",
-		"grunt-gitbook": "~1.5.0",
-		"gitbook-plugin-ga": "~0.2.0",
-		"grunt-gh-pages": "~0.10.0",
-		"grunt-contrib-clean": "~0.6.0"
-	},
-	"scripts": {"test": "grunt"},
-	"repository": {
-		"type": "git",
-		"url": "git://github.com/scotv/algo-wiki.git"
-	},
-	"keywords": [
-		"gitbook",
-	"api",
-	"algo-js",
-	"algo-scala"
-		],
-	"author": "scotv",
-	"license": "GPL-3.0",
-	"bugs": {
-		"url": "https://github.com/scotv/algo-wiki/issues"
-	},
-	"homepage": "https://github.com/scotv/algo-wiki"
+  "name": "algo-wiki",
+  "private": true,
+  "version": "3.1.4",
+  "description": "Sources of Ultimate API Docs for algo-x",
+  "dependencies": {},
+  "devDependencies": {
+    "gitbook": "~2.2.0",
+    "gitbook-plugin-yametrika": "^1.0.5",
+    "grunt": "~0.4.5",
+    "grunt-contrib-clean": "~0.6.0",
+    "grunt-gh-pages": "~0.10.0",
+    "grunt-gitbook": "~1.5.0"
+  },
+  "scripts": {
+    "test": "grunt"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/scotv/algo-wiki.git"
+  },
+  "keywords": [
+    "gitbook",
+    "api",
+    "algo-js",
+    "algo-scala"
+  ],
+  "author": "scotv",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/scotv/algo-wiki/issues"
+  },
+  "homepage": "https://github.com/scotv/algo-wiki"
 }
