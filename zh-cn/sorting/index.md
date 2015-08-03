@@ -1,22 +1,23 @@
 <a name="sorting"></a>
-# Sorting
-In our sorting, we pass a function as parameters, named `compare(x, y) : number`. 
-We sort the array by comparing each two value with this `compare` function.
+# 排序算法
+所有的排序算法定义在`Sorting`中，每个排序算法，
+接受一个排序规则函数`compare(x, y) : number`用来比较
+两两元素的先后关系。
 
-The default `compare(x, y) : number` is `(x, y) => x - y`. that is ascending order. 
-While, we may pass `(x, y) => y -x` to order by DESC, or we could pass `(x, y) => y^2 - x^2` 
-to order by DESC of each absolute value.
+默认的排序规则是升序排列，即`(x, y) => x - y`。可以使用`(x, y) => y^2 - x^2` 作
+绝对值的降序排列。
 
 #### `isSorted(arr, compare): boolean`
-Gets a boolean value indicating whether the `arr` is sorted under this `compare` rule.
+判断数组是否按照指定的规则排序。
 #### `quickSort(arr, compare): []`
-Gets a new sorted array by quick sort.
+返回一个新的数组，按照指定的规则作快速排序。
 #### `mergeSort(arr, compare): []`
-Gets a new sorted array by merge sort.
+返回一个新的数组，按照指定的规则作归并排序。
 #### `mergeSortBU(arr, compare): []`
-Gets a new sorted array by bottom-up merge sort.
+返回一个新的数组，按照指定的规则作Bottom Up归并排序。
 #### `heapSort(arr, option): []`
-Gets a new sorted array by heap sort, 
-with `option = {order:"ASC"}` OR `option = {order:"DESC"}`.
+返回一个新的数组，按照指定的规则作堆排序。
+
+规则可以是`option = {order:"ASC"}` 或者 `option = {order:"DESC"}`。
 
 <!--[Back to top](#sorting)-->

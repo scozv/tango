@@ -1,33 +1,45 @@
 <a name="graph"></a>
-# Graph
-We use `T.Graph` in `t.graph.js` to help implementations of some algorithms 
-in `Graph` static object, which has been put in `graph.*.js`.
-
-All the following methods are invoked like `Graph.*`. 
-To create a graph object, use `new T.Graph*()`.
+# 图算法
+图算法定义在`Graph`中，如果要使用图的数据结构，请参考`T.Graph`或者`T.GraphW`。
 
 #### `bfs(graph): []`
-Gets the vertex visiting array by BFS order.
+获得图的广度优先（BFS）遍历数组。
 #### `dfs(graph): []`
-Gets the vertex visiting array by DFS order.
+获得图的深度优先（DFS）遍历数组。
 #### `dijkstra(graph, s: number = 1): []`
-Gets the shortest path length of each vertex from initial vertex $s$.
+获得指定节点`s`到每一个节点的最短路径，使用Dijkstra算法。
 #### `multiMinimumCut(graph, times: number): number`
-Gets the minimum cut number of graph after that times calculations.
+获得图的最小割量，最多尝试`times`次。
 #### `mstPrim(graph, s: number = 1): number`
-Gets the total MST cost of weighted graph by Prim algorithm.
+获得有权重图的最小生成树的总权重，使用Prim算法。
 #### `mstKruskal(graph): number`
-Gets the total MST cost of weighted graph by Kruskal algorithm.
+获得有权重图的最小生成树的总权重，使用Kruskal算法。
 #### `mstKruskal(graph, k): number`
-Gets the max space of k-clustering by Kruskal algorithm.
+获得图的`k`簇最大空间数，使用Kruskal算法。
 #### `sccKosaraju(graph): []`
-Gets the top $3$ largest size of strong connect component for a directed graph, using Kosaraju algorithm.
+获得有向图的强联通组的个数，使用Kosaraju算法。
 #### `sccTarjan(graph): []`
-Gets the top $3$ largest size of strong connect component for a directed graph, using Tarjan algorithm.
+获得有向图的强联通组的个数，使用Tarjan算法。该算法的实现采用了迭代，而非递归。
+参考[解释](http://scotv.github.io/algo/2013/11/10/how-to-write-iterative-tarjan-scc-algorithm-part-zero/#pi)
 #### `topologicalSort(graph): []`
-Gets the topological visiting array of this directed graph.
+获得有向图的拓扑排序序列。
 #### `undirectedConnected(graph): []`
-Gets an array indicating connectivity info of undirected graph. this undirected graph is connected
-iff  `result.length == 1` AND `result[0][1] == Graph.dfs(graph)`.
+获得无向图的联通分组，比如，
+```JavaSript
+result = [
+  v1: [v1,v4,v8],
+  v2: [v2,v3],
+  ...
+]
+```
+表示，从`v1`出发，作深度优先（DFS）遍历，能依次访问到`v1`、`v4`和`v8`节点。
+`v1`不能访问得到其余节点，其余节点也不能访问得到`v1`。
+
+满足如下两个条件，则称无向图为联通图：
+
+```JavaSript
+result.length == 1 && 
+result[0][1] == Graph.dfs(graph)
+```
 
 <!--[Back to top](#graph)-->

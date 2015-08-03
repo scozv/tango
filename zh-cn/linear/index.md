@@ -1,20 +1,18 @@
 <a name="list"></a>
-# Linear Algorithm
-We put some algortithms on linear collection into `List.*`. 
-To use linear collection type, please go to `T.Stack`, `T.LinkedList`...
+# 线性算法
+线性集合上的一些通用算法定义在`List.*`中。
+要使用线性集合的数据结构，请参考`T.Stack`，`T.LinkedList`等。
 
-A overview of time complexity laies below:
+现有方法的时间复杂度为:
 
-Call | Time Complexity
+方法 | 时间复杂度
 :----|:---:
 `validPopStackSeries` | $\operatorname{O}(n)$
 `medianMaintenence` | $\operatorname{O}(n \ln n)$
 
 #### `validPopStackSeries(push: [], pop: []): bool`
-Returns true iff we can get the `pop` series from the `push` series, using a stack.
+验证一个`pop`序列，是否为基于`push`入栈的有效出栈序列。
 #### `medianMaintenence(arr): []`
-For each time $t$ we visit `arr` from $0$ to $n-1$, 
-we maintenence the median of all $[0, t]$ elements from input, 
-and push this median into output array.
+遍历数组`arr`，维护每一次遍历的中位数。
 
 <!--[Back to top](#list)-->

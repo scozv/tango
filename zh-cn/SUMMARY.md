@@ -16,9 +16,9 @@ This is the summary of algo-wiki
   * [统计](math/stats.md)
   * [点](math/point.md)
   * [向量](math/vector.md)
-* [Array Extension](array/index.md)
-* [Linear Algorithm](linear/index.md)
-* [Sorting Algorithm](sorting/index.md)
-* [Graph Algorithm](graph/index.md)
+* [Array包扩展](array/index.md)
+* [线性算法](linear/index.md)
+* [排序算法](sorting/index.md)
+* [图算法](graph/index.md)
 * Appendix
   * [Inside this](inside.md)

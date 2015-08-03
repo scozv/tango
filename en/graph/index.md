@@ -1,7 +1,5 @@
 <a name="graph"></a>
 # Graph
-We use `T.Graph` in `t.graph.js` to help implementations of some algorithms 
-in `Graph` static object, which has been put in `graph.*.js`.
 
 All the following methods are invoked like `Graph.*`. 
 To create a graph object, use `new T.Graph*()`.
@@ -23,7 +21,9 @@ Gets the max space of k-clustering by Kruskal algorithm.
 #### `sccKosaraju(graph): []`
 Gets the top $3$ largest size of strong connect component for a directed graph, using Kosaraju algorithm.
 #### `sccTarjan(graph): []`
-Gets the top $3$ largest size of strong connect component for a directed graph, using Tarjan algorithm.
+Gets the top $3$ largest size of strong connect component for a directed graph, using Tarjan algorithm. 
+The implemention of this Tarjian algorithm is iterative one, instead of recursive one.
+([Explanation](http://scotv.github.io/algo/2013/11/10/how-to-write-iterative-tarjan-scc-algorithm-part-zero/#pi))
 #### `topologicalSort(graph): []`
 Gets the topological visiting array of this directed graph.
 #### `undirectedConnected(graph): []`
