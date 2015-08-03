@@ -34,7 +34,7 @@ script src="sorting.quickSort.js"
 通常而言，如果我们有三个文件：`basic.js`、 `basic.extendOne.js`和 `basic.extendTwo.js`。
 那么，`basic.js`一般是其它两个文件的前置依赖。
 
-未来可能会参考[Node.js] [1]和[RequireJS] [2]中的`require()`作优化。
+未来可能会参考[`Node.js`] [1]和[`RequireJS`] [2]中的`require()`作优化。
 或者直接使用`grunt-contrib-uglify`发布为单个文件。
 
 [回到页面上方](#overview)
@@ -72,8 +72,8 @@ script src="sorting.quickSort.js"
 ## 实例和静态方法
 所有的类名都是首字母大写，无论它是公开的还是嵌套私有。
 
-比如我们有点的对象构造函数`new Math.Point()`，
-也有点的静态方法，定义在`Math.Point.member()`
+比如我们有“点”的对象构造函数`new Math.Point()`，
+也有“点”的静态方法，定义在`Math.Point.member()`
 
 __记得__ 使用关键字 `new` 来构造对象。
 
@@ -108,13 +108,13 @@ __记得__ 使用关键字 `new` 来构造对象。
 
 <a name="ut"></a>
 ## 单元测试
-使用[Mocha] [3]执行单元测试。
+使用[`Mocha`] [3]执行单元测试。
 
 [回到页面上方](#overview)
 
 <a name="coverage"></a>
 ## 代码覆盖率
-使用[Blanket.js] [4]检查代码覆盖率。
+使用[`Blanket.js`] [4]检查代码覆盖率。
 
 [回到页面上方](#overview)
 

@@ -33,7 +33,7 @@ that means `basic.js` is the basic file of other two files, these two files are 
 Meanwhile, `basic.extendOne.js` and `basic.extendTwo.js` are two branches of the extension.
 
 I will try to make this (using namespace, or import package) dynamicly one day, 
-like `require()` in [Node.js] [1] or [RequireJS] [2]. 
+like `require()` in [`Node.js`] [1] or [`RequireJS`] [2]. 
 Or I will merge them into one file using `grunt-contrib-uglify`.
 
 [Back to top](#overview)
@@ -140,7 +140,7 @@ So that, we can `join` a error list, and end a dot by ourselves.
 
 <a name="ut"></a>
 ## Unit Test
-Unit test runs under [Mocha] [3].
+Unit test runs under [`Mocha`] [3].
 To see the result of unit test for Algo.js, just run `qunit.html` in your `Firefox 22.0+`
 ([MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions#Browser_compatibility)).
 
@@ -148,7 +148,7 @@ To see the result of unit test for Algo.js, just run `qunit.html` in your `Firef
 
 <a name="coverage"></a>
 ## Code Coverage
-Code coverage runs under [Blanket.js] [4].
+Code coverage runs under [`Blanket.js`] [4].
 To see the result of code coverage for unit test, just run `grunt test` and check the result in `coverage.html`. 
 
 [Back to top](#overview)

@@ -8,7 +8,8 @@ Last updated on Aug, 2015
 An initial PDF document writed in $\LaTeX{}$ has been released on 
 [Releases](https://github.com/scotv/algo-wiki/releases) page.
 
-Read more in projects' `README.md`. This wiki page lists the API of projects algo-x:
+Read more about progress of projects from [`README.md`] [3]. 
+This wiki page only lists the API of projects algo-x:
 
 *  [algo-js](https://github.com/scotv/algo-js): Implementation of some algorithms using JavaScript
 *  [Delayed] [algo-scala](https://github.com/scotv/algo-scala): Implementation of some algorithms using Scala
@@ -16,3 +17,4 @@ Read more in projects' `README.md`. This wiki page lists the API of projects alg
 
 [1]: https://github.com/scotv/algo-js		"Algo-js"
 [2]: https://github.com/scotv/algo-scala	"Algo-scala"
+[3]: https://github.com/scotv/algo-js/blob/master/README.md "README.md"
