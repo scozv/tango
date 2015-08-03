@@ -2,7 +2,7 @@
 
 This is the summary of algo-wiki
 
-* [Overview](Home.md)
+<!--* [Overview](Home.md)-->
 * [Basic Type Extension](type/index.md)
   * [LinkedList](type/linkedlist.md)
   * [Stack](type/stack.md)
@@ -20,3 +20,5 @@ This is the summary of algo-wiki
 * [Linear Algorithm](linear/index.md)
 * [Sorting Algorithm](sorting/index.md)
 * [Graph Algorithm](graph/index.md)
+* Appendix
+* [Inside it](inside.md)
