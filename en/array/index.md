@@ -1,5 +1,5 @@
 <a name="array"></a>
-# Array
+# `Array` Extension
 The basic extensions for Array.
 
 #### `Array.zip(arr1, arr2): []`

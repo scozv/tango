@@ -3,7 +3,12 @@
 [![Build Status](https://drone.io/github.com/scotv/algo-wiki/status.png)](https://drone.io/github.com/scotv/algo-wiki/latest)
 [![devDependency Status](https://david-dm.org/scotv/algo-wiki/dev-status.png)](https://david-dm.org/scotv/algo-wiki#info=devDependencies)
 
-最后更新于二〇〇五年八月。
+元 | 数据
+:----|:-------
+最后更新 | 二〇〇五年八月
+版本编号 | 2.718281828459
+
+
 
 早期的一份基于$\LaTeX{}$编译的PDF文档发布在
 [Releases](https://github.com/scotv/algo-wiki/releases)页面。

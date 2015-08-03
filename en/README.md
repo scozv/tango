@@ -3,7 +3,10 @@ The API Documents for algo-x
 [![Build Status](https://drone.io/github.com/scotv/algo-wiki/status.png)](https://drone.io/github.com/scotv/algo-wiki/latest)
 [![devDependency Status](https://david-dm.org/scotv/algo-wiki/dev-status.png)](https://david-dm.org/scotv/algo-wiki#info=devDependencies)
 
-Last updated on Aug, 2015
+Meta | Data
+:----|:-------
+Last updated | Aug, 2015
+Version | 2.718281828459
 
 An initial PDF document writed in $\LaTeX{}$ has been released on 
 [Releases](https://github.com/scotv/algo-wiki/releases) page.

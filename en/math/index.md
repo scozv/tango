@@ -1,5 +1,5 @@
 <a name="math"></a>
-# Math
+# `Math` Extension
 The basic extensions for `Math`.
 
 #### `Math.mod(i, n): number`

@@ -1,5 +1,5 @@
 <a name="array"></a>
-# Array包扩展
+# `Array`包扩展
 对`JavaScript`中的Array做了扩展。
 
 #### `Array.zip(arr1, arr2): []`
