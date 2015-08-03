@@ -19,4 +19,4 @@ This is the summary of algo-wiki
 * [Array Extension](array/index.md)
 * [Linear Algorithm](linear/index.md)
 * [Sorting Algorithm](sorting/index.md)
-* [Graph Algorithm](api/graph.md)
+* [Graph Algorithm](graph/index.md)
