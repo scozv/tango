@@ -131,7 +131,9 @@ Only when we get to the function level, we use lowercase, otherwise, we describe
 
 <a name="error"></a>
 ## Error Message
+```JavaScript
 'All error messages should not end by any symbol'
+```
 So that, we can `join` a error list, and end a dot by ourselves.
 
 [Back to top](#overview)
@@ -139,7 +141,8 @@ So that, we can `join` a error list, and end a dot by ourselves.
 <a name="ut"></a>
 ## Unit Test
 Unit test runs under [Mocha] [3].
-To see the result of unit test for Algo.js, just run `qunit.html` in your web browser.
+To see the result of unit test for Algo.js, just run `qunit.html` in your `Firefox 22.0+`
+([MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions#Browser_compatibility)).
 
 [Back to top](#overview)
 

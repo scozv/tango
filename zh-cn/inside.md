@@ -1,160 +1,128 @@
 <a name="overview"></a>
-# Overview of Algo.js
+# Algo.js内部机制概述
 
-This overview describes how I organize the files, and how to name the variables.
+我将试图解释`JavaScript`算法包内部的文件结构和机制说明。
 
-* [File Structure](#file)
-* [Initial Filename and Its Meaning](#initial)
-* [Filename and So-called Namespace](#namespace)
-* [Private and Public Member](#member)
-* [Instance and Static](#static)
-* [Variable Name](#var)
-* [lower and Upper](#lower)
-* [Error Message](#error)
-* [Unit Test](#ut)
-* [Code Coverage](#coverage)
-* [References](#ref)
+* [文件结构](#file)
+* [文件命名规则](#initial)
+* [私有和公有成员](#member)
+* [实例和静态方法](#static)
+* [变量命名规则](#var)
+* [小写和大写](#lower)
+* [异常信息](#error)
+* [单元测试](#ut)
+* [代码覆盖率](#coverage)
+* [参考书目](#ref)
 
 <a name="file"></a>
-## File Structure
-The implementation of one Class may be separated into different files, with the same initial file name, 
-for instance `sorting.js`, `sorting.quickSort.js` and `sorting.mergeSort.js`. 
-These three files implement the class named `Sorting`. In `sorting.quickSort.js`, 
-there is a comment `// using sorting.js`, 
-which means the `sorting.quickSort.js` is dependent on `sorting.js`. 
-However, we have to add following lines into `index.html` manually:
+## 文件结构
+同样的一个类，可能分布在不同的文件中。比如排序`Sorting`类，分布在
+`sorting.js`、`sorting.quickSort.js` 和 `sorting.mergeSort.js`中。
+
+在文件`sorting.quickSort.js`中，有一行备注：
+```JavaScript
+// using sorting.js
+```
+表示`quickSort`依赖于`sorting`。
+
+同时，我们需要在`index.html`中手动地指定引用顺序：
 ```HTML
 script src="sorting.js"
 script src="sorting.quickSort.js"
 ```
 
-Usually, if we have `basic.js`, `basic.extendOne.js` and `basic.extendTwo.js`, 
-that means `basic.js` is the basic file of other two files, these two files are dependent on `basic.js`. 
-Meanwhile, `basic.extendOne.js` and `basic.extendTwo.js` are two branches of the extension.
+通常而言，如果我们有三个文件：`basic.js`、 `basic.extendOne.js`和 `basic.extendTwo.js`。
+那么，`basic.js`一般是其它两个文件的前置依赖。
 
-I will try to make this (using namespace, or import package) dynamicly one day, 
-like `require()` in [Node.js] [1] or [RequireJS] [2]. 
-Or I will merge them into one file using `grunt-contrib-uglify`.
+未来可能会参考[Node.js] [1]和[RequireJS] [2]中的`require()`作优化。
+或者直接使用`grunt-contrib-uglify`发布为单个文件。
 
-[Back to top](#overview)
+[回到页面上方](#overview)
 
 <a name="initial"></a>
-## Initial Filename and Its Meaning
+## 文件命名规则
 
- Filename | Meaning
+ 命名 | 含义
 :-----|:-------
- `t.*.js` | Encapsulation of the structure type, like `LinkedList`, `Stack`, etc 
- `x.*.js` | Extensions of the current object, like `x.array.js` 
- `sorting.*.js` | Implementation of sorting algorithm 
+ `t.*.js` | 数据结构的类型定义，比如`LinkedList`、`Stack`等
+ `x.*.js` | 现有对象的扩展，比如`x.array.js` 
+ `sorting.*.js` | 特定算法的实现，比如排序算法
 
-[Back to top](#overview)
+文件命名时，首字母小写，采用驼峰风格。
+比如，我们采用`sorting.quickSort.js`而非`sorting.quick_sort.js`，也不是`Sorting.QuickSort.js`。
 
-<a name="namespace"></a>
-## Filename and So-called Namespace
-`sorting.js`
-`sorting.quickSort.js`, `sorting.mergeSort.js`
+[回到页面上方](#overview)
 
-Our files are named like `sorting.quickSort.js` instead of `sorting.quick_sort.js` or `Sorting.QuickSort.js`. 
+## 私有和公有成员
+所有的成员命名都是首字母小写，采用驼峰风格。
 
-[Back to top](#overview)
+我们有如下两种私有成员的命名规则：
 
-## Private and Public Member
-All members of class named by lowercase, and we have two types of private member: `member` and `__member__`.
+* `member`是函数闭包中的私有变量，外部无法访问；
+* `__member__`将被视为一个私有成员，用于内部共享访问。
+  虽然外部可以访问到该成员，但是__不建议__之间访问该成员。
 
-* `member` is a private member which we can only access it inside the function closure. 
-* `__member__` is a so-called private member, which we can access it as a public one actually, 
-   but please __DO NOT__ call it directly.
+所有的私有成员定义在备注`// ***** private members *****`之下。
 
-We should place all private members under `// ***** private members *****` .
+公有成员的命名规则只有一种：首字母小写、驼峰，不带任何下划线。
 
-We have one type of public member: `member` by lowercase withoud any underscore.
-
-For instance, there are two files: `f1.js` and `f2.js`
-```JavaScript
-// f1.js
-(function(X, undefined){
-    function _func1(){};
-
-    X.__func2__ = function(){};
-
-    X.func3 = function(){};
-}(window.X = window.X || {}));
-```
-
-```JavaScript
-// f2.js
-(function(X, undefined){
-    function func1(){};
-
-    X.func3 = function(){
-        // call X.__func2__
-    };
-}(window.X = window.X || {}));
-
-// X.func1() is not accessible outside.
-```
-
-This coding way is inspired by "The constructor pattern defines instance properties,
-whereas the prototype pattern defines methods and shared properties." (see [Nicholas11](#ref) page 197)
-
-[Back to top](#overview)
+[回到页面上方](#overview)
 
 <a name="static"></a>
-## Instance and Static
-All classes named by Capital letter initilized, no matter public or nested private.
+## 实例和静态方法
+所有的类名都是首字母大写，无论它是公开的还是嵌套私有。
 
-We have Point objects constructed by `new Math.Point()`, 
-we also have static class Point, which we access its static member by `Math.Point.member()`.
+比如我们有点的对象构造函数`new Math.Point()`，
+也有点的静态方法，定义在`Math.Point.member()`
 
-__DO NOT__ forget using `new` to construct the object.
+__记得__ 使用关键字 `new` 来构造对象。
 
-[Back to top](#overview)
+[回到页面上方](#overview)
 
 <a name="var"></a>
-## Variable Name
-Here are some name specification:
+## 变量命名规则
+变量的命名参考如下规则：
 
- Variable name | Meaning
+ 变量命名 | 含义
 :-----|:-------
-`$pt` | the short for prototype, like `$arr = Array.prototype` 
- `_` | the short for 'this' in function, like `function(){var _ = this;};` 
- `*`compare | a function which returns negative, 0 and positive number for comparison, 
- it is `(x, y) => x - y` by default
+`$pt` | `prototype`的缩写，常用于闭包内部。比如`$arr = Array.prototype` 
+ `_` |  `this`的缩写，比如`function(){var _ = this;};` 
+ `*`compare | 排序规则，返回负数、0或者正数
 
-[Back to top](#overview)
+[回到页面上方](#overview)
 
 <a name="lower"></a>
-## lower and Upper
-Only when we get to the function level, we use lowercase, otherwise, we describe the Object by Uppercase.
+## 小写和大写
+对象的定义都是首字母大写。
 
-[Back to top](#overview)
+[回到页面上方](#overview)
 
 <a name="error"></a>
-## Error Message
-'All error messages should not end by any symbol'
-So that, we can `join` a error list, and end a dot by ourselves.
+## 异常信息
+```JavaScript
+'不要在异常信息的末尾添加标点符号'
+```
+这样便于我们拼接字符串。
 
-[Back to top](#overview)
+[回到页面上方](#overview)
 
 <a name="ut"></a>
-## Unit Test
-Unit test runs under [Mocha] [3].
-To see the result of unit test for Algo.js, just run `qunit.html` in your web browser.
+## 单元测试
+使用[Mocha] [3]执行单元测试。
 
-[Back to top](#overview)
+[回到页面上方](#overview)
 
 <a name="coverage"></a>
-## Code Coverage
-Code coverage runs under [Blanket.js] [4].
-To see the result of code coverage for unit test, just run `grunt test` and check the result in `coverage.html`. 
+## 代码覆盖率
+使用[Blanket.js] [4]检查代码覆盖率。
 
-[Back to top](#overview)
+[回到页面上方](#overview)
 
 <a name="ref"></a>
-## References
+## 参考文献
 [Nicholas11] Nicholas C. Zakas. Professional JavaScript for Web Developers, 3rd Edition. 2011. Wrox. 978-1-118-22219-5
 
-[Back to top](#overview)
+[回到页面上方](#overview)
 
 [1]: http://nodejs.org  "Node.js"
 [2]: http://requirejs.org   "require.js"
