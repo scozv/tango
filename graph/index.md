@@ -1,8 +1,10 @@
 <a name="graph"></a>
 # Graph
-We use `T.Graph` in `t.graph.js` to help implementations of some algorithms in `Graph` static object, which has been put in `graph.*.js`.
+We use `T.Graph` in `t.graph.js` to help implementations of some algorithms 
+in `Graph` static object, which has been put in `graph.*.js`.
 
-All the following methods are invoked like `Graph.*`. To create a graph object, use `new T.Graph*()` (see [APIType](APIType#graph)).
+All the following methods are invoked like `Graph.*`. 
+To create a graph object, use `new T.Graph*()`.
 
 #### `bfs(graph): []`
 Gets the vertex visiting array by BFS order.
@@ -19,10 +21,13 @@ Gets the total MST cost of weighted graph by Kruskal algorithm.
 #### `mstKruskal(graph, k): number`
 Gets the max space of k-clustering by Kruskal algorithm.
 #### `sccKosaraju(graph): []`
-Gets the top $10$ large size strong connect component of directed graph, using Kosaraju algorithm.
+Gets the top $3$ largest size of strong connect component for a directed graph, using Kosaraju algorithm.
+#### `sccTarjan(graph): []`
+Gets the top $3$ largest size of strong connect component for a directed graph, using Tarjan algorithm.
 #### `topologicalSort(graph): []`
 Gets the topological visiting array of this directed graph.
 #### `undirectedConnected(graph): []`
-Gets an array indicating connectivity info of undirected graph. this undirected graph is connected iff  `result.length == 1` AND `result[0][1] == Graph.dfs(graph)`.
+Gets an array indicating connectivity info of undirected graph. this undirected graph is connected
+iff  `result.length == 1` AND `result[0][1] == Graph.dfs(graph)`.
 
-[Back to top](#graph)
+<!--[Back to top](#graph)-->

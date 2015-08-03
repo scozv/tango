@@ -16,6 +16,7 @@ Gets a new sorted array by merge sort.
 #### `mergeSortBU(arr, compare): []`
 Gets a new sorted array by bottom-up merge sort.
 #### `heapSort(arr, option): []`
-Gets a new sorted array by heap sort, with `option = {order:"ASC"}` OR `option = {order:"DESC"}`.
+Gets a new sorted array by heap sort, 
+with `option = {order:"ASC"}` OR `option = {order:"DESC"}`.
 
-[Back to top](#sorting)
+<!--[Back to top](#sorting)-->
