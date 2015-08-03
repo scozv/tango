@@ -1,0 +1,23 @@
+{
+	"gitbook": ">=2.0.0",
+	"title": "为algo-x而作的接口文档",
+	"language": "zh-cn",
+	"plugins": ["yametrika", "-mixpanel", "-quizzes", "-exercises"],
+	"pluginsConfig": {
+		"yametrika": {
+			"number": "25680314"
+		}
+	},
+	"links": {
+		"home": false,
+		"about": false,
+		"issues": false,
+		"contribute": false,
+
+		"sharing": {
+			"google": false,
+			"facebook": false,
+			"twitter": false
+		}
+	}
+}

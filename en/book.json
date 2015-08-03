@@ -1,7 +1,12 @@
 {
+	"gitbook": ">=2.0.0",
+	"title": "The API Documents for algo-x",
+	"language": "en",
 	"plugins": ["yametrika", "-mixpanel", "-quizzes", "-exercises"],
 	"pluginsConfig": {
-    "yametrika": {"number": "25680314"}
+		"yametrika": {
+			"number": "25680314"
+		}
 	},
 	"links": {
 		"home": false,
