@@ -21,4 +21,4 @@ This is the summary of algo-wiki
 * [Sorting Algorithm](sorting/index.md)
 * [Graph Algorithm](graph/index.md)
 * Appendix
-  * [Inside it](inside.md)
+  * [Inside this](inside.md)
