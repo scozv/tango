@@ -1,28 +1,27 @@
 <a name="math"></a>
 
 <a name="math-vector"></a>
-## Math.Vector
-The vector is in $n$ dimension.
+## 向量
+向量定义在`Math.Vector`中。每一个向量都有一个维度`n`。
 
 #### `new Math.Vector(arr)`
-Builds new vector by coordinates array.
+通过向量坐标组构造一个新的向量。
 #### `new Math.Vector(arr1, arr2)`
-Builds new vector by coordinates array of two point.
+通过两个点的坐标组构造一个新的向量。
 #### `new Math.Vector(Math.Point, Math.Point)`
-Builds new vector by two Math.Point.
-
+通过两个点构造一个新的向量。
 #### `Math.Vector.norm(vec): number`
-Gets the length of the vec.
+获得向量的模。
 #### `Math.Vector.dot(v1, v2): number`
-Calculates the `dot` result of two vectors.
+获得两个向量的数量积。
 #### `Math.Vector.cos(v1, v2): number`
-Calculates the `cos` result of two vectors.
+获得两个向量的夹角值。
 
 #### `norm(): number`
-Gets the length of the vec itself.
+获得该向量的模。
 #### `dot(that): number`
-Calculates the `dot` result of this and that.
+获得该向量和`that`向量的数量积。
 #### `cos(that): number`
-Calculates the `cos` result of this and that.
+获得该向量和`that`向量的夹角值。
 
 <!--[Back to top](#math)-->
