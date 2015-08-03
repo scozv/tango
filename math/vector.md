@@ -2,13 +2,13 @@
 
 <a name="math-vector"></a>
 ## Math.Vector
-The vector in $n$ dimension.
+The vector is in $n$ dimension.
 
 #### `new Math.Vector(arr)`
 Builds new vector by coordinates array.
 #### `new Math.Vector(arr1, arr2)`
 Builds new vector by coordinates array of two point.
-#### `new Math.Vector(point1, point2)`
+#### `new Math.Vector(Math.Point, Math.Point)`
 Builds new vector by two Math.Point.
 
 #### `Math.Vector.norm(vec): number`
@@ -25,4 +25,4 @@ Calculates the `dot` result of this and that.
 #### `cos(that): number`
 Calculates the `cos` result of this and that.
 
-[Back to top](#math)
+<!--[Back to top](#math)-->

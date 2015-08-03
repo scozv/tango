@@ -7,4 +7,4 @@ The point for the vector.
 #### `new Math.Point(arr)`
 Builds new point by coordinates array.
 
-[Back to top](#math)
+<!--[Back to top](#math)-->

@@ -7,11 +7,11 @@ The basic statistics extension that is located in `Math.Stats.*`
 #### `equals(x: number, y: number): boolean`
 Return true iif `Math.abs(x - y) < 1e-29`.
 #### `equals(x: Array, y: Array): boolean`
-Return true iif the length of array x and y is same and each items in same index are `equals()`.
+Return true iif the lengths of array x and y are same and each items in same index are `equals()`.
 #### `max(arr): number`
-Gets the max number of an array.
+Gets the max value of an array.
 #### `min(arr): number`
-Gets the min number of an array.
+Gets the min value of an array.
 #### `sum(arr): number`
 Gets the sum of an array.
 #### `normalize(arr): []`
@@ -24,6 +24,7 @@ Gets sample variance of an array.
 #### `stddev(arr): number`
 Gets the standard deviation of an array.
 #### `linearLeastSquare(X,  Y, fn = (x=>x)): [number, number]`
-Gets the `[a, b]`, where $\operatorname{fn}(\vec{Y}) = a \cdot \operatorname{fn}(\vec{X}) + b$. Passes `Math.log` to get linear least square for $\vec{Y} = c \cdot (\vec{X})^a$, where $c = e^b$.
+Gets the `[a, b]`, where $\operatorname{fn}(\vec{Y}) = a \cdot \operatorname{fn}(\vec{X}) + b$. 
+Passes `Math.log` to get linear least square for $\vec{Y} = c \cdot (\vec{X})^a$, where $c = e^b$.
 
-[Back to top](#math)
+<!--[Back to top](#math)-->
