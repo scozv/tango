@@ -2,7 +2,7 @@
 
 <a name="quickfind"></a>
 ## QuickFind
-When we construct a `QuickFind`, we pass `n` as the capacity of the quick find. 
+When construct a `QuickFind`, we pass `n` as the capacity of the quick find. 
 We mark the elements in quick find from `0` to `n-1` (inclusive).
 
 Different algorithms of quick find bring us different growth of the cost, see below:
@@ -19,4 +19,4 @@ Gets the number of components which are not connected with each other.
 #### `union(p, q): number`
 Unions `p` with `q`, and returns the `count()` after union.
 
-[Back to top](#t)
+<!--[Back to top](#t)-->

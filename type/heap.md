@@ -18,10 +18,17 @@ Inserts an element into the `heap`, and gets `size()` of the new `heap`.
 Get the max element from `MaxHeap`, or the min element from `MinHeap`, 
 the remove it, keeping `heap` sorted.
 #### `minheap.update(key, when, how): boolean`
-`minheap.update(key: x => boolean, when: x => boolean, how: x => void): boolean`
-
 Finds the elem holding `key(x)`, if `when(x)`, 
 then updates that elem by `how(x)`, 
 returns `false` iff no elem hoding `key(x)`.
 
-[Back to top](#t)
+For instance:
+
+```JavaScript
+minheap.update(
+  key: x => boolean, 
+  when: x => boolean, 
+  how: x => void): boolean
+```
+
+<!--[Back to top](#t)-->

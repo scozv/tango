@@ -14,6 +14,5 @@ Read more in projects' `README.md`. This wiki page lists the API of projects alg
 *  [Delayed] [algo-scala](https://github.com/scotv/algo-scala): Implementation of some algorithms using Scala
 *  ...
 
-
 [1]: https://github.com/scotv/algo-js		"Algo-js"
 [2]: https://github.com/scotv/algo-scala	"Algo-scala"

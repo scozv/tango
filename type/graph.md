@@ -21,16 +21,4 @@ Gets a new cloned graph from this original graph itself.
 #### `toString(verbose: boolean = false): string`
 Gets the information of this graph, containing only number of vertex and edges by default.
 
-[Back to top](#t)
-
-<a name="graphw"></a>
-## GraphW
-The members in weighted graph is same as the graph, except some differences 
-between the adjancency list representation:
-
-Type | Element in Adjancency List
-:----|:-------
-`T.Graph` | `[v, [u1, u2, u3, ...]]`
-`T.GraphW` | `[v, [(u1, w1), (u2, w2), (u3, w3), ...]]`
-
-[Back to top](#t)
+<!--[Back to top](#t)-->

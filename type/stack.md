@@ -9,4 +9,4 @@ Gets the last added item from `stack`, throws `error` when empty.
 #### `pop(): any`
 Gets and removes the last added item from `stack`, throws `error` when empty.
 
-[Back to top](#t)
+<!--[Back to top](#t)-->

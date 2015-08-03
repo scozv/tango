@@ -9,4 +9,4 @@ Gets the first added item from `queue`, throws `error` when empty.
 #### `dequeue(): any`
 Gets and removes the first added item from `queue`, throws `error` when empty.
 
-[Back to top](#t)
+<!--[Back to top](#t)-->

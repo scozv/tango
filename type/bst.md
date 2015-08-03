@@ -5,9 +5,11 @@
 We can indicate the comparasion rule by constructor parameter which 
 will be used for greater left instead of smaller left by default.
 
-For `search`, `insert`, `delete` operations which travel the tree, 
-there are two versions, the one is iterative operation, 
-the other is recursive one whose function name is initialized with a `r`.
+For `search`, `insert`, `delete` operations that travel the tree, 
+there are two versions:
+
+* iterative operation, 
+* recursive one, in which function name is initialized with a `r`.
 
 Always choose iterative operations as a recommandation in `JavaScript`.
 
@@ -21,7 +23,8 @@ according to Wikipedia
 > 
 > The height of the root is the height of the tree. An empty tree (tree with no nodes, if such are allowed) has depth and height `−1`.
 
-We have defined different traversal way in `T.TRAVERSAL.*`. The default traversal way is `T.TRAVERSAL.IN_ORDER`.
+We have defined different traversal way in `T.TRAVERSAL.*`. 
+The default traversal way is `T.TRAVERSAL.IN_ORDER`.
 
 #### `search(elem): node`
 Searches `elem` in this tree, returns node which contains`elem`, or `null` if not exsits.
