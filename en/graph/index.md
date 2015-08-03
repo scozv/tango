@@ -9,7 +9,7 @@ Gets the vertex visiting array by BFS order.
 #### `dfs(graph): []`
 Gets the vertex visiting array by DFS order.
 #### `dijkstra(graph, s: number = 1): []`
-Gets the shortest path length of each vertex from initial vertex $s$.
+Gets the shortest path length of each vertex from initial vertex $$s$.
 #### `multiMinimumCut(graph, times: number): number`
 Gets the minimum cut number of graph after that times calculations.
 #### `mstPrim(graph, s: number = 1): number`

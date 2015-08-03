@@ -16,7 +16,7 @@ Gets the min value of an array.
 Gets the sum of an array.
 #### `normalize(arr): []`
 Normalizes the array, for instance: `normalize([1, 7, 3])` 
-$=[\frac{1}{1+7+3}, \frac{7}{1+7+3}, \frac{3}{1+7+3}]$.
+$$=[\frac{1}{1+7+3}, \frac{7}{1+7+3}, \frac{3}{1+7+3}]$$.
 #### `mean(arr): number`
 Gets the average of an array.
 #### `var(arr): number`
@@ -24,7 +24,7 @@ Gets sample variance of an array.
 #### `stddev(arr): number`
 Gets the standard deviation of an array.
 #### `linearLeastSquare(X,  Y, fn = (x=>x)): [number, number]`
-Gets the `[a, b]`, where $\operatorname{fn}(\vec{Y}) = a \cdot \operatorname{fn}(\vec{X}) + b$. 
-Passes `Math.log` to get linear least square for $\vec{Y} = c \cdot (\vec{X})^a$, where $c = e^b$.
+Gets the `[a, b]`, where $$\operatorname{fn}(\vec{Y}) = a \cdot \operatorname{fn}(\vec{X}) + b$$. 
+Passes `Math.log` to get linear least square for $$\vec{Y} = c \cdot (\vec{X})^a$, where $c = e^b$$.
 
 <!--[Back to top](#math)-->

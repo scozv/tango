@@ -7,14 +7,14 @@ A overview of time complexity laies below:
 
 Call | Time Complexity
 :----|:---:
-`validPopStackSeries` | $\operatorname{O}(n)$
-`medianMaintenence` | $\operatorname{O}(n \ln n)$
+`validPopStackSeries` | $$\operatorname{O}(n)$$
+`medianMaintenence` | $$\operatorname{O}(n \ln n)$$
 
 #### `validPopStackSeries(push: [], pop: []): bool`
 Returns true iff we can get the `pop` series from the `push` series, using a stack.
 #### `medianMaintenence(arr): []`
-For each time $t$ we visit `arr` from $0$ to $n-1$, 
-we maintenence the median of all $[0, t]$ elements from input, 
+For each time $$t$$ we visit `arr` from $$0$$ to $$n-1$$, 
+we maintenence the median of all $$[0, t]$$ elements from input, 
 and push this median into output array.
 
 <!--[Back to top](#list)-->

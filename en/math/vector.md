@@ -2,7 +2,7 @@
 
 <a name="math-vector"></a>
 ## Math.Vector
-The vector is in $n$ dimension.
+The vector is in $$n$$ dimension.
 
 #### `new Math.Vector(arr)`
 Builds new vector by coordinates array.

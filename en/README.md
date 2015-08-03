@@ -8,7 +8,7 @@ Meta | Data
 Last updated | Aug, 2015
 Version | 2.718281828459
 
-An initial PDF document writed in $\LaTeX{}$ has been released on 
+An initial PDF document writed in $$\LaTeX{}$$ has been released on 
 [Releases](https://github.com/scotv/algo-wiki/releases) page.
 
 Read more about progress of projects from [`README.md`] [3]. 
