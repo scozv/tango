@@ -1,24 +1,22 @@
 <a name="t"></a>
 
 <a name="graph"></a>
-## Graph
-Representation of unweighted graph, and it is undirected graph by default.
+## 无权重图
+一个无权重图，默认为无向图，定义在`T.Graph`中。
 
-To build a graph, we must pass `n` as number of vertex. `n`, 
-the number of vertex, is readonly after built graph.
-However, when we call `v()` or `e()` as below, 
-the number we get is the valid number of vertex or edges, 
-which has not been visited or marked.
+构造图的时候，必须指定节点数`n`，节点数`n`不可变。
+不过，我们可以调用 `v()` 和`e()` 来分别获取有效的节点数和有效的边的条数，
+即没有访问或标记的点或者边。
 
 #### `n: number`
-Gets the actual number of vertex, whether it has been visited, marked or not.
+获取图中原始的节点数。
 #### `v(): number`
-Gets the number of vertex, which has not been visited.
+获取图中没有被访问或标记过的节点数。
 #### `e(): number`
-Gets the number of edges, which has not been marked invalid, and the sourcing vertex has not been visited.
+获取图中没有被访问或标记过的边的条数。
 #### `clone(): Graph`
-Gets a new cloned graph from this original graph itself.
+获取一个新图，克隆自原图。
 #### `toString(verbose: boolean = false): string`
-Gets the information of this graph, containing only number of vertex and edges by default.
+获取关于图的基本信息，默认包含点和边的数量。
 
 <!--[Back to top](#t)-->

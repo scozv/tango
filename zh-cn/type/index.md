@@ -1,52 +1,52 @@
 <a name="t"></a>
-# Type Extension
-All typies in data structure are defined in __window.T__.
+# 类型扩展
+数据结构的类型定义在__`window.T`__里面。
 
-A function can be the parameter, such as in `.map(fn)`, `.forEach(fn)`, `.sort(compare)`, etc. 
-The default `fn` in `.map(fn)` is `x => x`, while the default comparasion way is `(x, y) => x - y`.
+函数可以作为构造器的参数，比如`.map(fn)`、 `.forEach(fn)`、 `.sort(compare)`等。 
+`.map(fn)`的默认参数是 `x => x`，而默认的排序规则采用递增排序：`(x, y) => x - y`。
 
-## Type Constructors
+## 类型构造
 #### `new T.LinkedList()`
-Constructs a new linked list.
+构造一个单向链接表。
 #### `new T.Stack()`
-Constructs a new stack
+构造一个栈。
 #### `new T.Queue()`
-Constructs a new queue.
+构造一个队列。
 #### `new T.MaxHeap(): heap`
-Gets a new max heap.
+构造一个最大堆。
 #### `new T.MinHeap(compare): heap`
-Gets a new min heap.
+构造一个最小堆。
 #### `new T.QuickFind(n: number): unionfind`
-Gets a union find by QuickFind algorithm.
+构造一个基于`QuickFind`算法的并查集。
 #### `new T.WeightedQuickUnion(n: number): unionfind`
-Gets a union find by Weighted QuickFind algorithm.
+构造一个基于`WeightedQuickUnion`算法的并查集。
 #### `new T.BinarySearchTree(compare)`
-Gets a Binary Search Tree with the specific comparasion rule.
+构造一个基于指定排序规则的二叉树。
 #### `new T.Graph(n: number, directed: bool = false)`
-Gets a unweighted graph with `n` vertex, which is undirected by default.
+构造一个节点数目为`n`的无权重图，默认为无向图。
 #### `new T.GraphW(n: number, directed: bool = false)`
-Gets a weighted graph with `n` vertex, which is undirected by default.
+构造一个节点数目为`n`的有权重图，默认为无向图。
 
-[Back to top](#t)
+[回到页面上方](#t)
 
-## General Members of Linear Collection
-Linear collection like `LinkedList`, `Stack`, `Queue` have the default traversal order. 
+## 线性集合的通则
+诸如 `LinkedList`、 `Stack`和`Queue` 这样的线性集合，我们定义默认的遍历方式：
 
-* `LinkedList` traverses each element in `0 ... n-1` order;
-* `Stack`traverses each element in `LIFO` order;
-* `Queue`traverses each element in `FIFO` order;
+* `LinkedList` 按照顺序 `0 ... n-1` 遍历；
+* `Stack`按照先进后出的规则遍历；
+* `Queue`按照先进先出的规则遍历。
 
-There are also some general members defined in linear collection.
+线性集合都有如下的公共函数：
 
 #### `size(): number`
-Gets the size (length) of the linear collecion.
+获取线性集合的长度。
 #### `isEmpty(): boolean`
-Returns `true` when the linear collection is empty, otherwise `false`.
+获取一个布尔值，当线性集合为空时，该布尔值为`true`，否则为`false`。
 #### `forEach(x => void): void`
-Applies a function to each element in default order.
+按照默认的遍历规则，对线性集合的每一个元素，应用指定的函数。
 #### `map(x => any): [any]`
-Gets a new array mapped from `x => any`in default order.
+按照默认的遍历规则，对线性集合的每一个元素，映射为新的值，返回一个新的数组（结果集）。
 #### `toArray(): []`
-Gets a new array containing each element of this linear collection in default order.
+按照默认的遍历规则，将线性集合映射为一个新的数组。
 
-[Back to top](#t)
+[回到页面上方](#t)

@@ -1,11 +1,12 @@
 <a name="t"></a>
 
 <a name="graphw"></a>
-## GraphW
-The members in weighted graph is same as the graph, except some differences 
-between the adjancency list representation:
+## 有权重图
+有权重图定义在`T.GraphW`中。
 
-Type | Element in Adjancency List
+有权重图和无权重图的成员相同，唯一的区别在于各自的邻接矩阵的结构：
+
+图的类型 | 邻接矩阵的数据结构
 :----|:-------
 `T.Graph` | `[v, [u1, u2, u3, ...]]`
 `T.GraphW` | `[v, [(u1, w1), (u2, w2), (u3, w3), ...]]`

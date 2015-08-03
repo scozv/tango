@@ -13,15 +13,15 @@ there are two versions:
 
 Always choose iterative operations as a recommandation in `JavaScript`.
 
-And, here is definition for some properties of tree, 
-according to Wikipedia 
-([Terminology of Tree on Wikipedia] [1]):
+<!--And, here is definition for some properties of tree, -->
+<!--according to Wikipedia -->
+<!--([Terminology of Tree on Wikipedia] [1]):-->
 
-> The height of a node is the length of the longest downward path to a leaf from that node. 
-> 
-> The depth of a node is the length of the path to its root (i.e., its root path). The root node has depth zero, leaf nodes have height zero.
-> 
-> The height of the root is the height of the tree. An empty tree (tree with no nodes, if such are allowed) has depth and height `−1`.
+<!-- The height of a node is the length of the longest downward path to a leaf from that node. -->
+<!-- -->
+<!--The depth of a node is the length of the path to its root (i.e., its root path). The root node has depth zero, leaf nodes have height zero.-->
+<!-- -->
+<!-- The height of the root is the height of the tree. An empty tree (tree with no nodes, if such are allowed) has depth and height `−1`.-->
 
 We have defined different traversal way in `T.TRAVERSAL.*`. 
 The default traversal way is `T.TRAVERSAL.IN_ORDER`.
@@ -48,4 +48,4 @@ Recursive version is `rMap(t: TRAVERSAL, fn): void`.
 
 [Back to top](#t)
 
-[1]: https://en.wikipedia.org/wiki/Tree_(data_structure)#Terminology "Tree Term"
+<!--[1]: https://en.wikipedia.org/wiki/Tree_(data_structure)#Terminology "Tree Term"-->

@@ -18,11 +18,15 @@ Inserts an element into the `heap`, and gets `size()` of the new `heap`.
 Get the max element from `MaxHeap`, or the min element from `MinHeap`, 
 the remove it, keeping `heap` sorted.
 #### `minheap.update(key, when, how): boolean`
-Finds the elem holding `key(x)`, if `when(x)`, 
-then updates that elem by `how(x)`, 
-returns `false` iff no elem hoding `key(x)`.
+Finds an elem holding `key(x)`:
+* if it exists, and it holds `when(x)`, its value will be update by `how(x)`, 
+  and `true` will be returned as an indicator for 'element found';
+* if it doesn't hold `when(x)`, `true` will be returned also as an indicator for 'element found';
+* otherwise, return `false` as an indicator for 'no element found'.
 
-For instance:
+This method will be applied in `Dijkstra` algorithm.
+
+The details of parameters is:
 
 ```JavaScript
 minheap.update(

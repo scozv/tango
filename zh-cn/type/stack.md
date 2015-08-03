@@ -1,12 +1,14 @@
 <a name="t"></a>
 
 <a name="stack"></a>
-## Stack
+## 栈
+栈定义在`T.Stack`中。
+
 #### `push(any): void`
-Pushes `any` item into `stack`.
+将新值插入到栈的尾部。
 #### `peek(): any`
-Gets the last added item from `stack`, throws `error` when empty.
+获取栈尾的元素值，如果是空栈，则抛出异常。
 #### `pop(): any`
-Gets and removes the last added item from `stack`, throws `error` when empty.
+获取栈尾的元素值，并将该值从栈中删除，如果是空栈，则抛出异常。
 
 <!--[Back to top](#t)-->

@@ -1,15 +1,17 @@
 <a name="t"></a>
 
 <a name="linkedlist"></a>
-## LinkedList
+## 单向链表
+单向链表定义在`T.LinkedList`中。
+
 #### `insert(any, i): void`
-Inserts an element after i-th element, indexing from 0. If `i >= size()`, 
-inserts elem at the end of list.
+在第`i`处索引之后，插入新值，其中，索引从`0`开始编号。如何`i`大于该链接表的长度，
+则将新值插入在链接表的尾部。
 #### `push(any): void`
-Inserts an element at the end of list.
+将新值插入在链接表的尾部。
 #### `reverse(): void`
-Reverses the list itself.
+将该链接表反置。
 #### `remove(any): void`
-Removes the first node with such element, if no such node, keeps linkedlist unchanged.
+从该连接表中删除指定的元素，只删除第一次出现元素，如果没有这样的元素，则保持链接表不变。
 
 <!--[Back to top](#t)-->
