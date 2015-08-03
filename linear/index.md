@@ -1,5 +1,5 @@
 <a name="list"></a>
-# List
+# Linear Algorithm
 We put some algortithms on linear collection into `List.*`. To use linear collection type, please go to `T.Stack`, `T.LinkedList`...
 
 A overview of time complexity laies below:
