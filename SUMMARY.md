@@ -18,5 +18,5 @@ This is the summary of algo-wiki
   * [Vector](math/vector.md)
 * [Array Extension](array/index.md)
 * [Linear Algorithm](linear/index.md)
-* [Sorting Algorithm](api/sorting.md)
+* [Sorting Algorithm](sorting/index.md)
 * [Graph Algorithm](api/graph.md)
