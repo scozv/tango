@@ -1,5 +1,5 @@
 <a name="overview"></a>
-# Overview of Algo.js
+# Overview of `Algo.js`
 
 This overview describes how I organize the files, and how to name the variables.
 

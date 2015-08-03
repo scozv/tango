@@ -1,5 +1,5 @@
 <a name="overview"></a>
-# Algo.js内部机制概述
+# `Algo.js`内部机制概述
 
 我将试图解释`JavaScript`算法包内部的文件结构和机制说明。
 
