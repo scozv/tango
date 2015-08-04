@@ -7,7 +7,7 @@
 #### `dfs(graph): []`
 获得图的深度优先（DFS）遍历数组。
 #### `dijkstra(graph, s: number = 1): []`
-获得指定节点`s`到每一个节点的最短路径，使用Dijkstra算法。
+获得指定节点$$s$$到每一个节点的最短路径，使用Dijkstra算法。
 #### `multiMinimumCut(graph, times: number): number`
 获得图的最小割量，最多尝试`times`次。
 #### `mstPrim(graph, s: number = 1): number`

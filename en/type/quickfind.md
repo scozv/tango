@@ -17,6 +17,6 @@ Returns `true` iff $$p$$ is connected with $$q$$, otherwise `false`.
 #### `count(): number`
 Gets the number of components which are not connected with each other.
 #### `union(p, q): number`
-Unions $$p$$ with $$q`, and returns the `count()` after union.
+Unions $$p$$ with $$q$$ and returns the `count()` after union.
 
 <!--[Back to top](#t)-->
