@@ -118,7 +118,7 @@ Here are some name specification:
 :-----|:-------
 `$pt` | the short for prototype, like `$arr = Array.prototype` 
  `_` | the short for 'this' in function, like `function(){var _ = this;};` 
- `*`compare | a function which returns negative, 0 and positive number for comparison, 
+ `*compare` | a function which returns negative, $$0$$ and positive number for comparison, 
  it is `(x, y) => x - y` by default
 
 [Back to top](#overview)

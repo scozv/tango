@@ -1,6 +1,6 @@
 <a name="t"></a>
 # Type Extension
-All typies in data structure are defined in __window.T__.
+All typies in data structure are defined in `window.T`.
 
 A function can be the parameter, such as in `.map(fn)`, `.forEach(fn)`, `.sort(compare)`, etc. 
 The default `fn` in `.map(fn)` is `x => x`, while the default comparasion way is `(x, y) => x - y`.
@@ -17,15 +17,15 @@ Gets a new max heap.
 #### `new T.MinHeap(compare): heap`
 Gets a new min heap.
 #### `new T.QuickFind(n: number): unionfind`
-Gets a union find by QuickFind algorithm.
+Gets an union find by QuickFind algorithm.
 #### `new T.WeightedQuickUnion(n: number): unionfind`
-Gets a union find by Weighted QuickFind algorithm.
+Gets an union find by Weighted QuickFind algorithm.
 #### `new T.BinarySearchTree(compare)`
 Gets a Binary Search Tree with the specific comparasion rule.
 #### `new T.Graph(n: number, directed: bool = false)`
-Gets a unweighted graph with `n` vertex, which is undirected by default.
+Gets a unweighted graph with $$n$$ vertex, which is undirected by default.
 #### `new T.GraphW(n: number, directed: bool = false)`
-Gets a weighted graph with `n` vertex, which is undirected by default.
+Gets a weighted graph with $$n$$ vertex, which is undirected by default.
 
 [Back to top](#t)
 

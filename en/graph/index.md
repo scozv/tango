@@ -19,9 +19,9 @@ Gets the total MST cost of weighted graph by Kruskal algorithm.
 #### `mstKruskal(graph, k): number`
 Gets the max space of k-clustering by Kruskal algorithm.
 #### `sccKosaraju(graph): []`
-Gets the top $3$ largest size of strong connect component for a directed graph, using Kosaraju algorithm.
+Gets the top $$3$$ largest size of strong connect component for a directed graph, using Kosaraju algorithm.
 #### `sccTarjan(graph): []`
-Gets the top $3$ largest size of strong connect component for a directed graph, using Tarjan algorithm. 
+Gets the top $$3$ largest size of strong connect component for a directed graph, using Tarjan algorithm. 
 The implemention of this Tarjian algorithm is iterative one, instead of recursive one.
 ([Explanation](http://scotv.github.io/algo/2013/11/10/how-to-write-iterative-tarjan-scc-algorithm-part-zero/#pi))
 #### `topologicalSort(graph): []`

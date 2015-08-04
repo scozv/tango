@@ -4,7 +4,7 @@
 ## Graph
 Representation of unweighted graph, and it is undirected graph by default.
 
-To build a graph, we must pass `n` as number of vertex. `n`, 
+To build a graph, we must pass $$n$$ as number of vertex. $$n`, 
 the number of vertex, is readonly after built graph.
 However, when we call `v()` or `e()` as below, 
 the number we get is the valid number of vertex or edges, 

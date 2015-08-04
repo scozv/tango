@@ -11,7 +11,7 @@ Array.zip([1, 2, 3], ['A', 'B', 'C'])
 ```
 
 #### `Array.swap(arr, i, j): void` 
-Swaps the elements at index `i` and `j`, and does modify the original `arr`.
+Swaps the elements at index $$i$$ and $$j$$, and does modify the original `arr`.
 
 #### `.clone(): []`
 Get a new array cloned from the `arr` itself.
