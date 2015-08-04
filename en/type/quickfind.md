@@ -8,7 +8,7 @@ We mark the elements in quick find from $$0$$ to $$n-1$$ (inclusive).
 Different algorithms of quick find bring us different growth of the cost, see below:
 
 Type | `connected(p, q)` | `union(p, q)`
-:----|:-----------------:|:-------------
+:----|:-----------------:|:-------------:
 `T.QuickFind(N)` | $$\operatorname{O}(1)$$ | $$\operatorname{O}(N)$$
 `T.WeightedQuickFind(N)` | $$\operatorname{O}(\ln N)$$ | $$\operatorname{O}(\ln N)$$
 

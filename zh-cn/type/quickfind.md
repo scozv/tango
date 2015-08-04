@@ -8,7 +8,7 @@
 使用不同的算法，并查集各个操作的时间复杂度有所差异：
 
 并查集类型 | `connected(p, q)` | `union(p, q)`
-:----|:-----------------:|:-------------
+:----|:-----------------:|:-------------:
 `T.QuickFind(N)` | $$\operatorname{O}(1)$$ | $$\operatorname{O}(N)$$
 `T.WeightedQuickFind(N)` | $$\operatorname{O}(\ln N)$$ | $$\operatorname{O}(\ln N)$$
 
