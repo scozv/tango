@@ -20,7 +20,7 @@
 获得有向图的强联通组的个数，使用Kosaraju算法。
 #### `sccTarjan(graph): []`
 获得有向图的强联通组的个数，使用Tarjan算法。该算法的实现采用了迭代，而非递归。
-参考[解释](http://scotv.github.io/algo/2013/11/10/how-to-write-iterative-tarjan-scc-algorithm-part-zero/#pi)
+参考[解释](http://scotv.github.io/algo/2013/11/10/how-to-write-iterative-tarjan-scc-algorithm-part-zero/#pi)。
 #### `topologicalSort(graph): []`
 获得有向图的拓扑排序序列。
 #### `undirectedConnected(graph): []`
