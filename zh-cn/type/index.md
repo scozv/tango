@@ -1,8 +1,8 @@
 <a name="t"></a>
 # 基本数据结构
-数据结构的类型定义在__`window.T`__里面。
+数据结构的类型定义在`window.T`里面。
 
-函数可以作为构造器的参数，比如`.map(fn)`、 `.forEach(fn)`、 `.sort(compare)`等。 
+名为`fn`或者`compare`的参数通常都是函数，比如`.map(fn)`、 `.forEach(fn)`、 `.sort(compare)`等。 
 `.map(fn)`的默认参数是 `x => x`，而默认的排序规则采用递增排序：`(x, y) => x - y`。
 
 ## 类型构造器
@@ -23,16 +23,16 @@
 #### `new T.BinarySearchTree(compare)`
 构造一个基于指定排序规则的二叉树。
 #### `new T.Graph(n: number, directed: bool = false)`
-构造一个节点数目为`n`的无权重图，默认为无向图。
+构造一个节点数目为$$n$$的无权重图，默认为无向图。
 #### `new T.GraphW(n: number, directed: bool = false)`
-构造一个节点数目为`n`的有权重图，默认为无向图。
+构造一个节点数目为$$n$$的有权重图，默认为无向图。
 
 [回到页面上方](#t)
 
 ## 线性集合的通则
 诸如 `LinkedList`、 `Stack`和`Queue` 这样的线性集合，我们定义默认的遍历方式：
 
-* `LinkedList` 按照顺序 `0 ... n-1` 遍历；
+* `LinkedList` 按照索引顺序从$$0$$到$$n-1$$遍历；
 * `Stack`按照先进后出的规则遍历；
 * `Queue`按照先进先出的规则遍历。
 

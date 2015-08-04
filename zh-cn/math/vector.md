@@ -2,7 +2,7 @@
 
 <a name="math-vector"></a>
 ## 向量
-向量定义在`Math.Vector`中。每一个向量都有一个维度`n`。
+向量定义在`Math.Vector`中。每一个向量都有一个维度$$n$$。
 
 #### `new Math.Vector(arr)`
 通过向量坐标组构造一个新的向量。

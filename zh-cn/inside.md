@@ -87,7 +87,7 @@ __记得__ 使用关键字 `new` 来构造对象。
 :-----|:-------
 `$pt` | `prototype`的缩写，常用于闭包内部。比如`$arr = Array.prototype` 
  `_` |  `this`的缩写，比如`function(){var _ = this;};` 
- `*`compare | 排序规则，返回负数、0或者正数
+ `*compare` | 排序规则，返回负数、$$0$$或者正数
 
 [回到页面上方](#overview)
 
