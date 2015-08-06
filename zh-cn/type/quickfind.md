@@ -9,8 +9,8 @@
 
 并查集类型 | `connected(p, q)` | `union(p, q)`
 :----|:-----------------:|:-------------:
-`T.QuickFind(N)` | $$\operatorname{O}(1)$$ | $$\operatorname{O}(N)$$
-`T.WeightedQuickFind(N)` | $$\operatorname{O}(\ln N)$$ | $$\operatorname{O}(\ln N)$$
+`T.QuickFind(N)` | $$\text{O}(1)$$ | $$\text{O}(N)$$
+`T.WeightedQuickFind(N)` | $$\text{O}(\ln N)$$ | $$\text{O}(\ln N)$$
 
 #### `connected(p, q): boolean`
 返回一个布尔值，如果两个节点$$p$$和$$q$$相互关联，则返回`true`，否则返回`false`。
