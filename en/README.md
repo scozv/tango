@@ -4,6 +4,7 @@ The API Documents for algo-x
 :----|:-------
 Last updated | Aug, 2015
 Version | $$2.718281828459$$
+`LaTeX` engine | [`KaTeX`] [4]
 drone.io | [![Build Status](https://drone.io/github.com/scotv/algo-wiki/status.png)](https://drone.io/github.com/scotv/algo-wiki/latest)
 david-dm | [![devDependency Status](https://david-dm.org/scotv/algo-wiki/dev-status.png)](https://david-dm.org/scotv/algo-wiki#info=devDependencies)
 
@@ -21,3 +22,4 @@ This wiki page only lists the API of projects algo-x:
 [1]: https://github.com/scotv/algo-js		"Algo-js"
 [2]: https://github.com/scotv/algo-scala	"Algo-scala"
 [3]: https://github.com/scotv/algo-js/blob/master/README.md "README.md"
+[4]: https://khan.github.io/KaTeX/ "KaTeX"
