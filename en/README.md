@@ -8,7 +8,7 @@ drone.io | [![Build Status](https://drone.io/github.com/scotv/algo-wiki/status.p
 david-dm | [![devDependency Status](https://david-dm.org/scotv/algo-wiki/dev-status.png)](https://david-dm.org/scotv/algo-wiki#info=devDependencies)
 
 
-An initial PDF document writed in $$\LaTeX{}$$ has been released on 
+An initial PDF document writed in `LaTeX` has been released on 
 [Releases](https://github.com/scotv/algo-wiki/releases) page.
 
 Read more about the progress of projects from [`README.md`] [3]. 

@@ -7,8 +7,8 @@
 
 方法 | 时间复杂度
 :----|:---:
-`validPopStackSeries` | $$\operatorname{O}(N)$$
-`medianMaintenence` | $$\operatorname{O}(N \ln N)$$
+`validPopStackSeries` | $$\text{O}(N)$$
+`medianMaintenence` | $$\text{O}(N \ln N)$$
 
 #### `validPopStackSeries(push: [], pop: []): bool`
 验证一个`pop`序列，是否为基于`push`入栈的有效出栈序列。
