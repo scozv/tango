@@ -25,6 +25,7 @@ Gets sample variance of an array.
 Gets the standard deviation of an array.
 #### `linearLeastSquare(X,  Y, fn = (x=>x)): [number, number]`
 Gets the `[a, b]`, where $$\operatorname{fn}(\vec{Y}) = a \cdot \operatorname{fn}(\vec{X}) + b$$. 
-Passes `Math.log` to get linear least square for $$\vec{Y} = c \cdot (\vec{X})^a$$, where $c = e^b$$.
+
+Passing `Math.log` to get linear least square for $$\vec{Y} = c \cdot (\vec{X})^a$$, where $$c = e^b$$.
 
 <!--[Back to top](#math)-->
