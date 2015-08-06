@@ -13,7 +13,7 @@
   },
   "scripts": {
     "test": "npm install -g gitbook-cli && gitbook build",
-    "publish": "npm install -g gitbook-cli && gitbook build && grunt publish"
+    "install": "npm install -g gitbook-cli && gitbook build && grunt publish"
   },
   "repository": {
     "type": "git",
