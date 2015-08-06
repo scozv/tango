@@ -4,6 +4,7 @@
 :----|:-------
 最后更新 | 二〇〇五年八月
 版本编号 | $$2.718281828459$$
+`LaTeX`引擎 | [`KaTeX`] [4]
 drone.io | [![Build Status](https://drone.io/github.com/scotv/algo-wiki/status.png)](https://drone.io/github.com/scotv/algo-wiki/latest)
 david-dm | [![devDependency Status](https://david-dm.org/scotv/algo-wiki/dev-status.png)](https://david-dm.org/scotv/algo-wiki#info=devDependencies)
 
@@ -20,3 +21,4 @@ david-dm | [![devDependency Status](https://david-dm.org/scotv/algo-wiki/dev-sta
 [1]: https://github.com/scotv/algo-js		"Algo-js"
 [2]: https://github.com/scotv/algo-scala	"Algo-scala"
 [3]: https://github.com/scotv/algo-js/blob/master/DUWO.md "README.md"
+[4]: https://khan.github.io/KaTeX/ "KaTeX"

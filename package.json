@@ -12,8 +12,8 @@
     "grunt-gitbook": "~1.5.0"
   },
   "scripts": {
-    "test": "npm install -g gitbook-cli && gitbook build",
-    "install": "npm install -g gitbook-cli && gitbook build && grunt publish"
+    "test": "npm install -g gitbook-cli && gitbook install && gitbook build",
+    "install": "npm test && grunt publish"
   },
   "repository": {
     "type": "git",
