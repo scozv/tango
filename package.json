@@ -5,7 +5,7 @@
   "description": "Sources of Ultimate API Docs for algo-x",
   "dependencies": {},
   "devDependencies": {
-    "gitbook-plugin-yametrika": "^1.0.5",
+    "gitbook-plugin-yametrika": "^1.6.6",
     "grunt": "~0.4.5",
     "grunt-contrib-clean": "~0.6.0",
     "grunt-gh-pages": "~0.10.0",
