@@ -21,6 +21,6 @@ module.exports = function (grunt) {
 		}
 	});
 
-	grunt.registerTask('publish', ['gitbook','gh-pages','clean']);
-	grunt.registerTask('default', 'gitbook');
+	grunt.registerTask('publish', ['gh-pages','clean']);
+	// grunt.registerTask('default', 'gitbook');
 };

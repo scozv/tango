@@ -8,3 +8,4 @@ node_modules/
 *.pdf
 *.gz
 *.toc
+*.orig

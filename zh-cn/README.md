@@ -4,10 +4,11 @@
 :----|:-------
 最后更新 | 二〇〇五年八月
 版本编号 | $$2.718281828459$$
+`LaTeX`引擎 | [`KaTeX`] [4]
 drone.io | [![Build Status](https://drone.io/github.com/scozv/algo-wiki/status.png)](https://drone.io/github.com/scozv/algo-wiki/latest)
 david-dm | [![devDependency Status](https://david-dm.org/scozv/algo-wiki/dev-status.png)](https://david-dm.org/scozv/algo-wiki#info=devDependencies)
 
-早期的一份基于$$\LaTeX{}$$编译的PDF文档发布在
+早期的一份基于`LaTeX`编译的PDF文档发布在
 [Releases](https://github.com/scozv/algo-wiki/releases)页面。
 
 在项目的[`DUWO.md`] [3]文件中，可以了解到该算法包的进展情况。
@@ -20,3 +21,4 @@ david-dm | [![devDependency Status](https://david-dm.org/scozv/algo-wiki/dev-sta
 [1]: https://github.com/scozv/algo-js		"Algo-js"
 [2]: https://github.com/scozv/algo-scala	"Algo-scala"
 [3]: https://github.com/scozv/algo-js/blob/master/DUWO.md "README.md"
+[4]: https://khan.github.io/KaTeX/ "KaTeX"

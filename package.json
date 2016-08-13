@@ -5,19 +5,18 @@
   "description": "Sources of Ultimate API Docs for algo-x",
   "dependencies": {},
   "devDependencies": {
-    "gitbook": "~3.0.3",
-    "gitbook-plugin-yametrika": "^1.0.5",
+    "gitbook-plugin-yametrika": "^1.6.6",
     "grunt": "~1.0.1",
     "grunt-contrib-clean": "~1.0.0",
     "grunt-gh-pages": "~1.1.0",
     "grunt-gitbook": "~1.5.0"
   },
   "scripts": {
-    "test": "grunt"
+    "test": "gitbook install && gitbook build"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/scotv/algo-wiki.git"
+    "url": "git://github.com/scozv/algo-wiki.git"
   },
   "keywords": [
     "gitbook",
@@ -25,10 +24,10 @@
     "algo-js",
     "algo-scala"
   ],
-  "author": "scotv",
+  "author": "scozv",
   "license": "GPL-3.0",
   "bugs": {
-    "url": "https://github.com/scotv/algo-wiki/issues"
+    "url": "https://github.com/scozv/algo-wiki/issues"
   },
-  "homepage": "https://github.com/scotv/algo-wiki"
+  "homepage": "https://github.com/scozv/algo-wiki"
 }
