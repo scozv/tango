@@ -2,7 +2,7 @@
 	"gitbook": ">=2.0.0",
 	"title": "为algo-x而作的接口文档",
 	"language": "zh-cn",
-	"plugins": ["yametrika", "katex", "-mixpanel", "-quizzes", "-exercises"],
+  "plugins": ["yametrika", "katex", "-mixpanel", "-quizzes", "-exercises","-mathjax"],
 	"pluginsConfig": {
 		"yametrika": {
 			"number": "25680314"

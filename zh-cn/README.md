@@ -2,7 +2,7 @@
 ======
 元 | 数据
 :----|:-------
-最后更新 | 二〇〇五年八月
+最后更新 | 2016年8月
 版本编号 | $$2.718281828459$$
 `LaTeX`引擎 | [`KaTeX`] [4]
 drone.io | [![Build Status](https://drone.io/github.com/scozv/algo-wiki/status.png)](https://drone.io/github.com/scozv/algo-wiki/latest)

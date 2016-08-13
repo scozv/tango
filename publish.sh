@@ -1,1 +1,1 @@
-npm test && grunt publish
+gitbook install && gitbook build && grunt publish
