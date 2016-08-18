@@ -16,7 +16,7 @@ Read more about the progress of projects from [`README.md`] [3].
 This wiki page only lists the API of projects algo-x:
 
 *  [`algo-js`](https://github.com/scozv/algo-js): Implementation of some algorithms using `JavaScript`
-*  [`algo-scala`](https://github.com/scozv/algo-scala) (__Suspend__): Implementation of some algorithms using `Scala`
+*  [`algo-scala`](https://github.com/scozv/algo-scala) (__Suspended__): Implementation of some algorithms using `Scala`
 *  ...
 
 [1]: https://github.com/scozv/algo-js		"Algo-js"
