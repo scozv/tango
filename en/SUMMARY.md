@@ -20,5 +20,3 @@ This is the summary of algo-wiki
 * [Linear Algorithm](linear/index.md)
 * [Sorting Algorithm](sorting/index.md)
 * [Graph Algorithm](graph/index.md)
-* Appendix
-  * [Inside this](inside.md)

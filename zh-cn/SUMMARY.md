@@ -21,5 +21,3 @@ This is the summary of algo-wiki
 * [线性算法](linear/index.md)
 * [排序算法](sorting/index.md)
 * [图算法](graph/index.md)
-* 附录
-  * [Algo.js内部机制概述](inside.md)

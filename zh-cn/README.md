@@ -1,5 +1,8 @@
-为`algo-x`而作的接口文档
-======
+# 为`algo-x`而作的接口文档
+
+
+## 概述
+
 元 | 数据
 :----|:-------
 最后更新 | 2016年8月
@@ -17,6 +20,18 @@ david-dm | [![devDependency Status](https://david-dm.org/scozv/algo-wiki/dev-sta
 *  [`algo-js`](https://github.com/scozv/algo-js)：基于`JavaSript`而写的基本算法包
 *  [`algo-scala`](https://github.com/scozv/algo-scala)（暂时搁置）：基于`Scala`而写的基本算法包
 *  ...
+
+
+## 命名空间
+
+命名层级 | 说明
+:-------|:------
+`algo._` | 根节点
+`algo.Type._` | 基本的数据结构定义，可以使用工厂模式构造
+`algo.Math._` | `Math`扩展，以及数学相关的数据结构定义
+`algo.Linear._` | 线性算法和`Array`扩展
+`algo.Sorting._` | 排序算法
+`algo.Graph._` | 图算法
 
 [1]: https://github.com/scozv/algo-js		"Algo-js"
 [2]: https://github.com/scozv/algo-scala	"Algo-scala"
