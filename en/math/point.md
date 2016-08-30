@@ -1,10 +1,10 @@
 <a name="math"></a>
 
 <a name="math-point"></a>
-## Math.Point
+## algo.math.Point
 The point for the vector.
 
-#### `new Math.Point(arr)`
+#### `new algo.math.Point(arr)`
 Builds new point by coordinates array.
 
 <!--[Back to top](#math)-->

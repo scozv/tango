@@ -2,19 +2,19 @@
 
 <a name="math-vector"></a>
 ## 向量
-向量定义在`Math.Vector`中。每一个向量都有一个维度$$n$$。
+向量定义在`algo.math.Vector`中。每一个向量都有一个维度$$n$$。
 
-#### `new Math.Vector(arr)`
+#### `new algo.math.Vector(arr)`
 通过向量坐标组构造一个新的向量。
-#### `new Math.Vector(arr1, arr2)`
+#### `new algo.math.Vector(arr1, arr2)`
 通过两个点的坐标组构造一个新的向量。
-#### `new Math.Vector(Math.Point, Math.Point)`
+#### `new algo.math.Vector(algo.math.Point, algo.math.Point)`
 通过两个点构造一个新的向量。
-#### `Math.Vector.norm(vec): number`
+#### `algo.math.Vector.norm(vec): number`
 获得向量的模。
-#### `Math.Vector.dot(v1, v2): number`
+#### `algo.math.Vector.dot(v1, v2): number`
 获得两个向量的数量积。
-#### `Math.Vector.cos(v1, v2): number`
+#### `algo.math.Vector.cos(v1, v2): number`
 获得两个向量的夹角值。
 
 #### `norm(): number`

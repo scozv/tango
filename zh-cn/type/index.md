@@ -1,30 +1,30 @@
 <a name="t"></a>
 # 基本数据结构
-数据结构的类型定义在`window.T`里面。
+数据结构的类型定义在`algo.type`里面。
 
 名为`fn`或者`compare`的参数通常都是函数，比如`.map(fn)`、 `.forEach(fn)`、 `.sort(compare)`等。 
 `.map(fn)`的默认参数是 `x => x`，而默认的排序规则采用递增排序：`(x, y) => x - y`。
 
 ## 类型构造器
-#### `new T.LinkedList()`
+#### `new algo.type.LinkedList()`
 构造一个单向链接表。
-#### `new T.Stack()`
+#### `new algo.type.Stack()`
 构造一个栈。
-#### `new T.Queue()`
+#### `new algo.type.Queue()`
 构造一个队列。
-#### `new T.MaxHeap(): heap`
+#### `new algo.type.MaxHeap(): heap`
 构造一个最大堆。
-#### `new T.MinHeap(compare): heap`
+#### `new algo.type.MinHeap(compare): heap`
 构造一个最小堆。
-#### `new T.QuickFind(n: number): unionfind`
+#### `new algo.type.QuickFind(n: number): unionfind`
 构造一个基于`QuickFind`算法的并查集。
-#### `new T.WeightedQuickUnion(n: number): unionfind`
+#### `new algo.type.WeightedQuickUnion(n: number): unionfind`
 构造一个基于`WeightedQuickUnion`算法的并查集。
-#### `new T.BinarySearchTree(compare)`
+#### `new algo.type.BinarySearchTree(compare)`
 构造一个基于指定排序规则的二叉树。
-#### `new T.Graph(n: number, directed: bool = false)`
+#### `new algo.type.Graph(n: number, directed: bool = false)`
 构造一个节点数目为$$n$$的无权重图，默认为无向图。
-#### `new T.GraphW(n: number, directed: bool = false)`
+#### `new algo.type.GraphW(n: number, directed: bool = false)`
 构造一个节点数目为$$n$$的有权重图，默认为无向图。
 
 [回到页面上方](#t)

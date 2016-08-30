@@ -7,7 +7,7 @@ between the adjancency list representation:
 
 Type | Element in Adjancency List
 :----|:-------
-`T.Graph` | `[v, [u1, u2, u3, ...]]`
-`T.GraphW` | `[v, [(u1, w1), (u2, w2), (u3, w3), ...]]`
+`algo.type.Graph` | `[v, [u1, u2, u3, ...]]`
+`algo.type.GraphW` | `[v, [(u1, w1), (u2, w2), (u3, w3), ...]]`
 
 <!--[Back to top](#t)-->

@@ -1,9 +1,9 @@
 <a name="list"></a>
 # Linear Algorithm
-We put some algortithms on linear collection into `List.*`. 
-To use linear collection type, please go to `T.Stack`, `T.LinkedList`...
+We put some algorithms on linear collection into `algo.linear.*`. 
+To use linear collection type, please go to `algo.type.Stack`, `algo.type.LinkedList`...
 
-A overview of time complexity laies below:
+A overview of time complexity is listed below:
 
 Call | Time Complexity
 :----|:---:

@@ -1,21 +1,21 @@
 <a name="math"></a>
 
 <a name="math-vector"></a>
-## Math.Vector
+## algo.math.Vector
 The vector is in $$n$$ dimension.
 
-#### `new Math.Vector(arr)`
+#### `new algo.math.Vector(arr)`
 Builds new vector by coordinates array.
-#### `new Math.Vector(arr1, arr2)`
+#### `new algo.math.Vector(arr1, arr2)`
 Builds new vector by coordinates array of two point.
-#### `new Math.Vector(Math.Point, Math.Point)`
-Builds new vector by two Math.Point.
+#### `new algo.math.Vector(algo.math.Point, algo.math.Point)`
+Builds new vector by two algo.math.Point.
 
-#### `Math.Vector.norm(vec): number`
+#### `algo.math.Vector.norm(vec): number`
 Gets the length of the vec, that is $$|\vec{X}|=\sqrt{\sum_{i=0}^{n-1} x_i^2}$$.
-#### `Math.Vector.dot(v1, v2): number`
+#### `algo.math.Vector.dot(v1, v2): number`
 Calculates the `dot` result of two vectors, that is $$\vec{X}\cdot \vec{Y} = \sum_{i=0}^{n-1} x_i \cdot y_i$$  .
-#### `Math.Vector.cos(v1, v2): number`
+#### `algo.math.Vector.cos(v1, v2): number`
 Calculates the `cos` result of two vectors, that is $$\frac{\vec{X}\cdot \vec{Y}}{|\vec{X}|\cdot |\vec{Y}|}$$  .
 
 #### `norm(): number`

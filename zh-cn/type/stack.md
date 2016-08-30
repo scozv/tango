@@ -2,7 +2,7 @@
 
 <a name="stack"></a>
 ## 栈
-栈定义在`T.Stack`中。
+栈定义在`algo.type.Stack`中。
 
 #### `push(any): void`
 将新值插入到栈的尾部。

@@ -1,30 +1,30 @@
 <a name="t"></a>
 # Type Extension
-All typies in data structure are defined in `window.T`.
+All typies in data structure are defined in `algo.type`.
 
 A function can be the parameter, such as in `.map(fn)`, `.forEach(fn)`, `.sort(compare)`, etc. 
 The default `fn` in `.map(fn)` is `x => x`, while the default comparasion way is `(x, y) => x - y`.
 
 ## Type Constructors
-#### `new T.LinkedList()`
+#### `new algo.type.LinkedList()`
 Constructs a new linked list.
-#### `new T.Stack()`
+#### `new algo.type.Stack()`
 Constructs a new stack
-#### `new T.Queue()`
+#### `new algo.type.Queue()`
 Constructs a new queue.
-#### `new T.MaxHeap(): heap`
+#### `new algo.type.MaxHeap(): heap`
 Gets a new max heap.
-#### `new T.MinHeap(compare): heap`
+#### `new algo.type.MinHeap(compare): heap`
 Gets a new min heap.
-#### `new T.QuickFind(n: number): unionfind`
+#### `new algo.type.QuickFind(n: number): unionfind`
 Gets an union find by QuickFind algorithm.
-#### `new T.WeightedQuickUnion(n: number): unionfind`
+#### `new algo.type.WeightedQuickUnion(n: number): unionfind`
 Gets an union find by Weighted QuickFind algorithm.
-#### `new T.BinarySearchTree(compare)`
+#### `new algo.type.BinarySearchTree(compare)`
 Gets a Binary Search Tree with the specific comparasion rule.
-#### `new T.Graph(n: number, directed: bool = false)`
+#### `new algo.type.Graph(n: number, directed: bool = false)`
 Gets a unweighted graph with $$n$$ vertex, which is undirected by default.
-#### `new T.GraphW(n: number, directed: bool = false)`
+#### `new algo.type.GraphW(n: number, directed: bool = false)`
 Gets a weighted graph with $$n$$ vertex, which is undirected by default.
 
 [Back to top](#t)

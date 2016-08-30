@@ -43,7 +43,7 @@ Or I will merge them into one file using `grunt-contrib-uglify`.
 
  Filename | Meaning
 :-----|:-------
- `t.*.js` | Encapsulation of the structure type, like `LinkedList`, `Stack`, etc 
+ `algo.type.*.js` | Encapsulation of the structure type, like `LinkedList`, `Stack`, etc 
  `x.*.js` | Extensions of the current object, like `x.array.js` 
  `sorting.*.js` | Implementation of sorting algorithm 
 
@@ -103,8 +103,8 @@ whereas the prototype pattern defines methods and shared properties." (see [Nich
 ## Instance and Static
 All classes named by Capital letter initilized, no matter public or nested private.
 
-We have Point objects constructed by `new Math.Point()`, 
-we also have static class Point, which we access its static member by `Math.Point.member()`.
+We have Point objects constructed by `new algo.math.Point()`, 
+we also have static class Point, which we access its static member by `algo.math.Point.member()`.
 
 __DO NOT__ forget using `new` to construct the object.
 

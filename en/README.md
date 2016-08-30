@@ -6,7 +6,7 @@
 `meta` | Data
 :----|:-------
 Last updated | Aug, 2016
-Version | $$2.718281828459$$
+Version | $$3.1$$
 `LaTeX` engine | [`KaTeX`] [4]
 drone.io | [![Build Status](https://drone.io/github.com/scozv/algo-wiki/status.png)](https://drone.io/github.com/scozv/algo-wiki/latest)
 david-dm | [![devDependency Status](https://david-dm.org/scozv/algo-wiki/dev-status.png)](https://david-dm.org/scozv/algo-wiki#info=devDependencies)
@@ -29,11 +29,11 @@ This wiki page only lists the API of projects algo-x:
 Namespace Level | Description
 :-------|:------
 `algo._` | Root namespace
-`algo.Type._` | Definition of data structures, can be constructed by factory pattern
-`algo.Math._` | `Math` extensions
-`algo.Linear._` | Linear algorithm or `Array` extensions
-`algo.Sorting._` | Sorting algorithm
-`algo.Graph._` | Graph algorithm
+`algo.type._` | Definition of data structures, can be constructed by factory pattern
+`algo.math._` | `Math` extensions
+`algo.linear._` | Linear algorithm or `Array` extensions
+`algo.sorting._` | Sorting algorithm
+`algo.graph._` | Graph algorithm
 
 
 [1]: https://github.com/scozv/algo-js		"Algo-js"

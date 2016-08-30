@@ -2,7 +2,7 @@
 
 <a name="linkedlist"></a>
 ## 单向链表
-单向链表定义在`T.LinkedList`中。
+单向链表定义在`algo.type.LinkedList`中。
 
 #### `insert(any, i): void`
 在第$$i$$处索引之后，插入新值，其中，索引从$$0$$开始编号。如何$$i$$大于等于该链接表的长度，

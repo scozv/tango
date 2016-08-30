@@ -1,8 +1,8 @@
 <a name="graph"></a>
 # Graph
 
-All the following methods are invoked like `Graph.*`. 
-To create a graph object, use `new T.Graph*()`.
+All the following methods are invoked like `algo.graph._`. 
+To create a graph object, use `new algo.type.Graph*()`.
 
 #### `bfs(graph): []`
 Gets the vertex visiting array by BFS order.
