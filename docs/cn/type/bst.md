@@ -2,7 +2,7 @@
 
 <a name="binarysearchtree"></a>
 ## 二叉树
-二叉树定义在`algo.type.BinarySearchTree`。
+二叉树定义在`tango.type.BinarySearchTree`。
 
 可以传入一个函数，作为二叉树的排序规则，即默认将更小的值放到左节点，还是
 将更大的值放到左节点。
@@ -22,7 +22,7 @@
 <!-- -->
 <!-- The height of the root is the height of the tree. An empty tree (tree with no nodes, if such are allowed) has depth and height `−1`.-->
 
-同时，我们在`algo.type.TRAVERSAL.*`中定义了树的遍历规则，默认按照中序遍历。
+同时，我们在`tango.type.TRAVERSAL.*`中定义了树的遍历规则，默认按照中序遍历。
 
 #### `search(elem): node`
 在二叉树中查找指定元素，返回包含该元素的节点，如果没有该元素，则返回`null`。

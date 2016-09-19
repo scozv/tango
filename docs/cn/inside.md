@@ -1,5 +1,5 @@
 <a name="overview"></a>
-# `Algo.js`内部机制概述
+# `Tango.js`内部机制概述
 
 我将试图解释`JavaScript`算法包内部的文件结构和机制说明。
 
@@ -44,7 +44,7 @@ script src="sorting.quickSort.js"
 
  命名 | 含义
 :-----|:-------
- `algo.type.*.js` | 数据结构的类型定义，比如`LinkedList`、`Stack`等
+ `tango.type.*.js` | 数据结构的类型定义，比如`LinkedList`、`Stack`等
  `x.*.js` | 现有对象的扩展，比如`x.array.js` 
  `sorting.*.js` | 特定算法的实现，比如排序算法
 
@@ -72,8 +72,8 @@ script src="sorting.quickSort.js"
 ## 实例和静态方法
 所有的类名都是首字母大写，无论它是公开的还是嵌套私有。
 
-比如我们有“点”的对象构造函数`new algo.math.Point()`，
-也有“点”的静态方法，定义在`algo.math.Point.member()`
+比如我们有“点”的对象构造函数`new tango.math.Point()`，
+也有“点”的静态方法，定义在`tango.math.Point.member()`
 
 __记得__ 使用关键字 `new` 来构造对象。
 

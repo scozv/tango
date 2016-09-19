@@ -9,8 +9,8 @@ Different algorithms of quick find bring us different growth of the cost, see be
 
 Type | `connected(p, q)` | `union(p, q)`
 :----|:-----------------:|:-------------:
-`algo.type.QuickFind(N)` | $$\text{O}(1)$$ | $$\text{O}(N)$$
-`algo.type.WeightedQuickFind(N)` | $$\text{O}(\ln N)$$ | $$\text{O}(\ln N)$$
+`tango.type.QuickFind(N)` | $$\text{O}(1)$$ | $$\text{O}(N)$$
+`tango.type.WeightedQuickFind(N)` | $$\text{O}(\ln N)$$ | $$\text{O}(\ln N)$$
 
 #### `connected(p, q): boolean`
 Returns `true` iff $$p$$ is connected with $$q$$, otherwise `false`.

@@ -2,7 +2,7 @@
 
 <a name="heap"></a>
 ## Heap
-Usage of `algo.type.MinHeap` is same as `algo.type.MaxHeap`, except the constructor. 
+Usage of `tango.type.MinHeap` is same as `tango.type.MaxHeap`, except the constructor. 
 Notice, there is a pseudo element at `heap[0]` which we might not use.
 
 The reason we do not implement public `forEach`, `map` or `toArray` is 

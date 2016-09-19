@@ -1,7 +1,7 @@
 <a name="list"></a>
 # Linear Algorithm
-We put some algorithms on linear collection into `algo.linear.*`. 
-To use linear collection type, please go to `algo.type.Stack`, `algo.type.LinkedList`...
+We put some algorithms on linear collection into `tango.linear.*`. 
+To use linear collection type, please go to `tango.type.Stack`, `tango.type.LinkedList`...
 
 A overview of time complexity is listed below:
 

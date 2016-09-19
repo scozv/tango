@@ -1,7 +1,7 @@
 <a name="list"></a>
 # 线性算法
-线性集合上的一些通用算法定义在`algo.linear.*`中。
-要使用线性集合的数据结构，请参考`algo.type.Stack`，`algo.type.LinkedList`等。
+线性集合上的一些通用算法定义在`tango.linear.*`中。
+要使用线性集合的数据结构，请参考`tango.type.Stack`，`tango.type.LinkedList`等。
 
 现有方法的时间复杂度为:
 

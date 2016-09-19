@@ -1,30 +1,30 @@
 <a name="t"></a>
 # 基本数据结构
-数据结构的类型定义在`algo.type`里面。
+数据结构的类型定义在`tango.type`里面。
 
 名为`fn`或者`compare`的参数通常都是函数，比如`.map(fn)`、 `.forEach(fn)`、 `.sort(compare)`等。 
 `.map(fn)`的默认参数是 `x => x`，而默认的排序规则采用递增排序：`(x, y) => x - y`。
 
 ## 类型构造器
-#### `new algo.type.LinkedList()`
+#### `new tango.type.LinkedList()`
 构造一个单向链接表。
-#### `new algo.type.Stack()`
+#### `new tango.type.Stack()`
 构造一个栈。
-#### `new algo.type.Queue()`
+#### `new tango.type.Queue()`
 构造一个队列。
-#### `new algo.type.MaxHeap(): heap`
+#### `new tango.type.MaxHeap(): heap`
 构造一个最大堆。
-#### `new algo.type.MinHeap(compare): heap`
+#### `new tango.type.MinHeap(compare): heap`
 构造一个最小堆。
-#### `new algo.type.QuickFind(n: number): unionfind`
+#### `new tango.type.QuickFind(n: number): unionfind`
 构造一个基于`QuickFind`算法的并查集。
-#### `new algo.type.WeightedQuickUnion(n: number): unionfind`
+#### `new tango.type.WeightedQuickUnion(n: number): unionfind`
 构造一个基于`WeightedQuickUnion`算法的并查集。
-#### `new algo.type.BinarySearchTree(compare)`
+#### `new tango.type.BinarySearchTree(compare)`
 构造一个基于指定排序规则的二叉树。
-#### `new algo.type.Graph(n: number, directed: bool = false)`
+#### `new tango.type.Graph(n: number, directed: bool = false)`
 构造一个节点数目为$$n$$的无权重图，默认为无向图。
-#### `new algo.type.GraphW(n: number, directed: bool = false)`
+#### `new tango.type.GraphW(n: number, directed: bool = false)`
 构造一个节点数目为$$n$$的有权重图，默认为无向图。
 
 [回到页面上方](#t)

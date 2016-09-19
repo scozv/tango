@@ -1,6 +1,6 @@
 <a name="sorting"></a>
 # Sorting
-All static methods below are defined in `algo.sorting._`.
+All static methods below are defined in `tango.sorting._`.
 
 In our sorting, we pass a function as parameters, named `compare(x, y) : number`. 
 We sort the array by comparing each two value with this `compare` function.

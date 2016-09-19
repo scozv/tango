@@ -1,6 +1,6 @@
 <a name="graph"></a>
 # 图算法
-图算法定义在`algo.graph._`中，如果要使用图的数据结构，请参考`algo.type.Graph`或者`algo.type.GraphW`。
+图算法定义在`tango.graph._`中，如果要使用图的数据结构，请参考`tango.type.Graph`或者`tango.type.GraphW`。
 
 #### `bfs(graph): []`
 获得图的广度优先（BFS）遍历数组。

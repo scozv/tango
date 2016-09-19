@@ -1,6 +1,6 @@
-[![Build Status](https://drone.io/github.com/scozv/algo-js/status.png)](https://drone.io/github.com/scozv/algo-js/latest)
+[![Build Status](https://drone.io/github.com/scozv/tango/status.png)](https://drone.io/github.com/scozv/tango/latest)
 
-# Algo.js
+# Tango.js
 ####### _版本: 3.1_
 ####### _使用`ECMAScript 6`实现的基础算法包_
 
@@ -25,6 +25,7 @@ git tag -n
 时间 | 说明 | 参考源
 :-------|:---------|:-------:
 2016&darr; | - | -
+九月，20 | 重命名项目为`Tango.js` |
 八月，30 | 使用`istanbul`检测代码覆盖率 | [mocha-instanbul](http://ricostacruz.com/til/mocha-instanbul-coverage.html)
 八月，30 | 使用 `webpack`和`ES 6`重写代码 | [05a6c70](https://github.com/scozv/algo-js/commit/05a6c7068fd50204c0206f46dae2dfcd965b6912)
 2015&darr; | - | -
@@ -32,7 +33,7 @@ git tag -n
 八月，01 | 引入新的版本编号方式 |
 八月，01 | 引入强联通图的大文件测试 | [测试文件] [11]
 五月，21 | 将`nodejs 0.12`设为drone.io的默认环境 |
-五月，16 | 逐步用`ES6`的箭头来表达函数 | 
+五月，16 | 逐步用`ES6`的箭头来表达函数 |
 2014&darr; | - | -
 八月，27 | 基于`LaTeX`编译的第一份PDF文档发布 | [发布页面] [10]
 六月，14 | 逐步用`gitbook`重写API文档 | [API文档页面] [6]
@@ -40,12 +41,12 @@ git tag -n
 十二月，20 | 引入持续集成 [drone.io] [7]| [`e03180d`](https://github.com/scotv/algo-js/commit/e03180df15)
 十二月，12 | 逐步将该项目从[Google Code] [4]迁移过来 | [`b39f7f7`](https://github.com/scotv/algo-js/commit/b39f7f78ab)
 十月，18 | 自豪地实现了迭代版本的Tarjan强联通算法 | [`4542b93`](https://github.com/scotv/algo-js/commit/4542b937d827)和[解释][9]
-九月，27 | 开始留意JSLint | 
+九月，27 | 开始留意JSLint |
 七月，12 | 引入代码覆盖率测试 | [`600ee7d`](https://github.com/scotv/algo-js/commit/600ee7d899d2)
 五月，23 | 引入单元测试 | [`dad30d6`](https://github.com/scotv/algo-js/commit/dad30d64ad70)
 五月，23 | 从SVN到GIT | [`3b0c92e`](https://github.com/scotv/algo-js/commit/3b0c92e3b173)
- 
- 
+
+
 ## ES6
 
 我喜欢用`lambda`来表达函数——`Scala !`——所以，我默认开启了`nodejs`的`harmony`选项。

@@ -2,7 +2,7 @@
 
 <a name="queue"></a>
 ## 队列
-队列定义在`algo.type.Queue`中。
+队列定义在`tango.type.Queue`中。
 
 #### `enqueue(any): void`
 将元素加入到队列中排队。

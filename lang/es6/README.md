@@ -1,12 +1,12 @@
-[![Build Status](https://drone.io/github.com/scozv/algo-js/status.png)](https://drone.io/github.com/scozv/algo-js/latest)
+[![Build Status](https://drone.io/github.com/scozv/tango/status.png)](https://drone.io/github.com/scozv/tango/latest)
 
-# Algo.js
-####### [简体中文](https://github.com/scozv/algo-js/blob/master/DUWO.md)
+# Tango.js
+####### [简体中文](DUWO.md)
 ####### _Version: 3.1_
 ####### _Implementation of some algorithms using ECMAScript 6_
 
 ## Abstract
-This is a project containing implementation of some fundamental algorithms in `ECMAScript 6` with arrow functions enabled. 
+This is a project containing implementation of some fundamental algorithms in `ECMAScript 6` with arrow functions enabled.
 I use [Mocha] [1] for unit test, [istanbul] [2] for code coverage, and [drone.io] [7] for CI.
 
 ## Documentation
@@ -22,6 +22,7 @@ git tag -n
 When | What | Where
 :-------|:---------|:-------:
 2016&darr; | - | -
+Sept, 20 | Rename to `Tango.js` |
 Aug, 30 | `istanbul` for code coverage | [mocha-instanbul](http://ricostacruz.com/til/mocha-instanbul-coverage.html)
 Aug, 30 | switch to `webpack` and `ES 6` | [05a6c70](https://github.com/scozv/algo-js/commit/05a6c7068fd50204c0206f46dae2dfcd965b6912)
 2015&darr; | - | -
@@ -29,7 +30,7 @@ Aug, 03 | publish API page in `zh-cn` | [接口文档](http://scozv.github.io/al
 Aug, 01 | introduce new tag version naming system |
 Aug, 01 | introduce big test file for SCC algorithm |
 May, 21 | drone.io with `nodejs 0.12` |
-May, 16 | Start to replace `return` with Arrow functions in JavaScript | 
+May, 16 | Start to replace `return` with Arrow functions in JavaScript |
 2014&darr; | - | -
 Aug, 27 | An initial PDF document of API writed in LaTeX has been released | [Releases](https://github.com/scozv/algo-wiki/releases)
 Jun, 14 | Start to migrate API docs to project wiki page | [API page] [6]
@@ -37,7 +38,7 @@ Jun, 14 | Start to migrate API docs to project wiki page | [API page] [6]
 Dec,20 | Introduce Continuous Integration by [drone.io] [7]| [`e03180d`](https://github.com/scozv/algo-js/commit/e03180df15)
 Dec,12 | Start to migrate Algo.js from [Google Code] [4] | [`b39f7f7`](https://github.com/scozv/algo-js/commit/b39f7f78ab)
 Oct,18 | Proudly finish the implementation of iteration Tarjan algorithm on strongly connected components | [`4542b93`](https://github.com/scozv/algo-js/commit/4542b937d827)
-Sept,27 | Start to pay attention on JSLint | 
+Sept,27 | Start to pay attention on JSLint |
 Jul,12 | Add code coverage | [`600ee7d`](https://github.com/scozv/algo-js/commit/600ee7d899d2)
 May,23 | Start unit test | [`dad30d6`](https://github.com/scozv/algo-js/commit/dad30d64ad70)
 May,23 | Switch SVN to Git | [`3b0c92e`](https://github.com/scozv/algo-js/commit/3b0c92e3b173)
@@ -79,8 +80,8 @@ The default `mocha` task has been configured in `package.json`.
 ## Migration
 I have migrated this project from [Algo.js in Google Code] [4], with [__API__ page] [6] and [issue] [5].
 
-Due to default option of `git log` in github is no option, 
-so please use command below to follow the full history of the codes 
+Due to default option of `git log` in github is no option,
+so please use command below to follow the full history of the codes
 which I have moved from root into `src/` during this migration:
 
 ##### `git log --follow src/index.js`

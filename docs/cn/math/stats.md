@@ -2,7 +2,7 @@
 
 <a name="math-stats"></a>
 ## 统计
-基本的统计扩展定义在`algo.math.Stats.*`中。
+基本的统计扩展定义在`tango.math.Stats.*`中。
 
 #### `equals(x: number, y: number): boolean`
 判断两个数的差异是否在$$10^{-29}$$误差范围之内，

@@ -1,5 +1,5 @@
 <a name="overview"></a>
-# Overview of `Algo.js`
+# Overview of `Tango.js`
 
 This overview describes how I organize the files, and how to name the variables.
 
@@ -43,7 +43,7 @@ Or I will merge them into one file using `grunt-contrib-uglify`.
 
  Filename | Meaning
 :-----|:-------
- `algo.type.*.js` | Encapsulation of the structure type, like `LinkedList`, `Stack`, etc 
+ `tango.type.*.js` | Encapsulation of the structure type, like `LinkedList`, `Stack`, etc 
  `x.*.js` | Extensions of the current object, like `x.array.js` 
  `sorting.*.js` | Implementation of sorting algorithm 
 
@@ -103,8 +103,8 @@ whereas the prototype pattern defines methods and shared properties." (see [Nich
 ## Instance and Static
 All classes named by Capital letter initilized, no matter public or nested private.
 
-We have Point objects constructed by `new algo.math.Point()`, 
-we also have static class Point, which we access its static member by `algo.math.Point.member()`.
+We have Point objects constructed by `new tango.math.Point()`, 
+we also have static class Point, which we access its static member by `tango.math.Point.member()`.
 
 __DO NOT__ forget using `new` to construct the object.
 
@@ -141,7 +141,7 @@ So that, we can `join` a error list, and end a dot by ourselves.
 <a name="ut"></a>
 ## Unit Test
 Unit test runs under [`Mocha`] [3].
-To see the result of unit test for Algo.js, just run `qunit.html` in your `Firefox 22.0+`
+To see the result of unit test for Tango.js, just run `qunit.html` in your `Firefox 22.0+`
 ([MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions#Browser_compatibility)).
 
 [Back to top](#overview)

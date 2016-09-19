@@ -1,6 +1,6 @@
 <a name="sorting"></a>
 # 排序算法
-所有的排序算法定义在`algo.sorting._`中，每个排序算法，
+所有的排序算法定义在`tango.sorting._`中，每个排序算法，
 接受一个排序规则函数`compare(x, y) : number`用来比较
 两两元素的先后关系。
 

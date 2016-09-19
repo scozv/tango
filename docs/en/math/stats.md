@@ -2,7 +2,7 @@
 
 <a name="math-stats"></a>
 ## Statistics
-The basic statistics extension that is located in `algo.math.Stats.*`
+The basic statistics extension that is located in `tango.math.Stats.*`
 
 #### `equals(x: number, y: number): boolean`
 Return true iif `Math.abs(x - y) < 1e-29`.

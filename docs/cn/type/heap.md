@@ -2,7 +2,7 @@
 
 <a name="heap"></a>
 ## 堆
-除了构造器不同以外，最小堆`algo.type.MinHeap` 和最大堆 `algo.type.MaxHeap`有着相同的成员函数。
+除了构造器不同以外，最小堆`tango.type.MinHeap` 和最大堆 `tango.type.MaxHeap`有着相同的成员函数。
 该构造器用于指定堆中排序的规则，我们称之为堆的有序性。
 
 堆中的元素都是唯一的。

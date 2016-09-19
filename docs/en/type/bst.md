@@ -23,8 +23,8 @@ Always choose iterative operations as a recommandation in `JavaScript`.
 <!-- -->
 <!-- The height of the root is the height of the tree. An empty tree (tree with no nodes, if such are allowed) has depth and height `−1`.-->
 
-We have defined different traversal way in `algo.type.TRAVERSAL.*`. 
-The default traversal way is `algo.type.TRAVERSAL.IN_ORDER`.
+We have defined different traversal way in `tango.type.TRAVERSAL.*`. 
+The default traversal way is `tango.type.TRAVERSAL.IN_ORDER`.
 
 #### `search(elem): node`
 Searches `elem` in this tree, returns node which contains`elem`, or `null` if not exsits.
@@ -37,12 +37,12 @@ Inserts `elem` under `BST` order, no duplication.
 Recursive version is `rInsert(elem): void`.
 
 #### `forEach(t: TRAVERSAL, fn): void`
-Travels and applies function `fn` on this `BST` tree with specific `algo.type.TRAVERSAL` order.
+Travels and applies function `fn` on this `BST` tree with specific `tango.type.TRAVERSAL` order.
 
 Recursive version is `rForEach(t: TRAVERSAL, fn): void`.
 
 #### `map(t: TRAVERSAL, fn): [any]`
-Maps each element of this `BST` tree into an array with specific `algo.type.TRAVERSAL` order.
+Maps each element of this `BST` tree into an array with specific `tango.type.TRAVERSAL` order.
 
 Recursive version is `rMap(t: TRAVERSAL, fn): void`.
 

@@ -1,8 +1,8 @@
 {
-  "name": "algo",
+  "name": "tango",
   "private": true,
-  "version": "2.3.0",
-  "description": "Implementation of some algorithms using JavaScript",
+  "version": "2.3.1",
+  "description": "Implementation of some algorithms using ECMAScript 6",
   "main": "bundle.js",
   "dependencies": {},
   "devDependencies": {
@@ -32,16 +32,16 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/scozv/algo-js.git"
+    "url": "git://github.com/scozv/tango.git"
   },
   "keywords": [
     "algorithm",
-    "JavaScript"
+    "es6"
   ],
   "author": "Scott LIU",
   "license": "GPL-3.0",
   "bugs": {
-    "url": "https://github.com/scozv/algo-js/issues"
+    "url": "https://github.com/scozv/tango/issues"
   },
-  "homepage": "https://scozv.github.com/algo-wiki"
+  "homepage": "https://scozv.github.com/tango"
 }
