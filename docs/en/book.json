@@ -1,6 +1,6 @@
 {
 	"gitbook": ">=2.0.0",
-	"title": "The API Documents for algo-x",
+	"title": "The API Documents for Tango",
 	"language": "en",
   "plugins": ["yametrika", "katex", "-mixpanel", "-quizzes", "-exercises","-mathjax"],
 	"pluginsConfig": {

@@ -1,4 +1,4 @@
-# 为`algo-x`而作的接口文档
+# 为`Tango`而作的接口文档
 
 
 ## 概述
@@ -9,17 +9,16 @@
 版本编号 | $$3.1$$
 `LaTeX`引擎 | [`KaTeX`] [4]
 drone.io | [![Build Status](https://drone.io/github.com/scozv/tango/status.png)](https://drone.io/github.com/scozv/tango/latest)
-david-dm | [![devDependency Status](https://david-dm.org/scozv/tango/dev-status.png)](https://david-dm.org/scozv/tango#info=devDependencies)
 
 早期的一份基于`LaTeX`编译的PDF文档发布在
-[Releases](https://github.com/scozv/tango/releases)页面。
+[Releases](https://github.com/scozv/algo-wiki/releases)页面。
 
 在项目的[`DUWO.md`] [3]文件中，可以了解到该算法包的进展情况。
 而本页面是如下算法包的接口文档：
 
-*  [`algo-js`](https://github.com/scozv/algo-js)：基于`JavaSript`而写的基本算法包
-*  [`algo-scala`](https://github.com/scozv/algo-scala)（暂时搁置）：基于`Scala`而写的基本算法包
-*  ...
+*  [`Tango.js`](https://github.com/scozv/tango/tree/master/lang/es6)：基于`ECMAScript 6`而写的基本算法包
+*  `Tango.scala`（暂时搁置）：基于`Scala`而写的基本算法包
+*  `Tango.go`（还没开始）：基于`Golang`而写的基本算法包
 
 
 ## 命名空间
@@ -35,5 +34,5 @@ david-dm | [![devDependency Status](https://david-dm.org/scozv/tango/dev-status.
 
 [1]: https://github.com/scozv/tango	"Algo-js"
 [2]: https://github.com/scozv/algo-scala	"Algo-scala"
-[3]: https://github.com/scozv/algo-js/blob/master/DUWO.md "README.md"
+[3]: https://github.com/scozv/tango/blob/master/lang/es6/DUWO.md "README.md"
 [4]: https://khan.github.io/KaTeX/ "KaTeX"
