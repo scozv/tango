@@ -13,7 +13,10 @@ module.exports = function (grunt) {
 			}
 		},
 		'gh-pages': {
-			options: {base: '_book'},
+			options: {
+        base: '_book',
+        message: 'gh-pages compiled on ' + (new Date()).toISOString()
+      },
 			src: ['**']
 		},
 		'clean': {

@@ -1,0 +1,4 @@
+build:
+  image: node:5
+  commands:
+    source test.sh

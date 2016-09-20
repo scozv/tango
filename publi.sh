@@ -4,7 +4,7 @@ CURRENT_PATH=`pwd`
 
 cd docs
 gitbook install && gitbook build && \
-  grunt publish --gh-pages-message "gh-pages compiled on $(date +"%y%m%d%H%M")"
+  grunt publish
 
 
 cd $CURRENT_PATH

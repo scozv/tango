@@ -1,8 +1,10 @@
 # test lang
 CURRENT_PATH=`pwd`
+echo "pwd: `pwd`"
 
 cd lang/es6
-nvm install v5.11.1
+echo "pwd: `pwd`"
+# nvm install v5.11.1
 nodejs --version
 npm i
 npm install -g mocha istanbul
@@ -10,13 +12,15 @@ npm run coverage
 
 
 cd $CURRENT_PATH
-
+echo "pwd: `pwd`"
 
 cd docs
-nvm install v5.11.1
+echo "pwd: `pwd`"
+# nvm install v5.11.1
 npm install -g gitbook-cli grunt-cli
 npm install
 gitbook install && gitbook build
 
 
 cd $CURRENT_PATH
+echo "pwd: `pwd`"
