@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tango.Type", "Tango.Type\Tango.Type.csproj", "{B096B1B5-4443-4E03-B8C3-E83F445D27AC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tango.Sorting", "Tango.Sorting\Tango.Sorting.csproj", "{7387750B-6A75-48C6-B33D-135B6202AB74}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tango.Test", "Tango.Test\Tango.Test.csproj", "{94CACCA6-354F-4736-AB70-28E5E29122CE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7387750B-6A75-48C6-B33D-135B6202AB74}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7387750B-6A75-48C6-B33D-135B6202AB74}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7387750B-6A75-48C6-B33D-135B6202AB74}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7387750B-6A75-48C6-B33D-135B6202AB74}.Release|Any CPU.Build.0 = Release|Any CPU
+		{94CACCA6-354F-4736-AB70-28E5E29122CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{94CACCA6-354F-4736-AB70-28E5E29122CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{94CACCA6-354F-4736-AB70-28E5E29122CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{94CACCA6-354F-4736-AB70-28E5E29122CE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B096B1B5-4443-4E03-B8C3-E83F445D27AC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B096B1B5-4443-4E03-B8C3-E83F445D27AC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B096B1B5-4443-4E03-B8C3-E83F445D27AC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B096B1B5-4443-4E03-B8C3-E83F445D27AC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
