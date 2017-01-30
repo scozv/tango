@@ -1,4 +1,4 @@
-[![Build Status](https://drone.io/github.com/scozv/tango/status.png)](https://drone.io/github.com/scozv/tango/latest)
+[![Build Status](https://travis-ci.org/scozv/tango.svg?branch=master)](https://travis-ci.org/scozv/tango)
 
 # Tango.js
 ####### _版本: 3.1_
@@ -24,6 +24,8 @@ git tag -n
 
 时间 | 说明 | 参考源
 :-------|:---------|:-------:
+2017&darr; | - | -
+一月，30 | 使用 travis-ci | [![Build Status](https://travis-ci.org/scozv/tango.svg?branch=master)](https://travis-ci.org/scozv/tango)
 2016&darr; | - | -
 九月，20 | 重命名项目为`Tango.js` |
 八月，30 | 使用`istanbul`检测代码覆盖率 | [mocha-instanbul](http://ricostacruz.com/til/mocha-instanbul-coverage.html)

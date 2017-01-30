@@ -1,4 +1,4 @@
-[![Build Status](https://drone.io/github.com/scozv/tango/status.png)](https://drone.io/github.com/scozv/tango/latest)
+[![Build Status](https://travis-ci.org/scozv/tango.svg?branch=master)](https://travis-ci.org/scozv/tango)
 
 # Tango.js
 ####### [简体中文](DUWO.md)
@@ -21,6 +21,8 @@ git tag -n
 
 When | What | Where
 :-------|:---------|:-------:
+2017&darr; | - | -
+Jan, 30 | Swith to travis-ci | [![Build Status](https://travis-ci.org/scozv/tango.svg?branch=master)](https://travis-ci.org/scozv/tango)
 2016&darr; | - | -
 Sept, 20 | Rename to `Tango.js` |
 Aug, 30 | `istanbul` for code coverage | [mocha-instanbul](http://ricostacruz.com/til/mocha-instanbul-coverage.html)

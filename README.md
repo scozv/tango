@@ -1,6 +1,6 @@
 Tango, some Implementations of Fundamental Algorithms
 =================
-[![Build Status](https://drone.io/github.com/scozv/tango/status.png)](https://drone.io/github.com/scozv/tango/latest)
+[![Build Status](https://travis-ci.org/scozv/tango.svg?branch=master)](https://travis-ci.org/scozv/tango)
 
 `tango` is a multi-languages implementation of fundamental algorithms.
 
