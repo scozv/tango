@@ -2,3 +2,8 @@ language: node_js
 node_js:
   - "6"
 script: cd lang/es6 && npm i && npm test
+
+notifications:
+  email:
+    on_success: never
+    on_failure: always
