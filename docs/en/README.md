@@ -8,7 +8,7 @@
 Last updated | Aug, 2016
 Version | $$3.1$$
 `LaTeX` engine | [`KaTeX`] [4]
-drone.io | [![Build Status](https://drone.io/github.com/scozv/tango/status.png)](https://drone.io/github.com/scozv/tango/latest)
+Build Status | [![Build Status](https://travis-ci.org/scozv/tango.svg?branch=master)](https://travis-ci.org/scozv/tango)
 
 An initial PDF document writed in `LaTeX` has been released on
 [Releases](https://github.com/scozv/algo-wiki/releases) page.

@@ -8,7 +8,7 @@
 最后更新 | 2016年8月
 版本编号 | $$3.1$$
 `LaTeX`引擎 | [`KaTeX`] [4]
-drone.io | [![Build Status](https://drone.io/github.com/scozv/tango/status.png)](https://drone.io/github.com/scozv/tango/latest)
+编译状态 | [![Build Status](https://travis-ci.org/scozv/tango.svg?branch=master)](https://travis-ci.org/scozv/tango)
 
 早期的一份基于`LaTeX`编译的PDF文档发布在
 [Releases](https://github.com/scozv/algo-wiki/releases)页面。
