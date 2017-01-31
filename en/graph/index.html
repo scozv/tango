@@ -2,12 +2,12 @@
 <!DOCTYPE HTML>
 <html lang="en" >
     <head>
-        <title>Graph Algorithm · The API Documents for Tango</title>
         <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Graph Algorithm · The API Documents for Tango</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
-        <meta name="generator" content="GitBook 3.2.0">
+        <meta name="generator" content="GitBook 3.2.2">
         
         
         
@@ -382,13 +382,36 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <p><a name="graph"></a></p><h1 id="graph">Graph</h1><p>All the following methods are invoked like <code>tango.graph._</code>. 
-To create a graph object, use <code>new tango.type.Graph*()</code>.</p><h4 id="bfsgraph-"><code>bfs(graph): []</code></h4><p>Gets the vertex visiting array by BFS order.</p><h4 id="dfsgraph-"><code>dfs(graph): []</code></h4><p>Gets the vertex visiting array by DFS order.</p><h4 id="dijkstragraph-s-number--1-"><code>dijkstra(graph, s: number = 1): []</code></h4><p>Gets the shortest path length of each vertex from initial vertex <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>s</mi></mrow><annotation encoding="application/x-tex">s</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.43056em;"></span><span class="strut bottom" style="height:0.43056em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord mathit">s</span></span></span></span>.</p><h4 id="multiminimumcutgraph-times-number-number"><code>multiMinimumCut(graph, times: number): number</code></h4><p>Gets the minimum cut number of graph after that times calculations.</p><h4 id="mstprimgraph-s-number--1-number"><code>mstPrim(graph, s: number = 1): number</code></h4><p>Gets the total MST cost of weighted graph by Prim algorithm.</p><h4 id="mstkruskalgraph-number"><code>mstKruskal(graph): number</code></h4><p>Gets the total MST cost of weighted graph by Kruskal algorithm.</p><h4 id="mstkruskalgraph-k-number"><code>mstKruskal(graph, k): number</code></h4><p>Gets the max space of k-clustering by Kruskal algorithm.</p><h4 id="scckosarajugraph-"><code>sccKosaraju(graph): []</code></h4><p>Gets the top <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>3</mn></mrow><annotation encoding="application/x-tex">3</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.64444em;"></span><span class="strut bottom" style="height:0.64444em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord mathrm">3</span></span></span></span> largest size of strong connect component for a directed graph, using Kosaraju algorithm.</p><h4 id="scctarjangraph-"><code>sccTarjan(graph): []</code></h4><p>Gets the top <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>3</mn></mrow><annotation encoding="application/x-tex">3</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.64444em;"></span><span class="strut bottom" style="height:0.64444em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord mathrm">3</span></span></span></span> largest size of strong connect component for a directed graph, using Tarjan algorithm. 
+                                <p><a name="graph"></a></p>
+<h1 id="graph">Graph</h1>
+<p>All the following methods are invoked like <code>tango.graph._</code>. 
+To create a graph object, use <code>new tango.type.Graph*()</code>.</p>
+<h4 id="bfsgraph-"><code>bfs(graph): []</code></h4>
+<p>Gets the vertex visiting array by BFS order.</p>
+<h4 id="dfsgraph-"><code>dfs(graph): []</code></h4>
+<p>Gets the vertex visiting array by DFS order.</p>
+<h4 id="dijkstragraph-s-number--1-"><code>dijkstra(graph, s: number = 1): []</code></h4>
+<p>Gets the shortest path length of each vertex from initial vertex <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>s</mi></mrow><annotation encoding="application/x-tex">s</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.43056em;"></span><span class="strut bottom" style="height:0.43056em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord mathit">s</span></span></span></span>.</p>
+<h4 id="multiminimumcutgraph-times-number-number"><code>multiMinimumCut(graph, times: number): number</code></h4>
+<p>Gets the minimum cut number of graph after that times calculations.</p>
+<h4 id="mstprimgraph-s-number--1-number"><code>mstPrim(graph, s: number = 1): number</code></h4>
+<p>Gets the total MST cost of weighted graph by Prim algorithm.</p>
+<h4 id="mstkruskalgraph-number"><code>mstKruskal(graph): number</code></h4>
+<p>Gets the total MST cost of weighted graph by Kruskal algorithm.</p>
+<h4 id="mstkruskalgraph-k-number"><code>mstKruskal(graph, k): number</code></h4>
+<p>Gets the max space of k-clustering by Kruskal algorithm.</p>
+<h4 id="scckosarajugraph-"><code>sccKosaraju(graph): []</code></h4>
+<p>Gets the top <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>3</mn></mrow><annotation encoding="application/x-tex">3</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.64444em;"></span><span class="strut bottom" style="height:0.64444em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord mathrm">3</span></span></span></span> largest size of strong connect component for a directed graph, using Kosaraju algorithm.</p>
+<h4 id="scctarjangraph-"><code>sccTarjan(graph): []</code></h4>
+<p>Gets the top <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>3</mn></mrow><annotation encoding="application/x-tex">3</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.64444em;"></span><span class="strut bottom" style="height:0.64444em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord mathrm">3</span></span></span></span> largest size of strong connect component for a directed graph, using Tarjan algorithm. 
 The implemention of this Tarjian algorithm is iterative one, instead of recursive one.
-(<a href="http://scotv.github.io/algo/2013/11/10/how-to-write-iterative-tarjan-scc-algorithm-part-zero/#pi" target="_blank">Explanation</a>)</p><h4 id="topologicalsortgraph-"><code>topologicalSort(graph): []</code></h4><p>Gets the topological visiting array of this directed graph.</p><h4 id="undirectedconnectedgraph-"><code>undirectedConnected(graph): []</code></h4><p>Gets an array indicating connectivity info of undirected graph. this undirected graph is connected
-iff  <code>result.length == 1</code> AND <code>result[0][1] == Graph.dfs(graph)</code>.</p><!--[Back to top](#graph)-->
-
-
+(<a href="http://scotv.github.io/algo/2013/11/10/how-to-write-iterative-tarjan-scc-algorithm-part-zero/#pi" target="_blank">Explanation</a>)</p>
+<h4 id="topologicalsortgraph-"><code>topologicalSort(graph): []</code></h4>
+<p>Gets the topological visiting array of this directed graph.</p>
+<h4 id="undirectedconnectedgraph-"><code>undirectedConnected(graph): []</code></h4>
+<p>Gets an array indicating connectivity info of undirected graph. this undirected graph is connected
+iff  <code>result.length == 1</code> AND <code>result[0][1] == Graph.dfs(graph)</code>.</p>
+<!--[Back to top](#graph)-->
 
                                 
                                 </section>
@@ -428,7 +451,7 @@ iff  <code>result.length == 1</code> AND <code>result[0][1] == Graph.dfs(graph)<
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Graph Algorithm","level":"1.7","depth":1,"previous":{"title":"Sorting Algorithm","level":"1.6","depth":1,"path":"sorting/index.md","ref":"sorting/index.md","articles":[]},"dir":"ltr"},"config":{"plugins":["yametrika","katex","-mixpanel","-quizzes","-exercises","-mathjax"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"yametrika":{"number":"25680314"},"katex":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":false,"twitter":false,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"The API Documents for Tango","language":"en","links":{"home":false,"about":false,"issues":false,"contribute":false,"sharing":{"google":false,"facebook":false,"twitter":false}},"gitbook":">=2.0.0"},"file":{"path":"graph/index.md","mtime":"2016-09-19T15:30:48.587Z","type":"markdown"},"gitbook":{"version":"3.2.0","time":"2016-09-20T07:16:22.654Z"},"basePath":"..","book":{"language":"en"}});
+            gitbook.page.hasChanged({"page":{"title":"Graph Algorithm","level":"1.7","depth":1,"previous":{"title":"Sorting Algorithm","level":"1.6","depth":1,"path":"sorting/index.md","ref":"sorting/index.md","articles":[]},"dir":"ltr"},"config":{"plugins":["yametrika","katex","-mixpanel","-quizzes","-exercises","-mathjax"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"yametrika":{"number":"25680314"},"katex":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":false,"twitter":false,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"The API Documents for Tango","language":"en","links":{"home":false,"about":false,"issues":false,"contribute":false,"sharing":{"google":false,"facebook":false,"twitter":false}},"gitbook":">=2.0.0"},"file":{"path":"graph/index.md","mtime":"2017-01-28T12:29:40.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-01-31T15:33:28.302Z"},"basePath":"..","book":{"language":"en"}});
         });
     </script>
 </div>

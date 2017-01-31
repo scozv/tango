@@ -2,12 +2,12 @@
 <!DOCTYPE HTML>
 <html lang="en" >
     <head>
-        <title>BinarySearchTree · The API Documents for Tango</title>
         <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>BinarySearchTree · The API Documents for Tango</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
-        <meta name="generator" content="GitBook 3.2.0">
+        <meta name="generator" content="GitBook 3.2.2">
         
         
         
@@ -384,40 +384,42 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <p><a name="t"></a></p><p><a name="binarysearchtree"></a></p><h2 id="binarysearchtree">BinarySearchTree</h2><p>We can indicate the comparasion rule by constructor parameter which 
-will be used for greater left instead of smaller left by default.</p><p>For <code>search</code>, <code>insert</code>, <code>delete</code> operations that travel the tree, 
-there are two versions:</p><ul><li>iterative operation, 
-</li>
-<li>recursive one, in which function name is initialized with a <code>r</code>.
-</li></ul>
-<p>Always choose iterative operations as a recommandation in <code>JavaScript</code>.</p><!--And, here is definition for some properties of tree, -->
-
-
+                                <p><a name="t"></a></p>
+<p><a name="binarysearchtree"></a></p>
+<h2 id="binarysearchtree">BinarySearchTree</h2>
+<p>We can indicate the comparasion rule by constructor parameter which 
+will be used for greater left instead of smaller left by default.</p>
+<p>For <code>search</code>, <code>insert</code>, <code>delete</code> operations that travel the tree, 
+there are two versions:</p>
+<ul>
+<li>iterative operation, </li>
+<li>recursive one, in which function name is initialized with a <code>r</code>.</li>
+</ul>
+<p>Always choose iterative operations as a recommandation in <code>JavaScript</code>.</p>
+<!--And, here is definition for some properties of tree, -->
 <!--according to Wikipedia -->
-
-
 <!--([Terminology of Tree on Wikipedia] [1]):-->
-
-
 <!-- The height of a node is the length of the longest downward path to a leaf from that node. -->
-
-
 <!-- -->
-
-
 <!--The depth of a node is the length of the path to its root (i.e., its root path). The root node has depth zero, leaf nodes have height zero.-->
-
-
 <!-- -->
-
-
 <!-- The height of the root is the height of the tree. An empty tree (tree with no nodes, if such are allowed) has depth and height `−1`.-->
-
-
 <p>We have defined different traversal way in <code>tango.type.TRAVERSAL.*</code>. 
-The default traversal way is <code>tango.type.TRAVERSAL.IN_ORDER</code>.</p><h4 id="searchelem-node"><code>search(elem): node</code></h4><p>Searches <code>elem</code> in this tree, returns node which contains<code>elem</code>, or <code>null</code> if not exsits.</p><p>Recursive version is <code>rSearch(elem): node</code>.</p><h4 id="insertelem-void"><code>insert(elem): void</code></h4><p>Inserts <code>elem</code> under <code>BST</code> order, no duplication.</p><p>Recursive version is <code>rInsert(elem): void</code>.</p><h4 id="foreacht-traversal-fn-void"><code>forEach(t: TRAVERSAL, fn): void</code></h4><p>Travels and applies function <code>fn</code> on this <code>BST</code> tree with specific <code>tango.type.TRAVERSAL</code> order.</p><p>Recursive version is <code>rForEach(t: TRAVERSAL, fn): void</code>.</p><h4 id="mapt-traversal-fn-any"><code>map(t: TRAVERSAL, fn): [any]</code></h4><p>Maps each element of this <code>BST</code> tree into an array with specific <code>tango.type.TRAVERSAL</code> order.</p><p>Recursive version is <code>rMap(t: TRAVERSAL, fn): void</code>.</p><p><a href="#t">Back to top</a></p><!--[1]: https://en.wikipedia.org/wiki/Tree_(data_structure)#Terminology "Tree Term"-->
-
-
+The default traversal way is <code>tango.type.TRAVERSAL.IN_ORDER</code>.</p>
+<h4 id="searchelem-node"><code>search(elem): node</code></h4>
+<p>Searches <code>elem</code> in this tree, returns node which contains<code>elem</code>, or <code>null</code> if not exsits.</p>
+<p>Recursive version is <code>rSearch(elem): node</code>.</p>
+<h4 id="insertelem-void"><code>insert(elem): void</code></h4>
+<p>Inserts <code>elem</code> under <code>BST</code> order, no duplication.</p>
+<p>Recursive version is <code>rInsert(elem): void</code>.</p>
+<h4 id="foreacht-traversal-fn-void"><code>forEach(t: TRAVERSAL, fn): void</code></h4>
+<p>Travels and applies function <code>fn</code> on this <code>BST</code> tree with specific <code>tango.type.TRAVERSAL</code> order.</p>
+<p>Recursive version is <code>rForEach(t: TRAVERSAL, fn): void</code>.</p>
+<h4 id="mapt-traversal-fn-any"><code>map(t: TRAVERSAL, fn): [any]</code></h4>
+<p>Maps each element of this <code>BST</code> tree into an array with specific <code>tango.type.TRAVERSAL</code> order.</p>
+<p>Recursive version is <code>rMap(t: TRAVERSAL, fn): void</code>.</p>
+<p><a href="#t">Back to top</a></p>
+<!--[1]: https://en.wikipedia.org/wiki/Tree_(data_structure)#Terminology "Tree Term"-->
                                 
                                 </section>
                             
@@ -460,7 +462,7 @@ The default traversal way is <code>tango.type.TRAVERSAL.IN_ORDER</code>.</p><h4 
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"BinarySearchTree","level":"1.2.6","depth":2,"next":{"title":"Graph","level":"1.2.7","depth":2,"path":"type/graph.md","ref":"type/graph.md","articles":[]},"previous":{"title":"QuickFind","level":"1.2.5","depth":2,"path":"type/quickfind.md","ref":"type/quickfind.md","articles":[]},"dir":"ltr"},"config":{"plugins":["yametrika","katex","-mixpanel","-quizzes","-exercises","-mathjax"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"yametrika":{"number":"25680314"},"katex":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":false,"twitter":false,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"The API Documents for Tango","language":"en","links":{"home":false,"about":false,"issues":false,"contribute":false,"sharing":{"google":false,"facebook":false,"twitter":false}},"gitbook":">=2.0.0"},"file":{"path":"type/bst.md","mtime":"2016-09-19T15:30:48.607Z","type":"markdown"},"gitbook":{"version":"3.2.0","time":"2016-09-20T07:16:22.654Z"},"basePath":"..","book":{"language":"en"}});
+            gitbook.page.hasChanged({"page":{"title":"BinarySearchTree","level":"1.2.6","depth":2,"next":{"title":"Graph","level":"1.2.7","depth":2,"path":"type/graph.md","ref":"type/graph.md","articles":[]},"previous":{"title":"QuickFind","level":"1.2.5","depth":2,"path":"type/quickfind.md","ref":"type/quickfind.md","articles":[]},"dir":"ltr"},"config":{"plugins":["yametrika","katex","-mixpanel","-quizzes","-exercises","-mathjax"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"yametrika":{"number":"25680314"},"katex":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":false,"twitter":false,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"The API Documents for Tango","language":"en","links":{"home":false,"about":false,"issues":false,"contribute":false,"sharing":{"google":false,"facebook":false,"twitter":false}},"gitbook":">=2.0.0"},"file":{"path":"type/bst.md","mtime":"2017-01-28T12:29:40.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-01-31T15:33:28.302Z"},"basePath":"..","book":{"language":"en"}});
         });
     </script>
 </div>

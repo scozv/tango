@@ -2,12 +2,12 @@
 <!DOCTYPE HTML>
 <html lang="en" >
     <head>
-        <title>Graph · The API Documents for Tango</title>
         <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Graph · The API Documents for Tango</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
-        <meta name="generator" content="GitBook 3.2.0">
+        <meta name="generator" content="GitBook 3.2.2">
         
         
         
@@ -384,13 +384,26 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <p><a name="t"></a></p><p><a name="graph"></a></p><h2 id="graph">Graph</h2><p>Representation of unweighted graph, and it is undirected graph by default.</p><p>To build a graph, we must pass <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>n</mi></mrow><annotation encoding="application/x-tex">n</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.43056em;"></span><span class="strut bottom" style="height:0.43056em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord mathit">n</span></span></span></span> as number of vertex. <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>n</mi></mrow><annotation encoding="application/x-tex">n</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.43056em;"></span><span class="strut bottom" style="height:0.43056em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord mathit">n</span></span></span></span> ,
+                                <p><a name="t"></a></p>
+<p><a name="graph"></a></p>
+<h2 id="graph">Graph</h2>
+<p>Representation of unweighted graph, and it is undirected graph by default.</p>
+<p>To build a graph, we must pass <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>n</mi></mrow><annotation encoding="application/x-tex">n</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.43056em;"></span><span class="strut bottom" style="height:0.43056em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord mathit">n</span></span></span></span> as number of vertex. <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>n</mi></mrow><annotation encoding="application/x-tex">n</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.43056em;"></span><span class="strut bottom" style="height:0.43056em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord mathit">n</span></span></span></span> ,
 the number of vertex, is readonly after built graph.
 However, when we call <code>v()</code> or <code>e()</code> as below, 
 the number we get is the valid number of vertex or edges, 
-which has not been visited or marked.</p><h4 id="n-number"><code>n: number</code></h4><p>Gets the actual number of vertex, whether it has been visited, marked or not.</p><h4 id="v-number"><code>v(): number</code></h4><p>Gets the number of vertex, which has not been visited.</p><h4 id="e-number"><code>e(): number</code></h4><p>Gets the number of edges, which has not been marked invalid, and the sourcing vertex has not been visited.</p><h4 id="clone-graph"><code>clone(): Graph</code></h4><p>Gets a new cloned graph from this original graph itself.</p><h4 id="tostringverbose-boolean--false-string"><code>toString(verbose: boolean = false): string</code></h4><p>Gets the information of this graph, containing only number of vertex and edges by default.</p><!--[Back to top](#t)-->
-
-
+which has not been visited or marked.</p>
+<h4 id="n-number"><code>n: number</code></h4>
+<p>Gets the actual number of vertex, whether it has been visited, marked or not.</p>
+<h4 id="v-number"><code>v(): number</code></h4>
+<p>Gets the number of vertex, which has not been visited.</p>
+<h4 id="e-number"><code>e(): number</code></h4>
+<p>Gets the number of edges, which has not been marked invalid, and the sourcing vertex has not been visited.</p>
+<h4 id="clone-graph"><code>clone(): Graph</code></h4>
+<p>Gets a new cloned graph from this original graph itself.</p>
+<h4 id="tostringverbose-boolean--false-string"><code>toString(verbose: boolean = false): string</code></h4>
+<p>Gets the information of this graph, containing only number of vertex and edges by default.</p>
+<!--[Back to top](#t)-->
                                 
                                 </section>
                             
@@ -433,7 +446,7 @@ which has not been visited or marked.</p><h4 id="n-number"><code>n: number</code
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Graph","level":"1.2.7","depth":2,"next":{"title":"GraphW","level":"1.2.8","depth":2,"path":"type/graphw.md","ref":"type/graphw.md","articles":[]},"previous":{"title":"BinarySearchTree","level":"1.2.6","depth":2,"path":"type/bst.md","ref":"type/bst.md","articles":[]},"dir":"ltr"},"config":{"plugins":["yametrika","katex","-mixpanel","-quizzes","-exercises","-mathjax"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"yametrika":{"number":"25680314"},"katex":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":false,"twitter":false,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"The API Documents for Tango","language":"en","links":{"home":false,"about":false,"issues":false,"contribute":false,"sharing":{"google":false,"facebook":false,"twitter":false}},"gitbook":">=2.0.0"},"file":{"path":"type/graph.md","mtime":"2016-09-18T10:53:39.349Z","type":"markdown"},"gitbook":{"version":"3.2.0","time":"2016-09-20T07:16:22.654Z"},"basePath":"..","book":{"language":"en"}});
+            gitbook.page.hasChanged({"page":{"title":"Graph","level":"1.2.7","depth":2,"next":{"title":"GraphW","level":"1.2.8","depth":2,"path":"type/graphw.md","ref":"type/graphw.md","articles":[]},"previous":{"title":"BinarySearchTree","level":"1.2.6","depth":2,"path":"type/bst.md","ref":"type/bst.md","articles":[]},"dir":"ltr"},"config":{"plugins":["yametrika","katex","-mixpanel","-quizzes","-exercises","-mathjax"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"yametrika":{"number":"25680314"},"katex":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":false,"twitter":false,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"The API Documents for Tango","language":"en","links":{"home":false,"about":false,"issues":false,"contribute":false,"sharing":{"google":false,"facebook":false,"twitter":false}},"gitbook":">=2.0.0"},"file":{"path":"type/graph.md","mtime":"2017-01-28T12:29:40.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-01-31T15:33:28.302Z"},"basePath":"..","book":{"language":"en"}});
         });
     </script>
 </div>

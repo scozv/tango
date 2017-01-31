@@ -2,12 +2,12 @@
 <!DOCTYPE HTML>
 <html lang="en" >
     <head>
-        <title>Linear Algorithm · The API Documents for Tango</title>
         <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Linear Algorithm · The API Documents for Tango</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
-        <meta name="generator" content="GitBook 3.2.0">
+        <meta name="generator" content="GitBook 3.2.2">
         
         
         
@@ -384,23 +384,36 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <p><a name="list"></a></p><h1 id="linear-algorithm">Linear Algorithm</h1><p>We put some algorithms on linear collection into <code>tango.linear.*</code>. 
-To use linear collection type, please go to <code>tango.type.Stack</code>, <code>tango.type.LinkedList</code>...</p><p>A overview of time complexity is listed below:</p><table>
+                                <p><a name="list"></a></p>
+<h1 id="linear-algorithm">Linear Algorithm</h1>
+<p>We put some algorithms on linear collection into <code>tango.linear.*</code>. 
+To use linear collection type, please go to <code>tango.type.Stack</code>, <code>tango.type.LinkedList</code>...</p>
+<p>A overview of time complexity is listed below:</p>
+<table>
 <thead>
-<tr><th>Call</th>
-<th>Time Complexity</th>
-</tr></thead><tbody>
-<tr><td style="text-align:left"><code>validPopStackSeries</code></td>
-<td style="text-align:center"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mtext><mi mathvariant="normal">O</mi></mtext><mo>(</mo><mi>N</mi><mo>)</mo></mrow><annotation encoding="application/x-tex">\text{O}(N)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.75em;"></span><span class="strut bottom" style="height:1em;vertical-align:-0.25em;"></span><span class="base textstyle uncramped"><span class="text mord textstyle uncramped"><span class="mord mathrm">O</span></span><span class="mopen">(</span><span class="mord mathit" style="margin-right:0.10903em;">N</span><span class="mclose">)</span></span></span></span></td>
-</tr><tr><td style="text-align:left"><code>medianMaintenence</code></td>
-<td style="text-align:center"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mtext><mi mathvariant="normal">O</mi></mtext><mo>(</mo><mi>N</mi><mi>ln</mi><mi>N</mi><mo>)</mo></mrow><annotation encoding="application/x-tex">\text{O}(N \ln N)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.75em;"></span><span class="strut bottom" style="height:1em;vertical-align:-0.25em;"></span><span class="base textstyle uncramped"><span class="text mord textstyle uncramped"><span class="mord mathrm">O</span></span><span class="mopen">(</span><span class="mord mathit" style="margin-right:0.10903em;">N</span><span class="mop">ln</span><span class="mord mathit" style="margin-right:0.10903em;">N</span><span class="mclose">)</span></span></span></span></td>
-</tr></tbody></table>
-
-<h4 id="validpopstackseriespush--pop--bool"><code>validPopStackSeries(push: [], pop: []): bool</code></h4><p>Returns true iff we can get the <code>pop</code> series from the <code>push</code> series, using a stack.</p><h4 id="medianmaintenencearr-"><code>medianMaintenence(arr): []</code></h4><p>For each time <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>t</mi></mrow><annotation encoding="application/x-tex">t</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.61508em;"></span><span class="strut bottom" style="height:0.61508em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord mathit">t</span></span></span></span> we visit <code>arr</code> from <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>0</mn></mrow><annotation encoding="application/x-tex">0</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.64444em;"></span><span class="strut bottom" style="height:0.64444em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord mathrm">0</span></span></span></span> to <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>n</mi><mo>&#x2212;</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">n-1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.64444em;"></span><span class="strut bottom" style="height:0.72777em;vertical-align:-0.08333em;"></span><span class="base textstyle uncramped"><span class="mord mathit">n</span><span class="mbin">&#x2212;</span><span class="mord mathrm">1</span></span></span></span>, 
+<tr>
+<th style="text-align:left">Call</th>
+<th style="text-align:center">Time Complexity</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>validPopStackSeries</code></td>
+<td style="text-align:center"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mtext><mi mathvariant="normal">O</mi></mtext><mo>(</mo><mi>N</mi><mo>)</mo></mrow><annotation encoding="application/x-tex">\text{O}(N)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.75em;"></span><span class="strut bottom" style="height:1em;vertical-align:-0.25em;"></span><span class="base textstyle uncramped"><span class="mord text textstyle uncramped"><span class="mord mathrm">O</span></span><span class="mopen">(</span><span class="mord mathit" style="margin-right:0.10903em;">N</span><span class="mclose">)</span></span></span></span></td>
+</tr>
+<tr>
+<td style="text-align:left"><code>medianMaintenence</code></td>
+<td style="text-align:center"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mtext><mi mathvariant="normal">O</mi></mtext><mo>(</mo><mi>N</mi><mi>ln</mi><mi>N</mi><mo>)</mo></mrow><annotation encoding="application/x-tex">\text{O}(N \ln N)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.75em;"></span><span class="strut bottom" style="height:1em;vertical-align:-0.25em;"></span><span class="base textstyle uncramped"><span class="mord text textstyle uncramped"><span class="mord mathrm">O</span></span><span class="mopen">(</span><span class="mord mathit" style="margin-right:0.10903em;">N</span><span class="mop">ln</span><span class="mord mathit" style="margin-right:0.10903em;">N</span><span class="mclose">)</span></span></span></span></td>
+</tr>
+</tbody>
+</table>
+<h4 id="validpopstackseriespush--pop--bool"><code>validPopStackSeries(push: [], pop: []): bool</code></h4>
+<p>Returns true iff we can get the <code>pop</code> series from the <code>push</code> series, using a stack.</p>
+<h4 id="medianmaintenencearr-"><code>medianMaintenence(arr): []</code></h4>
+<p>For each time <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>t</mi></mrow><annotation encoding="application/x-tex">t</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.61508em;"></span><span class="strut bottom" style="height:0.61508em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord mathit">t</span></span></span></span> we visit <code>arr</code> from <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>0</mn></mrow><annotation encoding="application/x-tex">0</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.64444em;"></span><span class="strut bottom" style="height:0.64444em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord mathrm">0</span></span></span></span> to <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>n</mi><mo>&#x2212;</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">n-1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.64444em;"></span><span class="strut bottom" style="height:0.72777em;vertical-align:-0.08333em;"></span><span class="base textstyle uncramped"><span class="mord mathit">n</span><span class="mbin">&#x2212;</span><span class="mord mathrm">1</span></span></span></span>, 
 we maintenence the median of all <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo>[</mo><mn>0</mn><mo separator="true">,</mo><mi>t</mi><mo>]</mo></mrow><annotation encoding="application/x-tex">[0, t]</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.75em;"></span><span class="strut bottom" style="height:1em;vertical-align:-0.25em;"></span><span class="base textstyle uncramped"><span class="mopen">[</span><span class="mord mathrm">0</span><span class="mpunct">,</span><span class="mord mathit">t</span><span class="mclose">]</span></span></span></span> elements from input, 
-and push this median into output array.</p><!--[Back to top](#list)-->
-
-
+and push this median into output array.</p>
+<!--[Back to top](#list)-->
 
                                 
                                 </section>
@@ -444,7 +457,7 @@ and push this median into output array.</p><!--[Back to top](#list)-->
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Linear Algorithm","level":"1.5","depth":1,"next":{"title":"Sorting Algorithm","level":"1.6","depth":1,"path":"sorting/index.md","ref":"sorting/index.md","articles":[]},"previous":{"title":"Array Extension","level":"1.4","depth":1,"path":"array/index.md","ref":"array/index.md","articles":[]},"dir":"ltr"},"config":{"plugins":["yametrika","katex","-mixpanel","-quizzes","-exercises","-mathjax"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"yametrika":{"number":"25680314"},"katex":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":false,"twitter":false,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"The API Documents for Tango","language":"en","links":{"home":false,"about":false,"issues":false,"contribute":false,"sharing":{"google":false,"facebook":false,"twitter":false}},"gitbook":">=2.0.0"},"file":{"path":"linear/index.md","mtime":"2016-09-19T15:30:48.587Z","type":"markdown"},"gitbook":{"version":"3.2.0","time":"2016-09-20T07:16:22.654Z"},"basePath":"..","book":{"language":"en"}});
+            gitbook.page.hasChanged({"page":{"title":"Linear Algorithm","level":"1.5","depth":1,"next":{"title":"Sorting Algorithm","level":"1.6","depth":1,"path":"sorting/index.md","ref":"sorting/index.md","articles":[]},"previous":{"title":"Array Extension","level":"1.4","depth":1,"path":"array/index.md","ref":"array/index.md","articles":[]},"dir":"ltr"},"config":{"plugins":["yametrika","katex","-mixpanel","-quizzes","-exercises","-mathjax"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"yametrika":{"number":"25680314"},"katex":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":false,"twitter":false,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"The API Documents for Tango","language":"en","links":{"home":false,"about":false,"issues":false,"contribute":false,"sharing":{"google":false,"facebook":false,"twitter":false}},"gitbook":">=2.0.0"},"file":{"path":"linear/index.md","mtime":"2017-01-28T12:29:40.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-01-31T15:33:28.302Z"},"basePath":"..","book":{"language":"en"}});
         });
     </script>
 </div>

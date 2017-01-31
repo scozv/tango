@@ -2,12 +2,12 @@
 <!DOCTYPE HTML>
 <html lang="en" >
     <head>
-        <title>Basic Type Extension · The API Documents for Tango</title>
         <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Basic Type Extension · The API Documents for Tango</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
-        <meta name="generator" content="GitBook 3.2.0">
+        <meta name="generator" content="GitBook 3.2.2">
         
         
         
@@ -384,14 +384,53 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <p><a name="t"></a></p><h1 id="type-extension">Type Extension</h1><p>All typies in data structure are defined in <code>tango.type</code>.</p><p>A function can be the parameter, such as in <code>.map(fn)</code>, <code>.forEach(fn)</code>, <code>.sort(compare)</code>, etc. 
-The default <code>fn</code> in <code>.map(fn)</code> is <code>x =&gt; x</code>, while the default comparasion way is <code>(x, y) =&gt; x - y</code>.</p><h2 id="type-constructors">Type Constructors</h2><h4 id="new-tangotypelinkedlist"><code>new tango.type.LinkedList()</code></h4><p>Constructs a new linked list.</p><h4 id="new-tangotypestack"><code>new tango.type.Stack()</code></h4><p>Constructs a new stack</p><h4 id="new-tangotypequeue"><code>new tango.type.Queue()</code></h4><p>Constructs a new queue.</p><h4 id="new-tangotypemaxheap-heap"><code>new tango.type.MaxHeap(): heap</code></h4><p>Gets a new max heap.</p><h4 id="new-tangotypeminheapcompare-heap"><code>new tango.type.MinHeap(compare): heap</code></h4><p>Gets a new min heap.</p><h4 id="new-tangotypequickfindn-number-unionfind"><code>new tango.type.QuickFind(n: number): unionfind</code></h4><p>Gets an union find by QuickFind algorithm.</p><h4 id="new-tangotypeweightedquickunionn-number-unionfind"><code>new tango.type.WeightedQuickUnion(n: number): unionfind</code></h4><p>Gets an union find by Weighted QuickFind algorithm.</p><h4 id="new-tangotypebinarysearchtreecompare"><code>new tango.type.BinarySearchTree(compare)</code></h4><p>Gets a Binary Search Tree with the specific comparasion rule.</p><h4 id="new-tangotypegraphn-number-directed-bool--false"><code>new tango.type.Graph(n: number, directed: bool = false)</code></h4><p>Gets a unweighted graph with <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>n</mi></mrow><annotation encoding="application/x-tex">n</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.43056em;"></span><span class="strut bottom" style="height:0.43056em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord mathit">n</span></span></span></span> vertex, which is undirected by default.</p><h4 id="new-tangotypegraphwn-number-directed-bool--false"><code>new tango.type.GraphW(n: number, directed: bool = false)</code></h4><p>Gets a weighted graph with <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>n</mi></mrow><annotation encoding="application/x-tex">n</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.43056em;"></span><span class="strut bottom" style="height:0.43056em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord mathit">n</span></span></span></span> vertex, which is undirected by default.</p><p><a href="#t">Back to top</a></p><h2 id="general-members-of-linear-collection">General Members of Linear Collection</h2><p>Linear collection like <code>LinkedList</code>, <code>Stack</code>, <code>Queue</code> have the default traversal order.</p><ul><li><code>LinkedList</code> traverses each element in <code>0 ... n-1</code> order;
-</li>
-<li><code>Stack</code>traverses each element in <code>LIFO</code> order;
-</li>
-<li><code>Queue</code>traverses each element in <code>FIFO</code> order;
-</li></ul>
-<p>There are also some general members defined in linear collection.</p><h4 id="size-number"><code>size(): number</code></h4><p>Gets the size (length) of the linear collecion.</p><h4 id="isempty-boolean"><code>isEmpty(): boolean</code></h4><p>Returns <code>true</code> when the linear collection is empty, otherwise <code>false</code>.</p><h4 id="foreachx--void-void"><code>forEach(x =&gt; void): void</code></h4><p>Applies a function to each element in default order.</p><h4 id="mapx--any-any"><code>map(x =&gt; any): [any]</code></h4><p>Gets a new array mapped from <code>x =&gt; any</code>in default order.</p><h4 id="toarray-"><code>toArray(): []</code></h4><p>Gets a new array containing each element of this linear collection in default order.</p><p><a href="#t">Back to top</a></p>
+                                <p><a name="t"></a></p>
+<h1 id="type-extension">Type Extension</h1>
+<p>All typies in data structure are defined in <code>tango.type</code>.</p>
+<p>A function can be the parameter, such as in <code>.map(fn)</code>, <code>.forEach(fn)</code>, <code>.sort(compare)</code>, etc. 
+The default <code>fn</code> in <code>.map(fn)</code> is <code>x =&gt; x</code>, while the default comparasion way is <code>(x, y) =&gt; x - y</code>.</p>
+<h2 id="type-constructors">Type Constructors</h2>
+<h4 id="new-tangotypelinkedlist"><code>new tango.type.LinkedList()</code></h4>
+<p>Constructs a new linked list.</p>
+<h4 id="new-tangotypestack"><code>new tango.type.Stack()</code></h4>
+<p>Constructs a new stack</p>
+<h4 id="new-tangotypequeue"><code>new tango.type.Queue()</code></h4>
+<p>Constructs a new queue.</p>
+<h4 id="new-tangotypemaxheap-heap"><code>new tango.type.MaxHeap(): heap</code></h4>
+<p>Gets a new max heap.</p>
+<h4 id="new-tangotypeminheapcompare-heap"><code>new tango.type.MinHeap(compare): heap</code></h4>
+<p>Gets a new min heap.</p>
+<h4 id="new-tangotypequickfindn-number-unionfind"><code>new tango.type.QuickFind(n: number): unionfind</code></h4>
+<p>Gets an union find by QuickFind algorithm.</p>
+<h4 id="new-tangotypeweightedquickunionn-number-unionfind"><code>new tango.type.WeightedQuickUnion(n: number): unionfind</code></h4>
+<p>Gets an union find by Weighted QuickFind algorithm.</p>
+<h4 id="new-tangotypebinarysearchtreecompare"><code>new tango.type.BinarySearchTree(compare)</code></h4>
+<p>Gets a Binary Search Tree with the specific comparasion rule.</p>
+<h4 id="new-tangotypegraphn-number-directed-bool--false"><code>new tango.type.Graph(n: number, directed: bool = false)</code></h4>
+<p>Gets a unweighted graph with <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>n</mi></mrow><annotation encoding="application/x-tex">n</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.43056em;"></span><span class="strut bottom" style="height:0.43056em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord mathit">n</span></span></span></span> vertex, which is undirected by default.</p>
+<h4 id="new-tangotypegraphwn-number-directed-bool--false"><code>new tango.type.GraphW(n: number, directed: bool = false)</code></h4>
+<p>Gets a weighted graph with <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>n</mi></mrow><annotation encoding="application/x-tex">n</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.43056em;"></span><span class="strut bottom" style="height:0.43056em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord mathit">n</span></span></span></span> vertex, which is undirected by default.</p>
+<p><a href="#t">Back to top</a></p>
+<h2 id="general-members-of-linear-collection">General Members of Linear Collection</h2>
+<p>Linear collection like <code>LinkedList</code>, <code>Stack</code>, <code>Queue</code> have the default traversal order. </p>
+<ul>
+<li><code>LinkedList</code> traverses each element in <code>0 ... n-1</code> order;</li>
+<li><code>Stack</code>traverses each element in <code>LIFO</code> order;</li>
+<li><code>Queue</code>traverses each element in <code>FIFO</code> order;</li>
+</ul>
+<p>There are also some general members defined in linear collection.</p>
+<h4 id="size-number"><code>size(): number</code></h4>
+<p>Gets the size (length) of the linear collecion.</p>
+<h4 id="isempty-boolean"><code>isEmpty(): boolean</code></h4>
+<p>Returns <code>true</code> when the linear collection is empty, otherwise <code>false</code>.</p>
+<h4 id="foreachx--void-void"><code>forEach(x =&gt; void): void</code></h4>
+<p>Applies a function to each element in default order.</p>
+<h4 id="mapx--any-any"><code>map(x =&gt; any): [any]</code></h4>
+<p>Gets a new array mapped from <code>x =&gt; any</code>in default order.</p>
+<h4 id="toarray-"><code>toArray(): []</code></h4>
+<p>Gets a new array containing each element of this linear collection in default order.</p>
+<p><a href="#t">Back to top</a></p>
+
                                 
                                 </section>
                             
@@ -434,7 +473,7 @@ The default <code>fn</code> in <code>.map(fn)</code> is <code>x =&gt; x</code>, 
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Basic Type Extension","level":"1.2","depth":1,"next":{"title":"LinkedList","level":"1.2.1","depth":2,"path":"type/linkedlist.md","ref":"type/linkedlist.md","articles":[]},"previous":{"title":"Introduction","level":"1.1","depth":1,"path":"README.md","ref":"README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["yametrika","katex","-mixpanel","-quizzes","-exercises","-mathjax"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"yametrika":{"number":"25680314"},"katex":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":false,"twitter":false,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"The API Documents for Tango","language":"en","links":{"home":false,"about":false,"issues":false,"contribute":false,"sharing":{"google":false,"facebook":false,"twitter":false}},"gitbook":">=2.0.0"},"file":{"path":"type/index.md","mtime":"2016-09-19T15:30:48.607Z","type":"markdown"},"gitbook":{"version":"3.2.0","time":"2016-09-20T07:16:22.654Z"},"basePath":"..","book":{"language":"en"}});
+            gitbook.page.hasChanged({"page":{"title":"Basic Type Extension","level":"1.2","depth":1,"next":{"title":"LinkedList","level":"1.2.1","depth":2,"path":"type/linkedlist.md","ref":"type/linkedlist.md","articles":[]},"previous":{"title":"Introduction","level":"1.1","depth":1,"path":"README.md","ref":"README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["yametrika","katex","-mixpanel","-quizzes","-exercises","-mathjax"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"yametrika":{"number":"25680314"},"katex":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":false,"twitter":false,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"The API Documents for Tango","language":"en","links":{"home":false,"about":false,"issues":false,"contribute":false,"sharing":{"google":false,"facebook":false,"twitter":false}},"gitbook":">=2.0.0"},"file":{"path":"type/index.md","mtime":"2017-01-28T12:29:40.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-01-31T15:33:28.302Z"},"basePath":"..","book":{"language":"en"}});
         });
     </script>
 </div>

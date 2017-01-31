@@ -2,12 +2,12 @@
 <!DOCTYPE HTML>
 <html lang="en" >
     <head>
-        <title>Heap · The API Documents for Tango</title>
         <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Heap · The API Documents for Tango</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
-        <meta name="generator" content="GitBook 3.2.0">
+        <meta name="generator" content="GitBook 3.2.2">
         
         
         
@@ -384,23 +384,38 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <p><a name="t"></a></p><p><a name="heap"></a></p><h2 id="heap">Heap</h2><p>Usage of <code>tango.type.MinHeap</code> is same as <code>tango.type.MaxHeap</code>, except the constructor. 
-Notice, there is a pseudo element at <code>heap[0]</code> which we might not use.</p><p>The reason we do not implement public <code>forEach</code>, <code>map</code> or <code>toArray</code> is 
-that any of these function will destroy the heap.</p><h4 id="isempty-boolean"><code>isEmpty(): boolean</code></h4><p>Returns <code>true</code> if there is no real element in <code>heap</code>, otherwise <code>false</code>.</p><h4 id="size-number"><code>size(): number</code></h4><p>Gets the number of elements in <code>heap</code>.</p><h4 id="pushany-number"><code>push(any): number</code></h4><p>Inserts an element into the <code>heap</code>, and gets <code>size()</code> of the new <code>heap</code>.</p><h4 id="pop-any"><code>pop(): any</code></h4><p>Get the max element from <code>MaxHeap</code>, or the min element from <code>MinHeap</code>, 
-the remove it, keeping <code>heap</code> sorted.</p><h4 id="minheapupdatekey-when-how-boolean"><code>minheap.update(key, when, how): boolean</code></h4><p>Finds an elem holding <code>key(x)</code>:</p><ul><li>if it exists, and it holds <code>when(x)</code>, its value will be update by <code>how(x)</code>, 
-and <code>true</code> will be returned as an indicator for &apos;element found&apos;;
-</li>
-<li>if it doesn&apos;t hold <code>when(x)</code>, <code>true</code> will be returned also as an indicator for &apos;element found&apos;;
-</li>
-<li>otherwise, return <code>false</code> as an indicator for &apos;no element found&apos;.
-</li></ul>
-<p>This method will be applied in <code>Dijkstra</code> algorithm.</p><p>The details of parameters is:</p><pre><code class="lang-JavaScript">minheap.update(
+                                <p><a name="t"></a></p>
+<p><a name="heap"></a></p>
+<h2 id="heap">Heap</h2>
+<p>Usage of <code>tango.type.MinHeap</code> is same as <code>tango.type.MaxHeap</code>, except the constructor. 
+Notice, there is a pseudo element at <code>heap[0]</code> which we might not use.</p>
+<p>The reason we do not implement public <code>forEach</code>, <code>map</code> or <code>toArray</code> is 
+that any of these function will destroy the heap.</p>
+<h4 id="isempty-boolean"><code>isEmpty(): boolean</code></h4>
+<p>Returns <code>true</code> if there is no real element in <code>heap</code>, otherwise <code>false</code>.</p>
+<h4 id="size-number"><code>size(): number</code></h4>
+<p>Gets the number of elements in <code>heap</code>.</p>
+<h4 id="pushany-number"><code>push(any): number</code></h4>
+<p>Inserts an element into the <code>heap</code>, and gets <code>size()</code> of the new <code>heap</code>.</p>
+<h4 id="pop-any"><code>pop(): any</code></h4>
+<p>Get the max element from <code>MaxHeap</code>, or the min element from <code>MinHeap</code>, 
+the remove it, keeping <code>heap</code> sorted.</p>
+<h4 id="minheapupdatekey-when-how-boolean"><code>minheap.update(key, when, how): boolean</code></h4>
+<p>Finds an elem holding <code>key(x)</code>:</p>
+<ul>
+<li>if it exists, and it holds <code>when(x)</code>, its value will be update by <code>how(x)</code>, 
+and <code>true</code> will be returned as an indicator for &apos;element found&apos;;</li>
+<li>if it doesn&apos;t hold <code>when(x)</code>, <code>true</code> will be returned also as an indicator for &apos;element found&apos;;</li>
+<li>otherwise, return <code>false</code> as an indicator for &apos;no element found&apos;.</li>
+</ul>
+<p>This method will be applied in <code>Dijkstra</code> algorithm.</p>
+<p>The details of parameters is:</p>
+<pre><code class="lang-JavaScript">minheap.update(
   key: x =&gt; boolean, 
   when: x =&gt; boolean, 
-  how: x =&gt; <span class="hljs-keyword">void</span>): boolean</code></pre>
+  how: x =&gt; <span class="hljs-keyword">void</span>): boolean
+</code></pre>
 <!--[Back to top](#t)-->
-
-
                                 
                                 </section>
                             
@@ -443,7 +458,7 @@ and <code>true</code> will be returned as an indicator for &apos;element found&a
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Heap","level":"1.2.4","depth":2,"next":{"title":"QuickFind","level":"1.2.5","depth":2,"path":"type/quickfind.md","ref":"type/quickfind.md","articles":[]},"previous":{"title":"Queue","level":"1.2.3","depth":2,"path":"type/queue.md","ref":"type/queue.md","articles":[]},"dir":"ltr"},"config":{"plugins":["yametrika","katex","-mixpanel","-quizzes","-exercises","-mathjax"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"yametrika":{"number":"25680314"},"katex":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":false,"twitter":false,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"The API Documents for Tango","language":"en","links":{"home":false,"about":false,"issues":false,"contribute":false,"sharing":{"google":false,"facebook":false,"twitter":false}},"gitbook":">=2.0.0"},"file":{"path":"type/heap.md","mtime":"2016-09-19T15:30:48.607Z","type":"markdown"},"gitbook":{"version":"3.2.0","time":"2016-09-20T07:16:22.654Z"},"basePath":"..","book":{"language":"en"}});
+            gitbook.page.hasChanged({"page":{"title":"Heap","level":"1.2.4","depth":2,"next":{"title":"QuickFind","level":"1.2.5","depth":2,"path":"type/quickfind.md","ref":"type/quickfind.md","articles":[]},"previous":{"title":"Queue","level":"1.2.3","depth":2,"path":"type/queue.md","ref":"type/queue.md","articles":[]},"dir":"ltr"},"config":{"plugins":["yametrika","katex","-mixpanel","-quizzes","-exercises","-mathjax"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"yametrika":{"number":"25680314"},"katex":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":false,"twitter":false,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"The API Documents for Tango","language":"en","links":{"home":false,"about":false,"issues":false,"contribute":false,"sharing":{"google":false,"facebook":false,"twitter":false}},"gitbook":">=2.0.0"},"file":{"path":"type/heap.md","mtime":"2017-01-28T12:29:40.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-01-31T15:33:28.302Z"},"basePath":"..","book":{"language":"en"}});
         });
     </script>
 </div>

@@ -2,12 +2,12 @@
 <!DOCTYPE HTML>
 <html lang="en" >
     <head>
-        <title>Sorting Algorithm · The API Documents for Tango</title>
         <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Sorting Algorithm · The API Documents for Tango</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
-        <meta name="generator" content="GitBook 3.2.0">
+        <meta name="generator" content="GitBook 3.2.2">
         
         
         
@@ -384,13 +384,26 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <p><a name="sorting"></a></p><h1 id="sorting">Sorting</h1><p>All static methods below are defined in <code>tango.sorting._</code>.</p><p>In our sorting, we pass a function as parameters, named <code>compare(x, y) : number</code>. 
-We sort the array by comparing each two value with this <code>compare</code> function.</p><p>The default <code>compare(x, y) : number</code> is <code>(x, y) =&gt; x - y</code>. that is ascending order. 
+                                <p><a name="sorting"></a></p>
+<h1 id="sorting">Sorting</h1>
+<p>All static methods below are defined in <code>tango.sorting._</code>.</p>
+<p>In our sorting, we pass a function as parameters, named <code>compare(x, y) : number</code>. 
+We sort the array by comparing each two value with this <code>compare</code> function.</p>
+<p>The default <code>compare(x, y) : number</code> is <code>(x, y) =&gt; x - y</code>. that is ascending order. 
 While, we may pass <code>(x, y) =&gt; y -x</code> to order by DESC, or we could pass <code>(x, y) =&gt; y^2 - x^2</code> 
-to order by DESC of each absolute value.</p><h4 id="issortedarr-compare-boolean"><code>isSorted(arr, compare): boolean</code></h4><p>Gets a boolean value indicating whether the <code>arr</code> is sorted under this <code>compare</code> rule.</p><h4 id="quicksortarr-compare-"><code>quickSort(arr, compare): []</code></h4><p>Gets a new sorted array by quick sort.</p><h4 id="mergesortarr-compare-"><code>mergeSort(arr, compare): []</code></h4><p>Gets a new sorted array by merge sort.</p><h4 id="mergesortbuarr-compare-"><code>mergeSortBU(arr, compare): []</code></h4><p>Gets a new sorted array by bottom-up merge sort.</p><h4 id="heapsortarr-option-"><code>heapSort(arr, option): []</code></h4><p>Gets a new sorted array by heap sort, 
-with <code>option = {order:&quot;ASC&quot;}</code> OR <code>option = {order:&quot;DESC&quot;}</code>.</p><!--[Back to top](#sorting)-->
-
-
+to order by DESC of each absolute value.</p>
+<h4 id="issortedarr-compare-boolean"><code>isSorted(arr, compare): boolean</code></h4>
+<p>Gets a boolean value indicating whether the <code>arr</code> is sorted under this <code>compare</code> rule.</p>
+<h4 id="quicksortarr-compare-"><code>quickSort(arr, compare): []</code></h4>
+<p>Gets a new sorted array by quick sort.</p>
+<h4 id="mergesortarr-compare-"><code>mergeSort(arr, compare): []</code></h4>
+<p>Gets a new sorted array by merge sort.</p>
+<h4 id="mergesortbuarr-compare-"><code>mergeSortBU(arr, compare): []</code></h4>
+<p>Gets a new sorted array by bottom-up merge sort.</p>
+<h4 id="heapsortarr-option-"><code>heapSort(arr, option): []</code></h4>
+<p>Gets a new sorted array by heap sort, 
+with <code>option = {order:&quot;ASC&quot;}</code> OR <code>option = {order:&quot;DESC&quot;}</code>.</p>
+<!--[Back to top](#sorting)-->
 
                                 
                                 </section>
@@ -434,7 +447,7 @@ with <code>option = {order:&quot;ASC&quot;}</code> OR <code>option = {order:&quo
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Sorting Algorithm","level":"1.6","depth":1,"next":{"title":"Graph Algorithm","level":"1.7","depth":1,"path":"graph/index.md","ref":"graph/index.md","articles":[]},"previous":{"title":"Linear Algorithm","level":"1.5","depth":1,"path":"linear/index.md","ref":"linear/index.md","articles":[]},"dir":"ltr"},"config":{"plugins":["yametrika","katex","-mixpanel","-quizzes","-exercises","-mathjax"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"yametrika":{"number":"25680314"},"katex":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":false,"twitter":false,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"The API Documents for Tango","language":"en","links":{"home":false,"about":false,"issues":false,"contribute":false,"sharing":{"google":false,"facebook":false,"twitter":false}},"gitbook":">=2.0.0"},"file":{"path":"sorting/index.md","mtime":"2016-09-19T15:30:48.591Z","type":"markdown"},"gitbook":{"version":"3.2.0","time":"2016-09-20T07:16:22.654Z"},"basePath":"..","book":{"language":"en"}});
+            gitbook.page.hasChanged({"page":{"title":"Sorting Algorithm","level":"1.6","depth":1,"next":{"title":"Graph Algorithm","level":"1.7","depth":1,"path":"graph/index.md","ref":"graph/index.md","articles":[]},"previous":{"title":"Linear Algorithm","level":"1.5","depth":1,"path":"linear/index.md","ref":"linear/index.md","articles":[]},"dir":"ltr"},"config":{"plugins":["yametrika","katex","-mixpanel","-quizzes","-exercises","-mathjax"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"yametrika":{"number":"25680314"},"katex":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":false,"twitter":false,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"The API Documents for Tango","language":"en","links":{"home":false,"about":false,"issues":false,"contribute":false,"sharing":{"google":false,"facebook":false,"twitter":false}},"gitbook":">=2.0.0"},"file":{"path":"sorting/index.md","mtime":"2017-01-28T12:29:40.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-01-31T15:33:28.302Z"},"basePath":"..","book":{"language":"en"}});
         });
     </script>
 </div>
