@@ -2,6 +2,7 @@ import array from '../linear/array'
 import Stats from './Stats'
 import Point from './Point'
 import Vector from './Vector'
+import Calculator from './Calculator'
 
 const EPSILON = Math.abs(1e-29);
 
@@ -108,4 +109,5 @@ export default {
   Stats,
   Point,
   Vector,
+  BigCalculator: Calculator
 }
