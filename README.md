@@ -4,8 +4,8 @@ Tango, some Implementations of Fundamental Algorithms
 
 `tango` is a multi-languages implementation of fundamental algorithms.
 
-Currently, `tango` has and will have:
+Currently, `tango` has:
 
-* implementation via `ECMAScript 6`, see `lang/es6`
-* [TODO] via `Scala`
-* [TODO] via `Golang`
+* implementation in `JavaScript`, see `lang/es6`
+* [In Progress] implementation in `Golang`, see `lang/golang`
+* [TODO] `Scala` implementation

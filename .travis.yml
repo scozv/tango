@@ -20,6 +20,21 @@ matrix:
         - go test -v -race -coverprofile=cover.out ./...
         # - go tool cover -func=cover.out
 
+    - language: node_js
+      node_js:
+        - "6"
+      before_install:
+        - cd docs
+      install:
+        - npm install -g gitbook-cli
+        - npm install
+      script:
+        - gitbook install
+        - gitbook build
+      branches:
+        only:
+          - master
+
 notifications:
   email:
     on_success: never
