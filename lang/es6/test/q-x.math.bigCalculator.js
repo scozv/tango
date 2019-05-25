@@ -1,9 +1,11 @@
 require('./q');
 
-var algo = require('../bundle').default;
+var algo = require('../dist/bundle').default;
 var math = algo.math;
 var Sorting = algo.sorting;
 var array = algo.linear.array;
+
+console.log(Object.keys(math));
 
 Array.prototype.zip = function(that){return array.zip(this, that);};
 Array.prototype.take = function(n){return array.take(this, n);};

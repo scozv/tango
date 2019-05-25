@@ -1,4 +1,4 @@
-var algo = require('../bundle').default;
+var algo = require('../dist/bundle').default;
 var MinHeap = algo.type.MinHeap;
 var MaxHeap = algo.type.MaxHeap;
 var should = require('should');

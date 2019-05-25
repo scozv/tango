@@ -1,6 +1,6 @@
 require('./q');
 
-var algo = require('../bundle').default;
+var algo = require('../dist/bundle').default;
 var math = algo.math;
 var Sorting = algo.sorting;
 var array = algo.linear.array;

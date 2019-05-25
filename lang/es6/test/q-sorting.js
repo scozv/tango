@@ -1,6 +1,6 @@
 require('./q');
 
-var algo = require('../bundle').default;
+var algo = require('../dist/bundle').default;
 var T = algo.type;
 var Sorting = algo.sorting;
 
@@ -21,7 +21,7 @@ test('Sorting, the basic function', function () {
 
     randomArray = Sorting.__randomUniqueArray__(length);
     // according to MDN
-    // If compareFunction is not supplied, elements are sorted by converting them to strings 
+    // If compareFunction is not supplied, elements are sorted by converting them to strings
     // and comparing strings in lexicographic ("dictionary" or "telephone book," not numerical) order.
     randomArray.sort(function (x, y) {
       return x - y;

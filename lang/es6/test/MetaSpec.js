@@ -1,4 +1,4 @@
-var algo = require('../bundle').default;
+var algo = require('../dist/bundle').default;
 var should = require('should');
 var p = function(o, ps){
   "use strict";

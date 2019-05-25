@@ -1,6 +1,6 @@
 require('./q');
 
-var algo = require('../bundle').default;
+var algo = require('../dist/bundle').default;
 var T = algo.type;
 
 test('T.Queue enqueuing', function () {

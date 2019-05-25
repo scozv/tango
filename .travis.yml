@@ -17,7 +17,8 @@ matrix:
       before_script:
         - cd lang/golang
       script:
-        - go teset -v -race ./...
+        - go test -v -race -coverprofile=cover.out ./...
+        # - go tool cover -func=cover.out
 
 notifications:
   email:
