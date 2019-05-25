@@ -5,7 +5,7 @@
 	"plugins": ["yametrika", "katex", "-mixpanel", "-quizzes", "-exercises","-mathjax"],
 	"pluginsConfig": {
 		"yametrika": {
-			"number": "25680314"
+			"id": 25680314
 		}
 	},
 	"links": {
