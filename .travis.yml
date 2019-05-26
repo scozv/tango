@@ -26,7 +26,7 @@ matrix:
         - "8.0.0"
       before_install:
         - cd docs
-        - npm cache clean
+        - npm cache verify
         - rm -Rf node_modules/
       install:
         - npm install -g gitbook-cli
