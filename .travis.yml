@@ -23,7 +23,6 @@ matrix:
 
     - language: node_js
       node_js:
-        - "6"
         - "8.0.0"
       before_install:
         - cd docs
