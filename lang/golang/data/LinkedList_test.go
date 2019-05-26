@@ -1,7 +1,6 @@
 package data
 
 import (
-	"reflect"
 	"testing"
 )
 
@@ -36,8 +35,7 @@ func TestLinkedList_append(t *testing.T) {
 	xs.append(4).append(3).append(1).append(9)
 
 	ys := xs.ToArray()
-	if !reflect.DeepEqual(ys, []int{4, 3, 1, 9}) && len(ys) != 4 {
-		// https://stackoverflow.com/a/53672500/3809076
+	if !equals(ys, []int{4, 3, 1, 9}) {
 		t.Errorf("[4, 3, 1, 9] failed on ToArray, the actual array is %d", ys)
 	}
 }
@@ -45,11 +43,7 @@ func TestLinkedList_append(t *testing.T) {
 func TestLinkedList_prepend(t *testing.T) {
 	xs := new(LinkedList)
 	xs.prepend(4).prepend(3).prepend(1).prepend(9)
-
-	ys := xs.ToArray()
-	if !reflect.DeepEqual(ys, []int{9, 1, 3, 4}) && len(ys) != 4  {
-		t.Errorf("[9, 1, 3, 4] failed on ToArray, the actual array is %d", ys)
-	}
+	xs.expectedToEqual([]int{9, 1, 3, 4}, "[9, 1, 3, 4] failed on ToArray", t)
 }
 
 func TestLinkedList_Map(t *testing.T) {
@@ -59,20 +53,48 @@ func TestLinkedList_Map(t *testing.T) {
 	ys := xs.Map(func (elem interface{}) interface{} {
 		return elem.(int) + 3
 	})
-	if !reflect.DeepEqual(ys.ToArray(), []int{7, 6, 4, 12}) && ys.Size() != 4  {
-		t.Errorf("[4, 3, 1, 9] failed on Map(_ + 3), the actual array is %d", ys.ToArray())
-	}
-	if !reflect.DeepEqual(xs.ToArray(), []int{4, 3, 1, 9}) && xs.Size() != 4  {
-		t.Errorf("[4, 3, 1, 9] should be immutable, but now it is %d", xs.ToArray())
-	}
+	ys.expectedToEqual([]int{7, 6, 4, 12}, "[4, 3, 1, 9] failed on Map(_ + 3)", t)
+	xs.expectedToEqual([]int{4, 3, 1, 9}, "[4, 3, 1, 9] should be immutable", t)
 
 	zs := xs.Push(7).Map(func (elem interface{}) interface{} {
 		return elem.(int) - 7
 	})
-	if !reflect.DeepEqual(zs.ToArray(), []int{-3, -4, -6, 0}) && zs.Size() != 5  {
-		t.Errorf("[4, 3, 1, 9, 7] failed on Map(_ + 3), the actual array is %d", zs.ToArray())
+	zs.expectedToEqual([]int{-3, -4, -6, 2, 0}, "[4, 3, 1, 9, 7] failed on Map(_ + 3)", t)
+	xs.expectedToEqual([]int{4, 3, 1, 9, 7}, "[4, 3, 1, 9, 7] should be immutable", t)
+}
+
+func TestLinkedList_Reverse(t *testing.T) {
+	xs := new(LinkedList)
+	if xs.Reverse() != xs {
+		t.Error("Reverse of empty list should be itself")
 	}
-	if !reflect.DeepEqual(xs.ToArray(), []int{4, 3, 1, 9, 7}) && xs.Size() != 5  {
-		t.Errorf("[4, 3, 1, 9, 7] should be immutable, but now it is %d", xs.ToArray())
+
+	xs.Push(4).Push(3).Push(1).Push(9)
+	ys := xs.Reverse()
+	xs.expectedToEqual([]int{4, 3, 1, 9}, "After reverse, [4, 3, 1, 9] should be immutable", t)
+	ys.expectedToEqual([]int{9, 1, 3, 4}, "Reverse of [4, 3, 1, 9] should be [9, 1, 3, 4]", t)
+}
+
+// helper function to compare LinkedList with []int
+// given our test data of LinkedList are all collection of int
+func (xs *LinkedList) expectedToEqual(expected []int, error string, t *testing.T) {
+	actual := xs.ToArray()
+	// https://stackoverflow.com/a/53672500/3809076
+	if xs.Size() != len(expected) || !equals(actual, expected) {
+		t.Errorf("%s, expected %d but actual is %d", error, expected, actual)
 	}
+}
+
+func equals(xs []interface{}, ys []int) bool {
+	if len(xs) != len(ys) {
+		return false
+	} else {
+		for i := range xs {
+			if xs[i].(int) != ys[i] {
+				return false
+			}
+		}
+	}
+
+	return true
 }

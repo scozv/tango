@@ -95,4 +95,17 @@ func (xs *LinkedList) ToArray() []interface{} {
 	return ys
 }
 
+func (xs *LinkedList) Reverse() *LinkedList {
+	if xs.IsEmpty() {
+		return xs
+	} else {
+		ys := new(LinkedList).Init()
+
+		xs.ForEach(func(elem interface{}) {
+			ys.prepend(elem)
+		})
+
+		return ys
+	}
+}
 
