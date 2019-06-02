@@ -12,19 +12,6 @@ type LinkedList struct {
 	length int
 }
 
-func (xs *LinkedList) tail() *LinkedList {
-	if xs.IsEmpty() {
-		// TODO use error instead
-		return xs
-	} else {
-		ys := new(LinkedList).Init()
-		ys.head = xs.head.next
-		ys.last = xs.last
-		ys.length = xs.length - 1
-		return ys
-	}
-}
-
 func (xs *LinkedList) Init() *LinkedList {
 	xs.length = 0
 	return xs
@@ -76,10 +63,21 @@ func (xs *LinkedList) Push(elem interface{}) *LinkedList {
 }
 
 func (xs *LinkedList) Insert(elem interface{}, i int) *LinkedList {
-	if i < 0 || i >= xs.length {
+	if i < 0 || i >= xs.length - 1 {
 		return xs.append(elem)
 	} else {
-		return xs.tail().Insert(elem, i - 1)
+		k := 0
+		p := xs.head
+		for k < i {
+			p = p.next
+			k = k + 1
+		}
+
+		x := node{elem, nil}
+		x.next = p.next
+		p.next = &x
+		xs.length = xs.length + 1
+		return xs
 	}
 }
 
